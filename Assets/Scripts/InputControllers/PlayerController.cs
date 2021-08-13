@@ -13,6 +13,10 @@ public class PlayerController : MonoBehaviour
     private float speed = 1f;
     [SerializeField]
     private float maxSpeed = 5f;
+
+    [SerializeField]
+    private Animator animator;
+
     private Vector3 velocity = Vector3.zero;
 
     private Rigidbody rigidbody;
@@ -20,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement = Vector2.zero;
 
     private Vector3 mousePos = Vector3.zero;
+
 
     private void Awake()
     {
@@ -32,11 +37,13 @@ public class PlayerController : MonoBehaviour
         rigidbody.AddForce(velocity, ForceMode.Impulse);
         velocity = Vector3.zero;
 
+        // Falling Velocity
         if (rigidbody.velocity.y < 0f)
         {
             rigidbody.velocity += Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
         }
 
+        // Max Velocity
         Vector3 horizontalVelocity = rigidbody.velocity;
         horizontalVelocity.y = 0;
         if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
@@ -44,22 +51,21 @@ public class PlayerController : MonoBehaviour
             rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rigidbody.velocity.y;
         }
 
+        // Look Direction (Y)
         var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
         Physics.Raycast(ray, out var hit);
         var lookPos = hit.point - transform.position;
         lookPos.y = 0;
         var rotation = Quaternion.LookRotation(lookPos);
-        transform.rotation = rotation;
-        // transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
     }
-
-    // public void OnLook(InputAction.CallbackContext context)
-    // {
-    //     mousePos = Camera.main.ScreenToWorldPoint(context.action.ReadValue<Vector2>());
-    // }
 
     public void OnMovement(InputAction.CallbackContext context)
     {
+        if (context.performed)
+            animator.SetBool("isMoving", true);
+        if (context.canceled)
+            animator.SetBool("isMoving", false);
         movement = context.ReadValue<Vector2>();
     }
 

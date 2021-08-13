@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Floor
-  m_Shader: {fileID: -6465566751694194690, guid: 477cbf834e028814cb4cb301ca079276, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 731fd439384d8494e957e5756e2fe6c3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_77d79e5736e248259cf3a8d72cdb989b:
+        m_Texture: {fileID: 2800000, guid: 9049773df1cce5a47b56250dfbcd8fb2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -72,6 +76,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_4570a886b0f64daeac3c84c9fba4601e: 1
+    - Vector1_78fae97dec0f49a794ebabdcaeae2062: 0.4
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -90,6 +96,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_84c1aeb542604a2bb4060c53f1749852: {r: 0.9056604, g: 0.7456725, b: 0.5254539, a: 0}
+    - Color_ca7f88f7fb6d49db9b2412a94cdcec54: {r: 1, g: 0.2856554, b: 0.17647058, a: 0}
     - _Color: {r: 0.8867924, g: 0.5018956, b: 0.32208967, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
