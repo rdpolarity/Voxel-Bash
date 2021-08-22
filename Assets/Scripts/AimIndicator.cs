@@ -18,25 +18,13 @@ public class AimIndicator : MonoBehaviour
 
     public void DrawIndicator(Vector3 force, Rigidbody rb, Vector3 startingPoint)
     {
-        Vector3 velocity = (force / rb.mass) * Time.fixedDeltaTime;
-
-        float flightDuration = (2 * velocity.y) / Physics.gravity.y;
-        float stepTime = flightDuration / lineSegmentCount;
-
         linePoints.Clear();
 
+        //This is a rough estimate. gets inaccurate near the end of it, but for now it does actually point to the right block up to about a 8 block radius.
+        //Tried doing legitimate trajectory but it wasn't having it
         linePoints.Add(startingPoint);
-
-        for (int i = 0; i < lineSegmentCount; i++)
-        {
-            float stepTimePassed = stepTime * i; //time elapsed
-            Vector3 MovementVector = new Vector3(
-                velocity.x * stepTimePassed, 
-                velocity.y * stepTimePassed - 0.5f * Physics.gravity.y * stepTimePassed * stepTimePassed, 
-                velocity.z * stepTimePassed);
-
-            linePoints.Add(-MovementVector*1000 + startingPoint);
-        }
+        var distanceMultiplier = Vector3.Distance(startingPoint, startingPoint + force)*0.05f;
+        linePoints.Add((startingPoint -force.normalized) + force / 2 + Vector3.down*distanceMultiplier);
 
         lineRenderer.positionCount = linePoints.Count;
         lineRenderer.SetPositions(linePoints.ToArray());

@@ -36,8 +36,13 @@ public class Bow : MonoBehaviour
     {
         if (Charging)
         {
-            charge += Time.deltaTime*chargeRate;
-            indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), arrow.GetComponent<Rigidbody>(), transform.position+dir);
+            charge += Time.deltaTime * chargeRate;
+            indicator.gameObject.SetActive(true);
+            indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), arrow.GetComponent<Rigidbody>(), transform.position + dir);
+        }
+        else
+        {
+            indicator.gameObject.SetActive(false);
         }
     }
 
