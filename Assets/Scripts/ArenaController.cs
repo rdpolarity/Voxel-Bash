@@ -24,6 +24,8 @@ public class ArenaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Removes tiles that have been deleted from other places in the code
+        floorTiles.RemoveAll(item => item == null);
         if (decay.active)
         {
             decay.RemoveTiles(floorTiles);
