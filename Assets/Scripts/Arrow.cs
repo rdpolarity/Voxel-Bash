@@ -18,4 +18,9 @@ public class Arrow : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(rigidbody.velocity);
         rigidbody.MoveRotation(targetRotation);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
+    }
 }
