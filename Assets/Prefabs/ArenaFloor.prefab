@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6015876190329361410}
+  - component: {fileID: 2866326909571573567}
   m_Layer: 0
   m_Name: ArenaFloor
   m_TagString: Untagged
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2866326909571573567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456541409323027992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e3e4ccde2577d4b80248dfa3d06426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours: []
 --- !u!1 &8273903744510419058
 GameObject:
   m_ObjectHideFlags: 0
