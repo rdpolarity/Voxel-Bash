@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HarderFloor
+  m_Name: PowerUpBlock
   m_Shader: {fileID: -6465566751694194690, guid: 731fd439384d8494e957e5756e2fe6c3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -81,7 +81,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_4570a886b0f64daeac3c84c9fba4601e: 2
-    - Vector1_78fae97dec0f49a794ebabdcaeae2062: 0.1
+    - Vector1_78fae97dec0f49a794ebabdcaeae2062: 0.07
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -109,13 +109,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_ca7f88f7fb6d49db9b2412a94cdcec54: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - Color_ca7f88f7fb6d49db9b2412a94cdcec54: {r: 0.6764121, g: 0, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &3985227831804538490
+--- !u!114 &4398886026426329630
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
