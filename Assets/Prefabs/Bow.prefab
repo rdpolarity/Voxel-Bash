@@ -43,5 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 236db612171a7f44d9fe193daae53711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 0
   arrow: {fileID: 3464475405107332064, guid: db2b0cccd655dee47bc6b6403a65e332, type: 3}
+  power: 1
+  chargeRate: 1
+  minForce: 1
+  maxForce: 1
