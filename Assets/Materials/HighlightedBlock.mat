@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LeaveBlock
-  m_Shader: {fileID: -6465566751694194690, guid: 731fd439384d8494e957e5756e2fe6c3, type: 3}
+  m_Name: HighlightedBlock
+  m_Shader: {fileID: -6465566751694194690, guid: bf709c570fc41ef458286e600e033646, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_77d79e5736e248259cf3a8d72cdb989b:
-        m_Texture: {fileID: 2800000, guid: 9049773df1cce5a47b56250dfbcd8fb2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,6 +59,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_31ed995ed7e34ffcb93be9764026715a_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 9049773df1cce5a47b56250dfbcd8fb2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -80,11 +80,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_335ae85dc017463d88fea548db82c0f9: 1
-    - Vector1_096d4d461e2d4dab885669fe2c88fbb7: 1
-    - Vector1_4570a886b0f64daeac3c84c9fba4601e: 1
-    - Vector1_78fae97dec0f49a794ebabdcaeae2062: 0.15
-    - Vector1_fad56eba0a2a4118b511e21d336fe949: 0.2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -112,13 +107,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_ca7f88f7fb6d49db9b2412a94cdcec54: {r: 0.9137255, g: 0.14113326, b: 0.13333331, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &362568321768062741
+--- !u!114 &4832287996660054686
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
