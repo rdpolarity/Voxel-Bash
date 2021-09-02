@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using Mirror;
 using Steamworks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SteamLobby : MonoBehaviour
 {
     [SerializeField]
-    private GameObject hostButton = null;
-
-    [SerializeField]
     private NetworkManager networkManager;
-
+// 
     protected Callback<LobbyCreated_t> lobbyCreated;
     protected Callback<GameLobbyJoinRequested_t> joinRequested;
     protected Callback<LobbyEnter_t> lobbyJoin;
@@ -26,12 +24,15 @@ public class SteamLobby : MonoBehaviour
 
     } 
 
+    public void Join() {
+
+    }
+
     /// <summary>
     /// Hosts a steam lobby
     /// </summary>
     public void Host() {
-        hostButton.SetActive(false);
-
+        SceneManager.LoadScene("Lobby");
         SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypeFriendsOnly, networkManager.maxConnections);
     }
 
@@ -51,14 +52,13 @@ public class SteamLobby : MonoBehaviour
 
         networkManager.networkAddress = hostAddress;
         networkManager.StartClient();
-
-        hostButton.SetActive(false);
     }
 
     /// <summary>
     /// Triggers when a user requests to join server
     /// </summary>
     private void OnRequestedJoin(GameLobbyJoinRequested_t joinRequestDetails) {
+        SceneManager.LoadScene("Lobby");
         SteamMatchmaking.JoinLobby(joinRequestDetails.m_steamIDLobby);
     }
 
@@ -68,7 +68,6 @@ public class SteamLobby : MonoBehaviour
     /// <param name="lobbyDetails">Data received back on the connection details</param>
     private void OnLobbyCreated(LobbyCreated_t lobbyDetails) {
         if (lobbyDetails.m_eResult != EResult.k_EResultOK) {
-            hostButton.SetActive(true);
             return;
         }
 

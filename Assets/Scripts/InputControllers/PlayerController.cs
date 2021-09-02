@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
 
     [SerializeField]
@@ -28,31 +29,42 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 mousePos = Vector3.zero;
 
+    private CharacterController controller;
+
     private void Awake()
     {
+        animator.SetBool("isMoving", false);
         rigidbody = GetComponent<Rigidbody>();
         bow = GetComponentInChildren<Bow>();
+        controller = GetComponent<CharacterController>();
     }
 
-    private void FixedUpdate()
-    {
-        velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
-        rigidbody.AddForce(velocity, ForceMode.Impulse);
-        velocity = Vector3.zero;
+    // public override void OnStartAuthority()
+    // {
+    //     enabled = true;
+    // }
 
+    [Client]
+    private void Update()
+    {
+        if (!isLocalPlayer) return;
+        velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
+        controller.SimpleMove(velocity);
+        // rigidbody.AddForce(velocity, ForceMode.Impulse);
+        // velocity = Vector3.zero;
         // Falling Velocity
-        if (rigidbody.velocity.y < 0f)
-        {
-            rigidbody.velocity += Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
-        }
+        // if (rigidbody.velocity.y < 0f)
+        // {
+        //     rigidbody.velocity += Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
+        // }
 
         // Max Velocity
-        Vector3 horizontalVelocity = rigidbody.velocity;
-        horizontalVelocity.y = 0;
-        if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
-        {
-            rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rigidbody.velocity.y;
-        }
+        // Vector3 horizontalVelocity = rigidbody.velocity;
+        // horizontalVelocity.y = 0;
+        // if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+        // {
+        //     rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rigidbody.velocity.y;
+        // }
 
         // Look Direction (Y)
         var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
@@ -60,24 +72,27 @@ public class PlayerController : MonoBehaviour
         facing = Vector3.Normalize(hit.point - transform.position);
         facing.y = 0;
         var rotation = Quaternion.LookRotation(facing);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
+        var slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
+        transform.rotation = slowRotation;
         bow.Dir = facing;
     }
 
     public void OnMovement(InputAction.CallbackContext context)
     {
-
+        if (!isLocalPlayer) return;
         if (context.performed)
             animator.SetBool("isMoving", true);
         if (context.canceled)
             animator.SetBool("isMoving", false);
         movement = context.ReadValue<Vector2>();
 
+
     }
+
 
     public void OnShoot(InputAction.CallbackContext context)
     {
-
+        if (!isLocalPlayer) return;
         if (context.started)
         {
             Debug.Log("Charging");
@@ -89,6 +104,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Release");
             bow.Shoot(transform.position);
         }
+
 
     }
 }
