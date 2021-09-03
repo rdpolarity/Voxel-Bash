@@ -17,6 +17,7 @@ public class PlayerController : NetworkBehaviour
 
     [SerializeField]
     private PlayerInput inputs;
+    private MouseWorldPosition mouseWorld;
 
     [SerializeField]
     private float speed = 1f;
@@ -48,6 +49,7 @@ public class PlayerController : NetworkBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         bow = GetComponentInChildren<Bow>();
+        mouseWorld = GetComponent<MouseWorldPosition>();
     }
 
     private void FixedUpdate()
@@ -72,9 +74,10 @@ public class PlayerController : NetworkBehaviour
             }
 
             // Look Direction (Y)
-            var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-            Physics.Raycast(ray, out var hit);
-            facing = Vector3.Normalize(hit.point - transform.position);
+            //var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            //Physics.Raycast(ray, out var hit);
+
+            facing = Vector3.Normalize(mouseWorld.Position - transform.position);
             facing.y = 0;
             var rotation = Quaternion.LookRotation(facing);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
