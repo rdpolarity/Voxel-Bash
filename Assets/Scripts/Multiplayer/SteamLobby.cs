@@ -28,6 +28,11 @@ public class SteamLobby : MonoBehaviour
 
     }
 
+    public void Leave() {
+        networkManager.StopClient();
+        SceneManager.LoadScene("MainMenu");
+    }
+
     /// <summary>
     /// Hosts a steam lobby
     /// </summary>

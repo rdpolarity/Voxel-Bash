@@ -67,6 +67,14 @@ namespace UnityEngine.InputSystem
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""EscapeMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""0dd5a3da-3d40-4e6b-894b-450f64165e5b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -278,6 +286,17 @@ namespace UnityEngine.InputSystem
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""924605d3-6562-4218-a963-da2616eb391d"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EscapeMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -320,6 +339,7 @@ namespace UnityEngine.InputSystem
             m_Player_Parry = m_Player.FindAction("Parry", throwIfNotFound: true);
             m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
             m_Player_Strike = m_Player.FindAction("Strike", throwIfNotFound: true);
+            m_Player_EscapeMenu = m_Player.FindAction("EscapeMenu", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -375,6 +395,7 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_Parry;
         private readonly InputAction m_Player_Dash;
         private readonly InputAction m_Player_Strike;
+        private readonly InputAction m_Player_EscapeMenu;
         public struct PlayerActions
         {
             private @Inputs m_Wrapper;
@@ -385,6 +406,7 @@ namespace UnityEngine.InputSystem
             public InputAction @Parry => m_Wrapper.m_Player_Parry;
             public InputAction @Dash => m_Wrapper.m_Player_Dash;
             public InputAction @Strike => m_Wrapper.m_Player_Strike;
+            public InputAction @EscapeMenu => m_Wrapper.m_Player_EscapeMenu;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -412,6 +434,9 @@ namespace UnityEngine.InputSystem
                     @Strike.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStrike;
                     @Strike.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStrike;
                     @Strike.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStrike;
+                    @EscapeMenu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscapeMenu;
+                    @EscapeMenu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscapeMenu;
+                    @EscapeMenu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscapeMenu;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -434,6 +459,9 @@ namespace UnityEngine.InputSystem
                     @Strike.started += instance.OnStrike;
                     @Strike.performed += instance.OnStrike;
                     @Strike.canceled += instance.OnStrike;
+                    @EscapeMenu.started += instance.OnEscapeMenu;
+                    @EscapeMenu.performed += instance.OnEscapeMenu;
+                    @EscapeMenu.canceled += instance.OnEscapeMenu;
                 }
             }
         }
@@ -464,6 +492,7 @@ namespace UnityEngine.InputSystem
             void OnParry(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
             void OnStrike(InputAction.CallbackContext context);
+            void OnEscapeMenu(InputAction.CallbackContext context);
         }
     }
 }
