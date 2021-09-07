@@ -18,7 +18,11 @@ public class PlayerController : NetworkBehaviour
     [SerializeField]
     private Animator animator;
 
+    private MouseWorld mouseWorld;
+
     private Vector3 velocity = Vector3.zero;
+
+    [SerializeField]
     private Vector3 facing = Vector3.zero;
 
 
@@ -37,6 +41,7 @@ public class PlayerController : NetworkBehaviour
         rigidbody = GetComponent<Rigidbody>();
         bow = GetComponentInChildren<Bow>();
         controller = GetComponent<CharacterController>();
+        mouseWorld = GetComponent<MouseWorld>();
     }
 
     // public override void OnStartAuthority()
@@ -67,9 +72,7 @@ public class PlayerController : NetworkBehaviour
         // }
 
         // Look Direction (Y)
-        var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-        Physics.Raycast(ray, out var hit);
-        facing = Vector3.Normalize(hit.point - transform.position);
+        facing = Vector3.Normalize(mouseWorld.Position - transform.position);
         facing.y = 0;
         var rotation = Quaternion.LookRotation(facing);
         var slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);

@@ -168,9 +168,10 @@ GameObject:
   - component: {fileID: 655632522009330606}
   - component: {fileID: 2395031841467032819}
   - component: {fileID: 4451523294621958049}
+  - component: {fileID: 507328640812373682}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,6 +210,7 @@ MonoBehaviour:
   speed: 3
   maxSpeed: 4
   animator: {fileID: 1882352509146524678}
+  facing: {x: 0, y: 0, z: 0}
 --- !u!114 &4544073927636467284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +312,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0dd5a3da-3d40-4e6b-894b-450f64165e5b
     m_ActionName: Player/EscapeMenu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 337daa10-b863-4b95-a803-eec1a21bc898
+    m_ActionName: Player/ChangeMapForward[/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c296fbc7-ca3f-4422-9a38-202a428640f1
+    m_ActionName: Player/ChangeMapBackwards[/Keyboard/leftArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
@@ -425,6 +435,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &507328640812373682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736277583398175609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995a5425c54aa5648bae94f639d73605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 0, z: 0}
+  planeHeight: 1
 --- !u!1001 &1273380616448664970
 PrefabInstance:
   m_ObjectHideFlags: 0
