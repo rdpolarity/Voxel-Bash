@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 1879761853175852216}
   - component: {fileID: 3911038092953585024}
   - component: {fileID: 2427677777718601009}
-  - component: {fileID: 1307027616400392304}
   m_Layer: 0
   m_Name: ArenaFloor(Active Prefab)
   m_TagString: Untagged
@@ -128,7 +127,7 @@ MonoBehaviour:
   sceneId: 0
   serverOnly: 0
   visible: 0
-  m_AssetId: 69fd97f5913db4d44aaad20939bd20c6
+  m_AssetId: c4ebaa286c467a84684037769593034d
   hasSpawned: 0
 --- !u!114 &2427677777718601009
 MonoBehaviour:
@@ -159,36 +158,6 @@ MonoBehaviour:
   showGizmos: 0
   showOverlay: 0
   overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
---- !u!114 &1307027616400392304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227140387990399777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d402f224fbfd4b48aad0ebb8f2d2ec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sourcePrefab:
-    _unityPrefab: {fileID: 9179812162700507663, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
-    _initialWorldRotation: {x: -0, y: -0, z: -0, w: 1}
-    _initialWorldScale: {x: 1, y: 1, z: 1}
-    _instantiationSettings: {fileID: 0}
-    _activationSettings: {fileID: 0}
-    _tagAssociations: {fileID: 0}
-    _name: ArenaFloor
-    _offsetFromGridSurface: 0
-    _offsetFromObjectSurface: 0
-    _view:
-      _isVisible: 1
-      _toggleVisibilityBeforeRender: 0
-      _visibilityToggleLabel: 
-      _visibilityToggleIndent: 0
-      _indentContent: 0
-      _surroundWithBox: 1
-  _transform: {fileID: 8087311119255968901}
 --- !u!1 &4816427454744081443
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,8 +168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4287001675153632355}
   - component: {fileID: 9166075557822777679}
-  - component: {fileID: 3222308939468372669}
-  - component: {fileID: 9209187033369820594}
   m_Layer: 0
   m_Name: Chaos Bridge
   m_TagString: Untagged
@@ -362,95 +329,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocations: []
   destructablesGroup: {fileID: 0}
---- !u!114 &3222308939468372669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4816427454744081443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c28772ec13a3f4d9acba5c5525e400, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transform: {fileID: 4287001675153632355}
-  _showGUIHints: 0
-  _octave3DScene: {}
-  _prefabPreviewGenerator:
-    _renderCamera: {fileID: 0}
-    _previewLights:
-    - {fileID: 0}
-  _editorWindowPool: {fileID: 9209187033369820594}
-  _prefabCategoryDatabase: {fileID: 0}
-  _objectLayerDatabase: {fileID: 0}
-  _prefabTagDatabase: {fileID: 0}
-  _objectPlacementPathHeightPatternDatabase: {fileID: 0}
-  _objectPlacementPathTileConnectionConfigurationDatabase: {fileID: 0}
-  _decorPaintObjectPlacementBrushDatabase: {fileID: 0}
-  _placementObjectGroupDatabase: {fileID: 0}
-  _objectPlacement: {fileID: 0}
-  _objectSnapping: {fileID: 0}
-  _objectEraser: {fileID: 0}
-  _objectSelection: {fileID: 0}
-  _prefabsToCategoryDropEventHandler:
-    _prefabsDropSettings: {fileID: 0}
-    _prefabFoldersDropSettings: {fileID: 0}
-  _prefabsToPathTileConnectionDropEventHandler:
-    _dropSettings: {fileID: 0}
-  _inspector: {fileID: 0}
-  _meshCombineSettings: {fileID: 0}
-  _shaderPool:
-    _gridShader: {fileID: 4800000, guid: 06932e1e9899b5e429681a49da9c80cd, type: 3}
-  _materialPool:
-    _xzGridMaterial: {fileID: 0}
---- !u!114 &9209187033369820594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4816427454744081443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd15cbbeb80414648bab7c15830b8255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _allWindows:
-  - {fileID: 0}
-  - {fileID: 0}
-  _prefabManagementWindow: {fileID: 0}
-  _objectPlacementSettingsWindow: {fileID: 0}
-  _prefabsToCategoryDropSettingsWindow: {fileID: 0}
-  _prefabTagsWindow: {fileID: 0}
-  _objectLayersWindow: {fileID: 0}
-  _selectionGrabSettingsWindow: {fileID: 0}
-  _octave3DConfigSaveWindow: {fileID: 0}
-  _octave3DConfigLoadWindow: {fileID: 0}
-  _decorPaintBrushViewLookAndFeelWindow: {fileID: 0}
-  _activePrefabCategoryView:
-    _isVisible: 1
-    _toggleVisibilityBeforeRender: 1
-    _visibilityToggleLabel: Active Prefab Category View
-    _visibilityToggleIndent: 0
-    _indentContent: 0
-    _surroundWithBox: 1
-    _viewData: {fileID: 0}
-    _prefabScrollView:
-      _isVisible: 1
-      _toggleVisibilityBeforeRender: 0
-      _visibilityToggleLabel: 
-      _visibilityToggleIndent: 0
-      _indentContent: 0
-      _surroundWithBox: 0
-      _viewData: {fileID: 0}
-  _activePrefabView:
-    _isVisible: 1
-    _toggleVisibilityBeforeRender: 1
-    _visibilityToggleLabel: Active Prefab View
-    _visibilityToggleIndent: 0
-    _indentContent: 0
-    _surroundWithBox: 1
 --- !u!1001 &91379037659269784
 PrefabInstance:
   m_ObjectHideFlags: 0
