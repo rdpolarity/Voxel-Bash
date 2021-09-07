@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3819297670080007468, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -111
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 3819297670080007468, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -347,8 +347,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6519837899264895398, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
       propertyPath: m_Name
-      value: Purple Button (1)
+      value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 9138767402085023635, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f5cc40e4a1cd458c9901849a7f52a07, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
 --- !u!224 &7341186563674212396 stripped

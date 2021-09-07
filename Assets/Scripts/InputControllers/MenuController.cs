@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
@@ -10,7 +11,14 @@ public class MenuController : MonoBehaviour
     [SerializeField]
     private GameObject escapeMenuGroup;
 
-    public void ToggleEscapeMenu()
+
+    private void Awake() {
+        Inputs inputActions = new Inputs();
+        inputActions.Player.Enable();
+        inputActions.Player.EscapeMenu.performed += ToggleEscapeMenu;
+    }
+
+    public void ToggleEscapeMenu(InputAction.CallbackContext context)
     {
         escapeMenuGroup.SetActive(!escapeMenuGroup.activeSelf);
     }

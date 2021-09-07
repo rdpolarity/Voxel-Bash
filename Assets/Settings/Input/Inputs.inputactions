@@ -60,6 +60,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ChangeMapForward",
+                    "type": "Button",
+                    "id": "337daa10-b863-4b95-a803-eec1a21bc898",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ChangeMapBackwards",
+                    "type": "Button",
+                    "id": "c296fbc7-ca3f-4422-9a38-202a428640f1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -280,6 +296,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "EscapeMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "62e827bd-82bb-4fe9-bc10-b78afe347247",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeMapForward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44c57152-cc77-4bb5-bfda-783b56d601ba",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeMapBackwards",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

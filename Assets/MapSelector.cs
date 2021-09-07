@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class MapSelector : MonoBehaviour
 {
@@ -14,19 +15,26 @@ public class MapSelector : MonoBehaviour
 
     private int selected = 0;
 
+    private void Awake() {
+        Inputs inputActions = new Inputs();
+        inputActions.Player.Enable();
+        inputActions.Player.ChangeMapForward.performed += Forward;
+        inputActions.Player.ChangeMapBackwards.performed += Back;
+    }
+
     private void Start() {
         OnMapChange();
     }
 
     [Button]
-    private void Back() {
+    private void Back(InputAction.CallbackContext context) {
         if (selected <= 0) { selected = levels.Count - 1; } 
         else { selected--; }
         OnMapChange();
     }
 
     [Button]
-    private void Forward() {
+    private void Forward(InputAction.CallbackContext context) {
         if (selected >= levels.Count - 1) { selected = 0; } 
         else { selected++; }
         OnMapChange();
@@ -42,6 +50,9 @@ public class MapSelector : MonoBehaviour
         if (levelText != null) {
             levelText.text = levels[selected].name;
         }
+        GameSettings.Instance.SelectedMap = levels[selected];
     }
+
+
 
 }

@@ -75,6 +75,22 @@ namespace UnityEngine.InputSystem
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChangeMapForward"",
+                    ""type"": ""Button"",
+                    ""id"": ""337daa10-b863-4b95-a803-eec1a21bc898"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChangeMapBackwards"",
+                    ""type"": ""Button"",
+                    ""id"": ""c296fbc7-ca3f-4422-9a38-202a428640f1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -297,6 +313,28 @@ namespace UnityEngine.InputSystem
                     ""action"": ""EscapeMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62e827bd-82bb-4fe9-bc10-b78afe347247"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeMapForward"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""44c57152-cc77-4bb5-bfda-783b56d601ba"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeMapBackwards"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -340,6 +378,8 @@ namespace UnityEngine.InputSystem
             m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
             m_Player_Strike = m_Player.FindAction("Strike", throwIfNotFound: true);
             m_Player_EscapeMenu = m_Player.FindAction("EscapeMenu", throwIfNotFound: true);
+            m_Player_ChangeMapForward = m_Player.FindAction("ChangeMapForward", throwIfNotFound: true);
+            m_Player_ChangeMapBackwards = m_Player.FindAction("ChangeMapBackwards", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -396,6 +436,8 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_Dash;
         private readonly InputAction m_Player_Strike;
         private readonly InputAction m_Player_EscapeMenu;
+        private readonly InputAction m_Player_ChangeMapForward;
+        private readonly InputAction m_Player_ChangeMapBackwards;
         public struct PlayerActions
         {
             private @Inputs m_Wrapper;
@@ -407,6 +449,8 @@ namespace UnityEngine.InputSystem
             public InputAction @Dash => m_Wrapper.m_Player_Dash;
             public InputAction @Strike => m_Wrapper.m_Player_Strike;
             public InputAction @EscapeMenu => m_Wrapper.m_Player_EscapeMenu;
+            public InputAction @ChangeMapForward => m_Wrapper.m_Player_ChangeMapForward;
+            public InputAction @ChangeMapBackwards => m_Wrapper.m_Player_ChangeMapBackwards;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -437,6 +481,12 @@ namespace UnityEngine.InputSystem
                     @EscapeMenu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscapeMenu;
                     @EscapeMenu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscapeMenu;
                     @EscapeMenu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscapeMenu;
+                    @ChangeMapForward.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapForward;
+                    @ChangeMapForward.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapForward;
+                    @ChangeMapForward.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapForward;
+                    @ChangeMapBackwards.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapBackwards;
+                    @ChangeMapBackwards.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapBackwards;
+                    @ChangeMapBackwards.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapBackwards;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -462,6 +512,12 @@ namespace UnityEngine.InputSystem
                     @EscapeMenu.started += instance.OnEscapeMenu;
                     @EscapeMenu.performed += instance.OnEscapeMenu;
                     @EscapeMenu.canceled += instance.OnEscapeMenu;
+                    @ChangeMapForward.started += instance.OnChangeMapForward;
+                    @ChangeMapForward.performed += instance.OnChangeMapForward;
+                    @ChangeMapForward.canceled += instance.OnChangeMapForward;
+                    @ChangeMapBackwards.started += instance.OnChangeMapBackwards;
+                    @ChangeMapBackwards.performed += instance.OnChangeMapBackwards;
+                    @ChangeMapBackwards.canceled += instance.OnChangeMapBackwards;
                 }
             }
         }
@@ -493,6 +549,8 @@ namespace UnityEngine.InputSystem
             void OnDash(InputAction.CallbackContext context);
             void OnStrike(InputAction.CallbackContext context);
             void OnEscapeMenu(InputAction.CallbackContext context);
+            void OnChangeMapForward(InputAction.CallbackContext context);
+            void OnChangeMapBackwards(InputAction.CallbackContext context);
         }
     }
 }

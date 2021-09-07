@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6768048904070866726}
   - component: {fileID: 4660246013999111067}
+  - component: {fileID: 5375639006069867081}
   m_Layer: 0
   m_Name: PlayerSpawn
   m_TagString: Spawn
@@ -48,3 +49,15 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 69ea7b49e5405bc4487a5738a130da60
   hasSpawned: 0
+--- !u!114 &5375639006069867081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523037959507609070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f84591ce72545258ea98cb7518d8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
