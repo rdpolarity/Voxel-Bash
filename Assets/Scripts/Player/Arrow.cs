@@ -46,6 +46,12 @@ public class Arrow : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Hit player");
+            collision.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(20, rigidbody.velocity.x+rigidbody.velocity.y));
+            Destroy(gameObject);
+        }
         
     }
 
