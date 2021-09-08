@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &4856846591015691128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871229247804330960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89368a97045ffa41b3cb8e013163160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1322096531579873759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7,6 +19,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8511272707847353760, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
+      propertyPath: m_AssetId
+      value: b9a71781db907ff46bfc3736628dc793
+      objectReference: {fileID: 0}
     - target: {fileID: 1138568559570870098, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
       propertyPath: PrefabHash
       value: 627334876355372314
@@ -75,5 +91,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: BounceWall
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9179812162700507663, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179812162700507663, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
+      propertyPath: m_TagString
+      value: BounceWall
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6416516090208894696, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
+--- !u!1 &7871229247804330960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9179812162700507663, guid: 69fd97f5913db4d44aaad20939bd20c6, type: 3}
+  m_PrefabInstance: {fileID: 1322096531579873759}
+  m_PrefabAsset: {fileID: 0}

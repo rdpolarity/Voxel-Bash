@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
+    public LayerMask bounceMask;
+
     private Rigidbody rigidbody;
+    private Ray collisionDetect;
+    private Vector3 lastPos;
 
     // Start is called before the first frame update
     void Start()
@@ -17,10 +21,36 @@ public class Arrow : MonoBehaviour
     {
         Quaternion targetRotation = Quaternion.LookRotation(rigidbody.velocity);
         rigidbody.MoveRotation(targetRotation);
+
+        if (transform.position.y < -100)
+        {
+            Destroy(gameObject);
+        }
+
+        float speed = (transform.position - lastPos).magnitude;
+        collisionDetect = new Ray(transform.position, rigidbody.velocity.normalized);
+        RaycastHit hit;
+        if (Physics.Raycast(collisionDetect, out hit, 0.5f, bounceMask))
+        {
+            Debug.Log("Ricochet");
+            rigidbody.velocity = Vector3.Reflect(rigidbody.velocity, hit.normal);
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.z);
+        }
+
+        lastPos = transform.position;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Tile"))
+        {
+            Destroy(gameObject);
+        }
+        
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawRay(collisionDetect);
     }
 }
