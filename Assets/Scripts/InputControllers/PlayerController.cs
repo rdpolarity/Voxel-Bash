@@ -19,6 +19,7 @@ public class PlayerController : NetworkBehaviour
     private Animator animator;
 
     private MouseWorld mouseWorld;
+    private Knockback force;
 
     private Vector3 velocity = Vector3.zero;
 
@@ -90,6 +91,18 @@ public class PlayerController : NetworkBehaviour
         movement = context.ReadValue<Vector2>();
 
 
+    }
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        Debug.Log("Called");
+        if (!isLocalPlayer) return;
+        if (context.started)
+        {
+            Debug.Log("Dashing");
+            force.AddImpact(velocity.normalized, 100);
+        }
+            
     }
 
 
