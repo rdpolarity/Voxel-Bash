@@ -18,7 +18,12 @@ public class PlayerController : NetworkBehaviour
     [SerializeField]
     private Animator animator;
 
+    private MouseWorld mouseWorld;
+    private Knockback force;
+
     private Vector3 velocity = Vector3.zero;
+
+    [SerializeField]
     private Vector3 facing = Vector3.zero;
 
     private Bow bow;
@@ -36,6 +41,7 @@ public class PlayerController : NetworkBehaviour
         animator.SetBool("isMoving", false);
         bow = GetComponentInChildren<Bow>();
         rigidbody = GetComponent<Rigidbody>();
+        mouseWorld = GetComponent<MouseWorld>();
     }
 
     public override void OnStartLocalPlayer()
@@ -62,9 +68,7 @@ public class PlayerController : NetworkBehaviour
         }
 
         // Look Direction (Y)
-        var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-        Physics.Raycast(ray, out var hit);
-        facing = Vector3.Normalize(hit.point - transform.position);
+        facing = Vector3.Normalize(mouseWorld.Position - transform.position);
         facing.y = 0;
         var rotation = Quaternion.LookRotation(facing);
         var slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
@@ -80,6 +84,18 @@ public class PlayerController : NetworkBehaviour
         if (context.canceled)
             animator.SetBool("isMoving", false);
         movement = context.ReadValue<Vector2>();
+    }
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        Debug.Log("Called");
+        if (!isLocalPlayer) return;
+        if (context.started)
+        {
+            Debug.Log("Dashing");
+            force.AddImpact(velocity.normalized, 100);
+        }
+            
     }
 
 

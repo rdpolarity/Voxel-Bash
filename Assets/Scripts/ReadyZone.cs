@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class ReadyZone : MonoBehaviour
 {
     void OnTriggerEnter(Collider other) {
-        VoxelBashNetworkManager.singleton.ServerChangeScene("Arena");
+        if (other.CompareTag("Player"))
+        {
+            VoxelBashNetworkManager.singleton.ServerChangeScene("Arena");
+        }
     }
 }

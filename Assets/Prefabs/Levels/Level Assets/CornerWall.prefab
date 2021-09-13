@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2001207843955597160}
   - component: {fileID: 7280905170582344989}
   - component: {fileID: 225356673157077078}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArenaFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 5245848079893304780}
   - component: {fileID: 7822382304088236725}
   - component: {fileID: 7949807402227641979}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArenaFloor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2846826400371247918}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CornerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
