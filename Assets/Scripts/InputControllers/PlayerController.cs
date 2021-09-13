@@ -95,7 +95,19 @@ public class PlayerController : NetworkBehaviour
         if (context.canceled)
         {
             Debug.Log("Release");
-            bow.Shoot(transform.position);
+            bow.shoot(transform.position);
         }
+    }
+
+    [SerializeField]
+    private GameObject arrow;
+
+    [Command]
+    public void CmdShoot(Vector3 pos, Vector3 dir, Vector3 pow)
+    {
+        var projectile = Instantiate(arrow);
+        projectile.transform.position = bow.transform.position + dir;
+        projectile.GetComponent<Rigidbody>().velocity = pow;
+        NetworkServer.Spawn(projectile);
     }
 }

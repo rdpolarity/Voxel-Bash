@@ -59,6 +59,7 @@ public class VoxelBashNetworkManager : NetworkManager
 
     public override void OnClientSceneChanged(NetworkConnection conn)
     {
+        base.OnClientSceneChanged(conn);
         NetworkClient.connection.Send(new CreateClientMessage());
     }
 }

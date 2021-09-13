@@ -6,9 +6,9 @@ using UnityEngine;
 public class Bow : MonoBehaviour
 {
     private float charge;
-    
+
     [SerializeField]
-    private GameObject arrow;
+    private PlayerController player;
 
     [SerializeField]
     private float power;
@@ -39,7 +39,7 @@ public class Bow : MonoBehaviour
         {
             charge += Time.deltaTime * chargeRate;
             indicator.gameObject.SetActive(true);
-            indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), arrow.GetComponent<Rigidbody>(), transform.position + dir);
+            indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), transform.position + dir);
         }
         else
         {
@@ -47,15 +47,13 @@ public class Bow : MonoBehaviour
         }
     }
 
-    public void Shoot(Vector3 pos)
+    public void shoot(Vector3 pos)
     {
-        var projectile = Instantiate(arrow);
-        NetworkServer.Spawn(projectile);
-        projectile.transform.position = transform.position + dir;
-        projectile.GetComponent<Rigidbody>().velocity = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f,0));
-
+        var pow = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f,0));
         indicator.Clear();
         charge = 0;
         Charging = false;
+
+        player.CmdShoot(pos, dir, pow);     
     }
 }

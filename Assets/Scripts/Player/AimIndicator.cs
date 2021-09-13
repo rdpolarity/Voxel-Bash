@@ -16,7 +16,7 @@ public class AimIndicator : MonoBehaviour
 
     public float Value { get; set; }
 
-    public void DrawIndicator(Vector3 force, Rigidbody rb, Vector3 startingPoint)
+    public void DrawIndicator(Vector3 force, Vector3 startingPoint)
     {
         linePoints.Clear();
 

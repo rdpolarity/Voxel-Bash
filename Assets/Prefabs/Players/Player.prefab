@@ -209,6 +209,7 @@ MonoBehaviour:
   speed: 1
   maxSpeed: 2
   animator: {fileID: 1882352509146524678}
+  arrow: {fileID: 3464475405107332064, guid: db2b0cccd655dee47bc6b6403a65e332, type: 3}
 --- !u!114 &4544073927636467284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,11 +463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1273380616403090837, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.785
       objectReference: {fileID: 0}
     - target: {fileID: 1273380616403090837, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.416
+      value: 0.505
       objectReference: {fileID: 0}
     - target: {fileID: 1273380616403090837, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -500,6 +501,10 @@ PrefabInstance:
       propertyPath: power
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1273380616403090843, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8311832726710157240}
     - target: {fileID: 1273380616403090843, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: maxForce
       value: 30
