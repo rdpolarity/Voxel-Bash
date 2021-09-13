@@ -12,7 +12,8 @@ public class MenuController : MonoBehaviour
     private GameObject escapeMenuGroup;
 
 
-    private void Awake() {
+    private void Awake()
+    {
         Inputs inputActions = new Inputs();
         inputActions.Player.Enable();
         inputActions.Player.EscapeMenu.performed += ToggleEscapeMenu;
@@ -20,19 +21,27 @@ public class MenuController : MonoBehaviour
 
     public void ToggleEscapeMenu(InputAction.CallbackContext context)
     {
-        escapeMenuGroup.SetActive(!escapeMenuGroup.activeSelf);
+        if (escapeMenuGroup != null)
+        {
+            escapeMenuGroup.SetActive(!escapeMenuGroup.activeSelf);
+        }
     }
 
-    public void LeaveGame() {
-        NetworkManager.singleton.StopClient();
-        GotoMainMenu();
+    public void LeaveGame()
+    {
+        NetworkController.Instance.Leave();
     }
 
-    public void Exit() {
+    /// <summary>
+    /// Will go to the main menu offline
+    /// </summary>
+    public void GotoOfflineMainMenu()
+    {
+        NetworkManager.singleton.ServerChangeScene("MainMenu");
+    }
+
+    public void Exit()
+    {
         Application.Quit();
-    }
-
-    public void GotoMainMenu() {
-        SceneManager.LoadScene("MainMenu");
     }
 }

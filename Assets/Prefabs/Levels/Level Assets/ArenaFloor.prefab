@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4482557314919645902}
   - component: {fileID: 1041164987393560761}
   - component: {fileID: 6416516090208894696}
-  - component: {fileID: -8511272707847353760}
-  - component: {fileID: 930519216929612830}
+  - component: {fileID: 4429644948691219694}
+  - component: {fileID: 6784720395162247474}
   m_Layer: 0
   m_Name: ArenaFloor
   m_TagString: Untagged
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coordinates: {x: 0, y: 0}
   neighbours: []
---- !u!114 &-8511272707847353760
+--- !u!114 &4429644948691219694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +129,7 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 69fd97f5913db4d44aaad20939bd20c6
   hasSpawned: 0
---- !u!114 &930519216929612830
+--- !u!114 &6784720395162247474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

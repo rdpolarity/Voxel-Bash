@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
 public class Bow : MonoBehaviour
@@ -49,6 +50,7 @@ public class Bow : MonoBehaviour
     public void Shoot(Vector3 pos)
     {
         var projectile = Instantiate(arrow);
+        NetworkServer.Spawn(projectile);
         projectile.transform.position = transform.position + dir;
         projectile.GetComponent<Rigidbody>().velocity = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f,0));
 

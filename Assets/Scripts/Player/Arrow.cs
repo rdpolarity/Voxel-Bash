@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
 public class Arrow : MonoBehaviour
@@ -22,5 +23,6 @@ public class Arrow : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);
+        NetworkServer.Destroy(gameObject);
     }
 }

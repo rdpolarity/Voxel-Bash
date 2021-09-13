@@ -29,16 +29,16 @@ public class SteamLobby : MonoBehaviour
     }
 
     public void Leave() {
+        networkManager.ServerChangeScene("MainMenu");
         networkManager.StopClient();
-        SceneManager.LoadScene("MainMenu");
     }
 
     /// <summary>
     /// Hosts a steam lobby
     /// </summary>
     public void Host() {
-        SceneManager.LoadScene("Lobby");
         SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypeFriendsOnly, networkManager.maxConnections);
+        networkManager.ServerChangeScene("Lobby");
     }
 
     /// <summary>
@@ -63,7 +63,7 @@ public class SteamLobby : MonoBehaviour
     /// Triggers when a user requests to join server
     /// </summary>
     private void OnRequestedJoin(GameLobbyJoinRequested_t joinRequestDetails) {
-        SceneManager.LoadScene("Lobby");
+        networkManager.ServerChangeScene("Lobby");
         SteamMatchmaking.JoinLobby(joinRequestDetails.m_steamIDLobby);
     }
 
