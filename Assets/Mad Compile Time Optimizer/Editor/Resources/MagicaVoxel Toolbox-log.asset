@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 342976093, guid: 5eb872180e6624b46b2fa8b2229cc7ac, type: 3}
+  m_Name: MagicaVoxel Toolbox-log
+  m_EditorClassIdentifier: 
+  ruleName: MagicaVoxel Toolbox
+  rootDirectoryGUID: 7e67b14b03bf16a4c9d98967860508a5
+  rules:
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\UnlimitiedMesh.cs
+    sourceGUID: 2db8d925c9ce274408511584f53ff120
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\UnlimitiedMesh.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Util.cs
+    sourceGUID: e2fd04bb2fb85ac40bd71608a7d90907
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Util.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\VoxelData.cs
+    sourceGUID: 67d3bce675b2bf94192b0397dca02b00
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\VoxelData.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\VoxelFile.cs
+    sourceGUID: c17102ec283cc2b4db1607c1e0696fba
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\VoxelFile.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\VoxelPostprocessor.cs
+    sourceGUID: 44da9b583747e4e4ab34ced30e6f5012
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\VoxelPostprocessor.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Core\Core_CharacterGeneration.cs
+    sourceGUID: c560e550cf96018429c68be24ad84a1e
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Core\Core_CharacterGeneration.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Core\Core_Combine.cs
+    sourceGUID: d8d01aeb79bd1a14990f72dede8b5e22
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Core\Core_Combine.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Core\Core_File.cs
+    sourceGUID: fab0181ff519ed746b29a210d0d8ae3a
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Core\Core_File.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Core\Core_MapGeneration.cs
+    sourceGUID: 7be6b4fda4881ef42b6bfe909ee94d86
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Core\Core_MapGeneration.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Core\Core_Sprite.cs
+    sourceGUID: 57c1ef64b1901554eae6594e5cf2dd2d
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Core\Core_Sprite.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Core\Core_Voxel.cs
+    sourceGUID: f2438364689bece4990d795d8dbc65ba
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Core\Core_Voxel.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\MoenenEditorWindow.cs
+    sourceGUID: b924ffebf69a1c34fb47b838502e3e86
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\MoenenEditorWindow.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow.cs
+    sourceGUID: 2fafbb0e5e7b49444a8cab2f2bc6debd
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_CharacterGenerator.cs
+    sourceGUID: 9cca6092a71641146a8f8c4dce5ef669
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_CharacterGenerator.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Combiner.cs
+    sourceGUID: 9d03cdb5c72f2b049829a6fdcad84cb2
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Combiner.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_MapGenerator.cs
+    sourceGUID: 70e17c2052a3f6b41ae852d78cde8e5d
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_MapGenerator.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Rig.cs
+    sourceGUID: 26758919401df2f469ac093fbd7628e6
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Rig.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Scene.cs
+    sourceGUID: 7143f6c3038a05749bebe462c1347afd
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Scene.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Skeletal.cs
+    sourceGUID: dfea437d23b3a8c41ad97dc8d41506be
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Skeletal.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Sprite.cs
+    sourceGUID: 38fbcf3f3d051354985633420b20cff0
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelEditorWindow_Sprite.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\Editor\Window\VoxelToUnityWindow.cs
+    sourceGUID: e4a4732af8fa1784db7856890074d7db
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\Editor\Window\VoxelToUnityWindow.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\RectPacking\RectPaking.cs
+    sourceGUID: e401109925ad2604cb8317c3ff393a4c
+    targetPath: Assets\Plugins\MagicaVoxel Toolbox\Script\RectPacking\RectPaking.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\SavingSystem\RuntimeSaving.cs
+    sourceGUID: 3cd6cee812895d445a4cd69adb39f35c
+    targetPath: Assets\Plugins\MagicaVoxel Toolbox\Script\SavingSystem\RuntimeSaving.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\SavingSystem\Saving.cs
+    sourceGUID: 675968bc6dd95594fbad33ca2ad4b18c
+    targetPath: Assets\Plugins\MagicaVoxel Toolbox\Script\SavingSystem\Saving.cs
+  - sourcePath: Assets\Packages\MagicaVoxel Toolbox\Script\SavingSystem\Editor\EditorSaving.cs
+    sourceGUID: a7b8dda604881b94081c767d76f72f76
+    targetPath: Assets\Plugins\Editor\MagicaVoxel Toolbox\Script\SavingSystem\Editor\EditorSaving.cs
+  forRemoval: 0
+  forRemovalDeleteEmptyDirs: 0
+  persistent: 1

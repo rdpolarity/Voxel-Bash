@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 342976093, guid: 5eb872180e6624b46b2fa8b2229cc7ac, type: 3}
+  m_Name: GUI PRO Kit - Fantasy RPG-log
+  m_EditorClassIdentifier: 
+  ruleName: GUI PRO Kit - Fantasy RPG
+  rootDirectoryGUID: 6b7446b49e67bec4a9020a666759fb2a
+  rules:
+  - sourcePath: Assets\Packages\GUI PRO Kit - Fantasy RPG\Extensions\UIParticle\UIParticleSystem.cs
+    sourceGUID: ea6c26686c050414eb1d71a523983e91
+    targetPath: Assets\Plugins\GUI PRO Kit - Fantasy RPG\Extensions\UIParticle\UIParticleSystem.cs
+  - sourcePath: Assets\Packages\GUI PRO Kit - Fantasy RPG\Scripts\Panel.cs
+    sourceGUID: 9a00128818eda43dfaa959b83527b255
+    targetPath: Assets\Plugins\GUI PRO Kit - Fantasy RPG\Scripts\Panel.cs
+  - sourcePath: Assets\Packages\GUI PRO Kit - Fantasy RPG\Scripts\PanelControl.cs
+    sourceGUID: bf55aa2c0d7914b348b9d193f622141c
+    targetPath: Assets\Plugins\GUI PRO Kit - Fantasy RPG\Scripts\PanelControl.cs
+  forRemoval: 0
+  forRemovalDeleteEmptyDirs: 0
+  persistent: 1

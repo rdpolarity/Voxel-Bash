@@ -63,10 +63,10 @@ public class MapManager : NetworkBehaviour
 
     private void OnMapChange()
     {
-        // if (NetworkServer.active)
-        // {
-        //     SpawnPreview();
-        // }
+        if (NetworkServer.active)
+        {
+            SpawnPreview();
+        }
     }
 
     [Server]

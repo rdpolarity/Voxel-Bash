@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 342976093, guid: 5eb872180e6624b46b2fa8b2229cc7ac, type: 3}
+  m_Name: ARTnGAME-log
+  m_EditorClassIdentifier: 
+  ruleName: ARTnGAME
+  rootDirectoryGUID: e870c689ae382d3479da85ecc6bbd641
+  rules:
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\offsetUVsSM.cs
+    sourceGUID: 033a5558981bd274c90b9c610d3d5131
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\offsetUVsSM.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\VolumeCloudsScriptingTemplate.cs
+    sourceGUID: 141f13ed8dd5ad44bb17ac054e83e724
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\VolumeCloudsScriptingTemplate.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V1.0 Scripts\Helper
+      scripts\Circle_Around_ParticleSKYMASTER.cs
+    sourceGUID: 9eb3335fa068fb442bc98d1471f03ccc
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V1.0 Scripts\Helper scripts\Circle_Around_ParticleSKYMASTER.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V1.0 Scripts\Helper
+      scripts\MouseLookSKYMASTER.cs
+    sourceGUID: 7c237acc7ec0a0b448915f6f31c369d7
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V1.0 Scripts\Helper scripts\MouseLookSKYMASTER.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\SetRenderQueue.cs
+    sourceGUID: 2eefef095fe09b7429ff041fc0a0b19d
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\SetRenderQueue.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\ParticleShadows\ParticleShadowsSM.cs
+    sourceGUID: 588170fcab3391a40af9e0ac445d6045
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\ParticleShadows\ParticleShadowsSM.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\Volume
+      Clouds\Camera2WorldSM.cs
+    sourceGUID: 10d69cd5cc46c0144bbfbd7cf7b38b8a
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\Volume Clouds\Camera2WorldSM.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\Volume
+      Clouds\VolumeParticleShadePDM.cs
+    sourceGUID: 78ba7f3baf51b0844bac7fac2e47851d
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V3.0 Scripts\Volume Clouds\VolumeParticleShadePDM.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V3.4 Scripts\CloudHandlerSM_SRP.cs
+    sourceGUID: 610536089f677f5478ca44f5e508d5da
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V3.4 Scripts\CloudHandlerSM_SRP.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V3.5 Scripts\Chain Lightning\ChainLightningShuriken_SM.cs
+    sourceGUID: 63a40ee0466cacf4f8ae4e8725363963
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V3.5 Scripts\Chain Lightning\ChainLightningShuriken_SM.cs
+  - sourcePath: Assets\Packages\ARTnGAME\InfiniCLOUD\Scripts\V4.9.2 Scripts\infiniteParticleLifeSM.cs
+    sourceGUID: 1ba38b2243f27ff46a267057b78257dc
+    targetPath: Assets\Plugins\ARTnGAME\InfiniCLOUD\Scripts\V4.9.2 Scripts\infiniteParticleLifeSM.cs
+  forRemoval: 0
+  forRemovalDeleteEmptyDirs: 0
+  persistent: 1

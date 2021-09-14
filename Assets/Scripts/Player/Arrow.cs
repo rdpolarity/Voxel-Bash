@@ -7,7 +7,7 @@ public class Arrow : NetworkBehaviour
 {
     public LayerMask bounceMask;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
     private Ray collisionDetect;
     private Vector3 lastPos;
 

@@ -5,7 +5,6 @@ using UnityEngine;
 public class AimIndicator : MonoBehaviour
 {
     private float value;
-    private int lineSegmentCount = 5;
     private List<Vector3> linePoints = new List<Vector3>();
     private LineRenderer lineRenderer;
 

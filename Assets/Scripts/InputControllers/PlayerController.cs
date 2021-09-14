@@ -34,7 +34,7 @@ public class PlayerController : NetworkBehaviour
 
     private CharacterController controller;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
     private void Awake()
     {
