@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
+/// <summary>
+/// Will Spawn the selected map from [MapManager] on start
+/// </summary>
 public class MapSpawner : MonoBehaviour
 {   
-    [SerializeField]
-    private GameObject gameObject;
-
     void Start() {
-
-        // Spawn the map in
-        Instantiate(GameSettings.Instance.SelectedMap, transform.position, Quaternion.identity);
-        
+        if (NetworkServer.active) {
+            MapManager.Instance.SpawnMap(transform.position);
+        }   
     }
 }

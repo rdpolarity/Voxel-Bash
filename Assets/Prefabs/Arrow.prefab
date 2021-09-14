@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7491711477697449086}
   - component: {fileID: 539733644235096346}
   - component: {fileID: 2200600917128272806}
-  - component: {fileID: 3940793058412773097}
+  - component: {fileID: -1151288190903504849}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Arrow
@@ -63,6 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79a08dc84b92424e81d088aaf051a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   bounceMask:
     serializedVersion: 2
     m_Bits: 128
@@ -83,7 +85,7 @@ MonoBehaviour:
   visible: 0
   m_AssetId: db2b0cccd655dee47bc6b6403a65e332
   hasSpawned: 0
---- !u!114 &3940793058412773097
+--- !u!114 &-1151288190903504849
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,19 +94,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 3464475405107332064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83392ae5c1b731446909f252fd494ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  target: {fileID: 7491711477697449086}
   clientAuthority: 0
-  syncVelocity: 1
-  clearVelocity: 0
-  velocitySensitivity: 0.1
-  syncAngularVelocity: 1
-  clearAngularVelocity: 0
-  angularVelocitySensitivity: 0.1
+  sendInterval: 0.004
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 1
+  bufferTimeMultiplier: 3
+  bufferSizeLimit: 64
+  catchupThreshold: 6
+  catchupMultiplier: 0.1
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
 --- !u!1 &3464475405107332066
 GameObject:
   m_ObjectHideFlags: 0

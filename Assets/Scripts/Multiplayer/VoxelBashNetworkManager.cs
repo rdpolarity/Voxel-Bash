@@ -13,8 +13,6 @@ public struct CreateClientMessage : NetworkMessage
 
 public class VoxelBashNetworkManager : NetworkManager
 {
-    [SerializeField]
-    private GameObject playerSpawner = null;
 
     public override void OnStartServer()
     {
