@@ -27,9 +27,22 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public void LeaveGame()
+    public void LeaveGameOnClick()
     {
-        NetworkController.Instance.Leave();
+        var nm = NetworkManager.singleton as VoxelBashNetworkManager;
+        nm.Leave();
+    }
+
+    public void JoinGameOnClick()
+    {
+        var nm = NetworkManager.singleton as VoxelBashNetworkManager;
+        nm.Join();
+    }
+
+    public void HostGameOnClick()
+    {
+        var nm = NetworkManager.singleton as VoxelBashNetworkManager;
+        nm.Host();
     }
 
     /// <summary>

@@ -42,6 +42,7 @@ public class PlayerController : NetworkBehaviour
         bow = GetComponentInChildren<Bow>();
         rigidbody = GetComponent<Rigidbody>();
         mouseWorld = GetComponent<MouseWorld>();
+        force = GetComponent<Knockback>();
     }
 
     public override void OnStartLocalPlayer()
@@ -88,12 +89,14 @@ public class PlayerController : NetworkBehaviour
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        Debug.Log("Called");
         if (!isLocalPlayer) return;
         if (context.started)
         {
             Debug.Log("Dashing");
-            force.AddImpact(velocity.normalized, 100);
+
+            // Use velocity with dash time, don't use add force... this will caus some ramp slides
+
+            // rigidbody.AddForce((movement * 80), ForceMode.Impulse);
         }
             
     }

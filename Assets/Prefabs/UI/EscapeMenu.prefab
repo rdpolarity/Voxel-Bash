@@ -397,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3596402789240567779, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LeaveGame
+      value: LeaveGameOnClick
       objectReference: {fileID: 0}
     - target: {fileID: 3596402789240567779, guid: 007c2e4c880dff34688b07f5d5cdd91c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

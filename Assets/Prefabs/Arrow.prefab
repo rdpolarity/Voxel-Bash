@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 3464475405107830722}
   - component: {fileID: 3464475405110730722}
   - component: {fileID: 3464475405109599522}
-  - component: {fileID: 6379240573646770217}
+  - component: {fileID: 1588998372772765806}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -196,8 +196,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6379240573646770217
-MeshCollider:
+--- !u!135 &1588998372772765806
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -206,7 +206,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ea9a210a5d3909c48b0d1128c569c7ff, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.61
+  m_Center: {x: 0, y: 1.5, z: 8.07}

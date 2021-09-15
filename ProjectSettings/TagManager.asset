@@ -9,6 +9,7 @@ TagManager:
   - Conductor
   - BounceWall
   - Tile
+  - Indestructable
   layers:
   - Default
   - TransparentFX

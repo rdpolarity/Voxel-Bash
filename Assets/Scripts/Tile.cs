@@ -9,7 +9,6 @@ public class Tile : MonoBehaviour
     public List<Tile> neighbours;
     
     //IMPORTANT!!!! this method must be used to destroy a tile to prevent null fields in other lists
-    [Server]
     public void Delete()
     {
         foreach (Tile t in neighbours)

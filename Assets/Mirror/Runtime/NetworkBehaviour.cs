@@ -9,7 +9,7 @@ namespace Mirror
 
     /// <summary>Base class for networked components.</summary>
     [AddComponentMenu("")]
-    [RequireComponent(typeof(NetworkIdentity))]
+    // [RequireComponent(typeof(NetworkIdentity))]
     [HelpURL("https://mirror-networking.gitbook.io/docs/guides/networkbehaviour")]
     public abstract class NetworkBehaviour : MonoBehaviour
     {
@@ -675,5 +675,12 @@ namespace Mirror
 
         /// <summary>Stop event, only called for objects the client has authority over.</summary>
         public virtual void OnStopAuthority() {}
+        #if UNITY_EDITOR
+            protected virtual void Reset() {
+                if (!transform.root.TryGetComponent<NetworkIdentity>(out _))
+                    transform.root.gameObject.AddComponent<NetworkIdentity>();
+            }
+        #endif
     }
+
 }

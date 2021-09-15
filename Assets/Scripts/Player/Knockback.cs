@@ -6,11 +6,11 @@ public class Knockback : MonoBehaviour
 {
     private float mass = 1; // defines the character mass
     private Vector3 impact = Vector3.zero;
-    private CharacterController character;
+    private Rigidbody character;
  
     void Start()
     {
-        character = GetComponent<CharacterController>();
+        character = GetComponent<Rigidbody>();
     }
 
     // call this function to add an impact force:
@@ -28,7 +28,7 @@ public class Knockback : MonoBehaviour
         if (impact.magnitude > 0.2)
         {
             Debug.Log("moving player");
-            character.Move(impact * Time.deltaTime);
+            character.AddForce(impact * Time.deltaTime);
         }
         // consumes the impact energy each cycle:
         impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
