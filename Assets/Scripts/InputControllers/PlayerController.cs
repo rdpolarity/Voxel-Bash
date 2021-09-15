@@ -45,9 +45,11 @@ public class PlayerController : NetworkBehaviour
         force = GetComponent<Knockback>();
     }
 
+    private string[] outlineColours = new string[]{"Red", "Green", "Blue", "Purple"};
+
     public override void OnStartLocalPlayer()
     {
-        Debug.Log("Am i local?: " + isLocalPlayer.ToString());
+        transform.GetComponentInChildren<SkinnedMeshRenderer>().gameObject.layer = LayerMask.NameToLayer(outlineColours[NetworkManager.singleton.numPlayers - 1]);
         if (isLocalPlayer) {
             inputs.enabled = true;
         }
