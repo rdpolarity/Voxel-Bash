@@ -11,9 +11,21 @@ public class MenuController : MonoBehaviour
     [SerializeField]
     private GameObject escapeMenuGroup;
 
+    [SerializeField]
+    private GameObject lobbyButton;
 
     private void Awake()
     {
+        if (lobbyButton != null)
+        {
+            if (SceneManager.GetActiveScene().name != "Lobby")
+            {
+                if (NetworkServer.active && NetworkClient.isHostClient)
+                {
+                    lobbyButton.SetActive(true);
+                }
+            }
+        }
         Inputs inputActions = new Inputs();
         inputActions.Player.Enable();
         inputActions.Player.EscapeMenu.performed += ToggleEscapeMenu;
@@ -43,6 +55,13 @@ public class MenuController : MonoBehaviour
     {
         var nm = NetworkManager.singleton as VoxelBashNetworkManager;
         nm.Host();
+    }
+
+    public void GotoLobby()
+    {
+        if (NetworkServer.active && NetworkClient.isHostClient) {
+            NetworkManager.singleton.ServerChangeScene("Lobby");
+        }
     }
 
     /// <summary>
