@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd37d03d18ee9584d881763c34816b35, type: 3}
-  m_Name: NewOutlineFeature
+  m_Name: Blue
   m_EditorClassIdentifier: 
   m_Active: 1
   _outlineResources: {fileID: 11400000, guid: 231d88937a104094b8e4e0fdb8d2e77b, type: 2}
@@ -27,7 +27,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1024
     _renderingLayerMask: 1
-  _renderPassEvent: 400
+  _renderPassEvent: 500
   _shaderPassNames: []
 --- !u!114 &-1541180085131625863
 MonoBehaviour:
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd37d03d18ee9584d881763c34816b35, type: 3}
-  m_Name: NewOutlineFeature
+  m_Name: Red
   m_EditorClassIdentifier: 
   m_Active: 1
   _outlineResources: {fileID: 11400000, guid: 231d88937a104094b8e4e0fdb8d2e77b, type: 2}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd37d03d18ee9584d881763c34816b35, type: 3}
-  m_Name: NewOutlineFeature
+  m_Name: Purple
   m_EditorClassIdentifier: 
   m_Active: 1
   _outlineResources: {fileID: 11400000, guid: 231d88937a104094b8e4e0fdb8d2e77b, type: 2}
@@ -175,7 +175,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 2048
     _renderingLayerMask: 1
-  _renderPassEvent: 400
+  _renderPassEvent: 500
   _shaderPassNames: []
 --- !u!114 &1795502330779051628
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd37d03d18ee9584d881763c34816b35, type: 3}
-  m_Name: NewOutlineFeature
+  m_Name: Green
   m_EditorClassIdentifier: 
   m_Active: 1
   _outlineResources: {fileID: 11400000, guid: 231d88937a104094b8e4e0fdb8d2e77b, type: 2}
@@ -204,5 +204,5 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 512
     _renderingLayerMask: 1
-  _renderPassEvent: 400
+  _renderPassEvent: 500
   _shaderPassNames: []
