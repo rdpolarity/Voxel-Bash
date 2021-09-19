@@ -122,5 +122,15 @@ public class PlayerController : NetworkBehaviour
         }
 
 
+<<<<<<< Updated upstream
+=======
+    [Command]
+    public void CmdShoot(Vector3 pos, Vector3 dir, Vector3 pow)
+    {
+        var projectile = Instantiate(arrow);
+        projectile.transform.position = bow.transform.position + dir/2;
+        projectile.GetComponent<Rigidbody>().velocity = pow;
+        NetworkServer.Spawn(projectile);
+>>>>>>> Stashed changes
     }
 }
