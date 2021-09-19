@@ -11,6 +11,10 @@ public class Arrow : NetworkBehaviour
     private Ray collisionDetect;
     private Vector3 lastPos;
 
+    [SerializeField]
+    private float maxTiles;
+    private float tilesHit;
+
     private Quaternion targetRotation;
 
     public override void OnStartClient()
@@ -55,8 +59,16 @@ public class Arrow : NetworkBehaviour
         if (NetworkServer.active) {
             if (collision.gameObject.CompareTag("Tile"))
             {
-                collision.gameObject.GetComponent<Tile>().Delete();
-                NetworkServer.Destroy(gameObject);
+                if (tilesHit < maxTiles)
+                {
+                    tilesHit++;
+                    collision.gameObject.GetComponent<Tile>().Delete();
+                    if (tilesHit >= maxTiles)
+                    {
+                        NetworkServer.Destroy(gameObject);
+                    }
+                }
+                
             }
             else if (collision.gameObject.CompareTag("Indestructable")) {
                 NetworkServer.Destroy(gameObject);
