@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nestedBlock: {fileID: 6613772577202858586}
+  explosionEffect: {fileID: 6913046579094719160, guid: b85e20680de894d47b1e76b71cfc4f52, type: 3}
   coordinates: {x: 0, y: 0}
   neighbours: []
 --- !u!114 &-6630330193780725650
