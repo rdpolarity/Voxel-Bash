@@ -36,6 +36,8 @@ public class PlayerController : NetworkBehaviour
 
     private new Rigidbody rigidbody;
 
+    private float inputDisableTimer;
+
     private void Awake()
     {
         animator.SetBool("isMoving", false);
@@ -58,9 +60,15 @@ public class PlayerController : NetworkBehaviour
     private void Update()
     {
         if (!isLocalPlayer) return;
-        velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
-        rigidbody.AddForce(velocity, ForceMode.Impulse);
-        velocity = Vector3.zero;
+
+        inputDisableTimer -= Time.deltaTime;
+        if (inputDisableTimer < 0)
+        {
+            velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
+            rigidbody.AddForce(velocity, ForceMode.Impulse);
+            velocity = Vector3.zero;
+        }
+        
 
         // Max Velocity
         Vector3 horizontalVelocity = rigidbody.velocity;
@@ -77,6 +85,11 @@ public class PlayerController : NetworkBehaviour
         var slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
         transform.rotation = slowRotation;
         bow.Dir = facing;
+    }
+
+    public void DisableInput(float duration)
+    {
+        inputDisableTimer = duration;
     }
 
     public void OnMovement(InputAction.CallbackContext context)

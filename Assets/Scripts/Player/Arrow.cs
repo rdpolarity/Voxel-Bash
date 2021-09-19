@@ -71,7 +71,8 @@ public class Arrow : NetworkBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit player");
-            other.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(30, rigidbody.velocity.x + rigidbody.velocity.y));
+            other.GetComponentInParent<Rigidbody>().AddForce(rigidbody.velocity*2, ForceMode.Impulse);
+            other.GetComponentInParent<PlayerController>().DisableInput(0.2f);
             NetworkServer.Destroy(gameObject);
         }
     }
