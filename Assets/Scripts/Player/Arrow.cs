@@ -55,7 +55,7 @@ public class Arrow : NetworkBehaviour
         if (NetworkServer.active) {
             if (collision.gameObject.CompareTag("Tile"))
             {
-                collision.gameObject.transform.position = collision.gameObject.transform.position - new Vector3(0,20, 0);
+                collision.gameObject.GetComponent<Tile>().Delete();
                 NetworkServer.Destroy(gameObject);
             }
             else if (collision.gameObject.CompareTag("Indestructable")) {

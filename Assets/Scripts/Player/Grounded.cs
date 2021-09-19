@@ -12,14 +12,12 @@ public class Grounded : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Tile") || collision.gameObject.CompareTag("Indestructable"))
         {
-            Debug.Log("added tile");
             tilecount += 1;
         }
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        Debug.Log("removed tile");
         if(collision.gameObject.CompareTag("Tile") || collision.gameObject.CompareTag("Indestructable"))
         {
             tilecount -= 1;

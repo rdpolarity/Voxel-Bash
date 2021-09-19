@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    public GameObject nestedBlock;
+
     public Vector2 coordinates;
     public List<Tile> neighbours;
     
@@ -15,6 +17,10 @@ public class Tile : MonoBehaviour
         {
             t.neighbours.Remove(this);
         }
-        Destroy(gameObject);
+        if (nestedBlock != null)
+        {
+            nestedBlock.transform.localPosition = new Vector3(0, 20, 0);
+        }
+        gameObject.transform.position = gameObject.transform.position - new Vector3(0, 20, 0);
     }
 }
