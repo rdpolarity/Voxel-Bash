@@ -18,6 +18,9 @@ public class PlayerController : NetworkBehaviour
     [SerializeField]
     private Animator animator;
 
+    [SerializeField]
+    private Grounded grounded;
+
     private MouseWorld mouseWorld;
     private Knockback force;
 
@@ -45,6 +48,7 @@ public class PlayerController : NetworkBehaviour
         rigidbody = GetComponent<Rigidbody>();
         mouseWorld = GetComponent<MouseWorld>();
         force = GetComponent<Knockback>();
+        grounded = GetComponentInChildren<Grounded>();
     }
 
     private string[] outlineColours = new string[]{"Red", "Green", "Blue", "Purple"};
@@ -62,7 +66,7 @@ public class PlayerController : NetworkBehaviour
         if (!isLocalPlayer) return;
 
         inputDisableTimer -= Time.deltaTime;
-        if (inputDisableTimer < 0)
+        if (inputDisableTimer < 0 && grounded.active)
         {
             velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
             rigidbody.AddForce(velocity, ForceMode.Impulse);
