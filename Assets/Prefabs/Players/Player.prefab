@@ -186,7 +186,7 @@ Transform:
   m_GameObject: {fileID: 2736277583398175609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.63444, y: 0.63444, z: 0.63444}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 6606159848698705758}
   - {fileID: 64526367}
@@ -211,8 +211,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   inputs: {fileID: 4544073927636467284}
-  speed: 1
-  maxSpeed: 2
+  speed: 0.7
+  maxSpeed: 1.4
   animator: {fileID: 1882352509146524678}
   grounded: {fileID: 0}
   facing: {x: 0, y: 0, z: 0}
