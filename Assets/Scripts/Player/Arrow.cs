@@ -58,18 +58,22 @@ public class Arrow : NetworkBehaviour
                 collision.gameObject.transform.position = collision.gameObject.transform.position - new Vector3(0,20, 0);
                 NetworkServer.Destroy(gameObject);
             }
-            else if (collision.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Hit player");
-                collision.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(20, rigidbody.velocity.x+rigidbody.velocity.y));
-                NetworkServer.Destroy(gameObject);
-            }
             else if (collision.gameObject.CompareTag("Indestructable")) {
                 NetworkServer.Destroy(gameObject);
             }
         }
         
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Hit player");
+            other.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(20, rigidbody.velocity.x + rigidbody.velocity.y));
+            NetworkServer.Destroy(gameObject);
+        }
     }
 
     private void OnDrawGizmos()
