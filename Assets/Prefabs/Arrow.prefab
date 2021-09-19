@@ -68,6 +68,7 @@ MonoBehaviour:
   bounceMask:
     serializedVersion: 2
     m_Bits: 128
+  maxTiles: 1
 --- !u!114 &2200600917128272806
 MonoBehaviour:
   m_ObjectHideFlags: 0
