@@ -26,8 +26,6 @@ public class PlayerController : NetworkBehaviour
     [SerializeField]
     private Vector3 facing = Vector3.zero;
 
-
-    private Rigidbody rigidbody;
     private Bow bow;
 
     private Vector2 movement = Vector2.zero;
@@ -36,41 +34,41 @@ public class PlayerController : NetworkBehaviour
 
     private CharacterController controller;
 
+    private new Rigidbody rigidbody;
+
     private void Awake()
     {
         animator.SetBool("isMoving", false);
-        rigidbody = GetComponent<Rigidbody>();
         bow = GetComponentInChildren<Bow>();
-        controller = GetComponent<CharacterController>();
+        rigidbody = GetComponent<Rigidbody>();
         mouseWorld = GetComponent<MouseWorld>();
+        force = GetComponent<Knockback>();
     }
 
-    // public override void OnStartAuthority()
-    // {
-    //     enabled = true;
-    // }
+    private string[] outlineColours = new string[]{"Red", "Green", "Blue", "Purple"};
 
-    [Client]
+    public override void OnStartLocalPlayer()
+    {
+        // transform.GetComponentInChildren<SkinnedMeshRenderer>().gameObject.layer = LayerMask.NameToLayer(outlineColours[NetworkManager.singleton.numPlayers - 1]);
+        if (isLocalPlayer) {
+            inputs.enabled = true;
+        }
+    }
+
     private void Update()
     {
         if (!isLocalPlayer) return;
         velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
-        controller.SimpleMove(velocity);
-        // rigidbody.AddForce(velocity, ForceMode.Impulse);
-        // velocity = Vector3.zero;
-        // Falling Velocity
-        // if (rigidbody.velocity.y < 0f)
-        // {
-        //     rigidbody.velocity += Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
-        // }
+        rigidbody.AddForce(velocity, ForceMode.Impulse);
+        velocity = Vector3.zero;
 
         // Max Velocity
-        // Vector3 horizontalVelocity = rigidbody.velocity;
-        // horizontalVelocity.y = 0;
-        // if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
-        // {
-        //     rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rigidbody.velocity.y;
-        // }
+        Vector3 horizontalVelocity = rigidbody.velocity;
+        horizontalVelocity.y = 0;
+        if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+        {
+            rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rigidbody.velocity.y;
+        }
 
         // Look Direction (Y)
         facing = Vector3.Normalize(mouseWorld.Position - transform.position);
@@ -89,18 +87,18 @@ public class PlayerController : NetworkBehaviour
         if (context.canceled)
             animator.SetBool("isMoving", false);
         movement = context.ReadValue<Vector2>();
-
-
     }
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        Debug.Log("Called");
         if (!isLocalPlayer) return;
         if (context.started)
         {
             Debug.Log("Dashing");
-            force.AddImpact(velocity.normalized, 100);
+
+            // Use velocity with dash time, don't use add force... this will caus some ramp slides
+
+            // rigidbody.AddForce((movement * 80), ForceMode.Impulse);
         }
             
     }
@@ -118,12 +116,12 @@ public class PlayerController : NetworkBehaviour
         if (context.canceled)
         {
             Debug.Log("Release");
-            bow.Shoot(transform.position);
+            bow.shoot(transform.position);
         }
+    }
 
-
-<<<<<<< Updated upstream
-=======
+    [SerializeField]
+    private GameObject arrow;
     [Command]
     public void CmdShoot(Vector3 pos, Vector3 dir, Vector3 pow)
     {
@@ -131,6 +129,5 @@ public class PlayerController : NetworkBehaviour
         projectile.transform.position = bow.transform.position + dir/2;
         projectile.GetComponent<Rigidbody>().velocity = pow;
         NetworkServer.Spawn(projectile);
->>>>>>> Stashed changes
     }
 }

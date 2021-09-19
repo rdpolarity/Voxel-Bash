@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arena.unity
     guid: 19260ae15cdb85440afd03c4c75eb27d
+  - enabled: 1
+    path: Assets/Scenes/ConnectionLost.unity
+    guid: e597ea91a8a1fde4381e0643f608d096
   m_configObjects: {}

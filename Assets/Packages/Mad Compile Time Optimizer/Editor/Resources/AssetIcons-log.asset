@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 342976093, guid: 5eb872180e6624b46b2fa8b2229cc7ac, type: 3}
+  m_Name: AssetIcons-log
+  m_EditorClassIdentifier: 
+  ruleName: AssetIcons
+  rootDirectoryGUID: fffb225e1252ad449a83971dc891438c
+  rules:
+  - sourcePath: Assets\Packages\AssetIcons\Demo\Demo Assets\Scripts\AssetIcons.Demo.cs
+    sourceGUID: 504b624c7fb51b74cb47461605fc4a90
+    targetPath: Assets\Plugins\AssetIcons\Demo\Demo Assets\Scripts\AssetIcons.Demo.cs
+  - sourcePath: Assets\Packages\AssetIcons\Demo\Demo Assets\Scripts\Prop.cs
+    sourceGUID: 364d3386861dd5a44b4478c1b582841f
+    targetPath: Assets\Plugins\AssetIcons\Demo\Demo Assets\Scripts\Prop.cs
+  - sourcePath: Assets\Packages\AssetIcons\Demo\Demo Assets\Scripts\VoxelItem.cs
+    sourceGUID: 5c33333122901694fa6e51777c8babd2
+    targetPath: Assets\Plugins\AssetIcons\Demo\Demo Assets\Scripts\VoxelItem.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIcons.Editors.cs
+    sourceGUID: 2daa22ad5de8a604eae9506607c6c754
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIcons.Editors.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsCameraSetup.cs
+    sourceGUID: 8edf3b6a1e17b644085eac6558a668df
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsCameraSetup.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsCompiledStyle.cs
+    sourceGUID: e5576ac6cf95dec4894e39f5fc15f179
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsCompiledStyle.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsGUI.cs
+    sourceGUID: 65cd1e8c1b0883742ab7134fd90c0ecf
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsGUI.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsGUIUtility.cs
+    sourceGUID: adff7b9e259df384ea4269c683af785e
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsGUIUtility.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsProjectHooks.cs
+    sourceGUID: 1861878bf65b9ab4090037f54b27527a
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsProjectHooks.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsRenderCache.cs
+    sourceGUID: 23c711194246cf946ad17f8c4c8944f6
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsRenderCache.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\AssetIconsRenderer.cs
+    sourceGUID: ff61d12b545e47844b1f31d76461b7b9
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\AssetIconsRenderer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Compat\Addressables\AddressablesCompat.cs
+    sourceGUID: 4f6dd5a83d498454d80602ddc3b90c30
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Compat\Addressables\AddressablesCompat.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Compat\Addressables\AddressablesGraphicDrawerFactory.cs
+    sourceGUID: c51e283fbdcfdc549a68fc2e854ccfd9
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Compat\Addressables\AddressablesGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Compat\Addressables\AssetIcons.Editor.Compat.Addressables.cs
+    sourceGUID: f02e865c79601904197ec559418f2c7f
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Compat\Addressables\AssetIcons.Editor.Compat.Addressables.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\AssetIconPipeline.cs
+    sourceGUID: 5116da1ae77069d41b8d514f2b520b4d
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\AssetIconPipeline.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\FromValuesAttribute.cs
+    sourceGUID: 4c969155bed0e3a4491d38b457e20f8b
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\FromValuesAttribute.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\GraphicSource.cs
+    sourceGUID: 7ca7fc2360ccc314ab3636ebbeeba2af
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\GraphicSource.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\GraphicSourceSelector.cs
+    sourceGUID: 744717250df95d145837a1c95263a30f
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\GraphicSourceSelector.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\IAssetGraphic.cs
+    sourceGUID: 463ba974e6847ab4faa1f2468c03f32f
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\IAssetGraphic.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawers\AssetIconAttributeDrawer.cs
+    sourceGUID: 8c0cd6ed8e473194faf60a95b9fe775f
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawers\AssetIconAttributeDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawers\ColorTintDrawer.cs
+    sourceGUID: bef19a10db08874499322a4e1d7596ae
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawers\ColorTintDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawers\EventFieldDrawer.cs
+    sourceGUID: 38b8c528a7545664e87a991eca7cb7d0
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawers\EventFieldDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawers\FromValuesAttributeDrawer.cs
+    sourceGUID: 2a4211ad0e6664346a5837c84257a98b
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawers\FromValuesAttributeDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawers\IconMappingDrawer.cs
+    sourceGUID: f4020cb87d721e541ad18e3526709a2c
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawers\IconMappingDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\AssetDrawer.cs
+    sourceGUID: 0159bb7784198524ba3dd844f9dfa2c0
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\AssetDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\AssetDrawerFactory.cs
+    sourceGUID: 526dac198b3ab934bbe6f833a6871e38
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\AssetDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\AssetDrawerFactoryLibrary.cs
+    sourceGUID: ee0703eb9c2a0734ea31b320d76d142b
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\AssetDrawerFactoryLibrary.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\AssetIconsMain.cs
+    sourceGUID: a0b19d9acbe364d43b6b4039954b714e
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\AssetIconsMain.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\AssetTarget.cs
+    sourceGUID: 2467d4a4ad2386d4f954cd422c3ed163
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\AssetTarget.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\AssetTargetCache.cs
+    sourceGUID: 745e7abdce6969e418b57963286de912
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\AssetTargetCache.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\ExpressionParser.cs
+    sourceGUID: 12f3b8931853b1141abde35c096bfca9
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\ExpressionParser.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\FieldGraphicSource.cs
+    sourceGUID: 18481840396a60a4a8873645626f2e94
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\FieldGraphicSource.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Drawing\MethodGraphicProvider.cs
+    sourceGUID: 4e5c88121b0bdc442a51babd2987381e
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Drawing\MethodGraphicProvider.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\CompiledExpression.cs
+    sourceGUID: c9573dbc6de09c44ca6db8c9009c9fac
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\CompiledExpression.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\ExpressionSyntax.cs
+    sourceGUID: 7f968ab3be6d7ed4385446bf1ad76f48
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\ExpressionSyntax.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\ExpressionToken.cs
+    sourceGUID: 5ff8b7d9d0505384c90c8e4f2e97a5e9
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\ExpressionToken.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\MathValue.cs
+    sourceGUID: 6b4d0d71119959d4682d29d7c5769a35
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\MathValue.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\SyntaxTokenKind.cs
+    sourceGUID: af75b7e37c0fd184ca6f3a0d2a0a13db
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\SyntaxTokenKind.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\ValueClassifier.cs
+    sourceGUID: 69e1d1c0d5cd89d43b661d4f56da56c5
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\ValueClassifier.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\FieldValueProvider.cs
+    sourceGUID: 31e80b3464db4664d896deae4884c9da
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\FieldValueProvider.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContext.cs
+    sourceGUID: dddd1b3886fbaf845b73aae84dae5922
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContext.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContextBuilder.cs
+    sourceGUID: ecb02e56f8147eb4e926806053b8464c
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContextBuilder.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContextBuilderExtensions.cs
+    sourceGUID: a92a2b51f68b12d4d91fa979df1a9218
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContextBuilderExtensions.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContextExtensions.cs
+    sourceGUID: c6a0d5b31427aee4485e169cb418d0e5
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IMathContextExtensions.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IObjectContext.cs
+    sourceGUID: a7fcdade8b509a549b36b7e9d32b8777
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IObjectContext.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IValueProvider.cs
+    sourceGUID: d9fa6346883a0f7498956d05910d22bc
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\IValueProvider.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\MathContext.cs
+    sourceGUID: 83ecc242d531b5542bd481e220665073
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\MathContext.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\MathContextBuilder.cs
+    sourceGUID: cc45b57782fd64041a84d9cd053dac91
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\MathContextBuilder.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\PropertyValueProvider.cs
+    sourceGUID: 2f9cafa130ddf8e4084d4d37dc471722
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\PropertyValueProvider.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Input\StaticValueProvider.cs
+    sourceGUID: 2746bf05fb38e0c4ba9dc1c45bffbfee
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Input\StaticValueProvider.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateExpression.cs
+    sourceGUID: dc482b68f3730d1438e5558abf1cdd40
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateExpression.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateOperation.cs
+    sourceGUID: 91e15feca44b1044ba273829334eb9ed
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateOperation.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateOperationActions.cs
+    sourceGUID: 83415df9eac0ed3469f9eb1df21ec14f
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateOperationActions.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateOperationCode.cs
+    sourceGUID: eca24815ceee81240ba07cce9c7ca73d
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateOperationCode.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateParameter.cs
+    sourceGUID: fe448a5945c71e14590feaa5d10ac972
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateParameter.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateSource.cs
+    sourceGUID: 3e3fa8b80fd96c1489c47325a9e1ef7b
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Expresser\Processing\IntermediateSource.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsDocumentationOpener.cs
+    sourceGUID: 4bc8cda3822490c42a368f040d2ef630
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsDocumentationOpener.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsLogger.cs
+    sourceGUID: 8d5d32c15d6050c49ae50aaeafebabb4
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsLogger.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsMenu.cs
+    sourceGUID: 5dbef2aa280f79846aa12b6f107ab272
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsMenu.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsPreferencesMenu.cs
+    sourceGUID: aa1e955a726def14395543018fb8df1e
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsPreferencesMenu.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsResources.cs
+    sourceGUID: 9c025da834488194fa3e034d7dd7c194
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsResources.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsUpdateCheckerWindow.cs
+    sourceGUID: 50ddf636314c7104683fbb25a53833c5
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\AssetIconsUpdateCheckerWindow.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\EditorProductInformation.cs
+    sourceGUID: e89980c72bbb56f47bec8200b2e3cd46
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\EditorProductInformation.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\ProductStatusModel.cs
+    sourceGUID: 39bfc70a7f049a54e8ca938facdf5304
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\ProductStatusModel.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\ProductVersionModel.cs
+    sourceGUID: 4985b58f4a35fb44e94aef8d1df1537a
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\ProductVersionModel.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Internal\Product\ThemedResourceCollection.cs
+    sourceGUID: ee6ceff9f86bf8242b607f8619f69802
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Internal\Product\ThemedResourceCollection.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\IAssetIconPipeline.cs
+    sourceGUID: 2b7f588df0517934db208a3af9efc89c
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\IAssetIconPipeline.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\IAssetIconsExtension.cs
+    sourceGUID: f67a157192f3b09468fec374b9085e94
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\IAssetIconsExtension.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\IGraphicDrawer.cs
+    sourceGUID: e26940725c5821440b88d2c749074bb0
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\IGraphicDrawer.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\IGraphicDrawerFactory.cs
+    sourceGUID: 5c2c198af6da9dd49944c4b7144c8d6d
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\IGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultColor32GraphicDrawerFactory.cs
+    sourceGUID: 54c4a571702a61543842c9ac660a9b31
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultColor32GraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultColorGraphicDrawerFactory.cs
+    sourceGUID: d0e80e9c49eb3874e86784b6e7993f5b
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultColorGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultCompat.cs
+    sourceGUID: b44fe0b94c12b2c479d65ed088555523
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultCompat.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultDecimalGraphicDrawerFactory.cs
+    sourceGUID: f7c3fd5e53ad8174d9c5b34e8b8c6d31
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultDecimalGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultGameObjectGraphicDrawerFactory.cs
+    sourceGUID: 2ff587e709d43d94cb3b737c97777198
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultGameObjectGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultGUISkinGraphicDrawerFactory.cs
+    sourceGUID: 4fe64acfb5f17b345a7b184c492813f2
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultGUISkinGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultGUIStyleGraphicDrawerFactory.cs
+    sourceGUID: 621f6842c4d617546bbba99be0fde2aa
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultGUIStyleGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultIntegerGraphicDrawerFactory.cs
+    sourceGUID: 9275e37618017014da76bf5357c95ffa
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultIntegerGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultSpriteGraphicDrawerFactory.cs
+    sourceGUID: 5b10a17303324b44f9bb2ff57c06ad91
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultSpriteGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultTextureGraphicDrawerFactory.cs
+    sourceGUID: 841be34ab60ec974a9070f39d5e14142
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Pipeline\Default\DefaultTextureGraphicDrawerFactory.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\AssetIconsPreferences.cs
+    sourceGUID: b9d76f1610525334ea8530424bd3fb4b
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\AssetIconsPreferences.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\AssetIconsPreferencesPreset.cs
+    sourceGUID: ef67cd20b812fd745a5fa369ab28dbd4
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\AssetIconsPreferencesPreset.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\BoolEventField.cs
+    sourceGUID: a0ccff8abfb1ae845b89b508ef353f17
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\BoolEventField.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\ColorTint.cs
+    sourceGUID: 5d8176f8e9416fa4680dfbd0c161e0a0
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\ColorTint.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\ColorTintEventField.cs
+    sourceGUID: 95859aa250aa9ee4983b2c4cfcab8490
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\ColorTintEventField.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\EventField.cs
+    sourceGUID: 9ed782addee96d54496e6989b751bc48
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\EventField.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\IconMapping.cs
+    sourceGUID: 7fb14e280169aa147b88e81cc6e0dce3
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\IconMapping.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\IntEventField.cs
+    sourceGUID: ffb0eb258feb5ec458a32df855614e14
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\IntEventField.cs
+  - sourcePath: Assets\Packages\AssetIcons\Editor\Scripts\Preferences\PreferencesAssetReference.cs
+    sourceGUID: 7ef8d3cc07a43b748b2a37c7c50bc1d2
+    targetPath: Assets\Plugins\Editor\AssetIcons\Editor\Scripts\Preferences\PreferencesAssetReference.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\AssetIconAttribute.cs
+    sourceGUID: b090aeb4deab6994692d2de64c9b979a
+    targetPath: Assets\Plugins\AssetIcons\Scripts\AssetIconAttribute.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\AssetIcons.cs
+    sourceGUID: 5c39285a05384c54ea84a910dc4973ed
+    targetPath: Assets\Plugins\AssetIcons\Scripts\AssetIcons.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\IconAnchor.cs
+    sourceGUID: 76be8ab64637eb642b120f6c65b990a2
+    targetPath: Assets\Plugins\AssetIcons\Scripts\IconAnchor.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\IconAspect.cs
+    sourceGUID: 6c91aa22f306a0d439180af259b0aae0
+    targetPath: Assets\Plugins\AssetIcons\Scripts\IconAspect.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\IconColor.cs
+    sourceGUID: f92b1d1b166bf0f479721e7eb6613802
+    targetPath: Assets\Plugins\AssetIcons\Scripts\IconColor.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\IconProjection.cs
+    sourceGUID: 6b41f21ab2310164e95b76b85dda76a2
+    targetPath: Assets\Plugins\AssetIcons\Scripts\IconProjection.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\ProductInformation.cs
+    sourceGUID: 89dcd658bba00c94eb40e0354180ab95
+    targetPath: Assets\Plugins\AssetIcons\Scripts\ProductInformation.cs
+  - sourcePath: Assets\Packages\AssetIcons\Scripts\StyleDefinition.cs
+    sourceGUID: d3f847396a7dac947b6a8a04f1503077
+    targetPath: Assets\Plugins\AssetIcons\Scripts\StyleDefinition.cs
+  forRemoval: 0
+  forRemovalDeleteEmptyDirs: 0
+  persistent: 1

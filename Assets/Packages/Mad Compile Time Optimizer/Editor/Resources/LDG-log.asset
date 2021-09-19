@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 342976093, guid: 5eb872180e6624b46b2fa8b2229cc7ac, type: 3}
+  m_Name: LDG-log
+  m_EditorClassIdentifier: 
+  ruleName: LDG
+  rootDirectoryGUID: 80f7623c4a9e3fd4ea42311f89aba950
+  rules:
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\MonoBehaviourEx.cs
+    sourceGUID: 4b43c09db33b84f4983815eedf6a3e92
+    targetPath: Assets\Plugins\LDG\Core\Scripts\MonoBehaviourEx.cs
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\MonoBehaviourParticle.cs
+    sourceGUID: ea6a514b3cd77dd4ea38d635e7345df8
+    targetPath: Assets\Plugins\LDG\Core\Scripts\MonoBehaviourParticle.cs
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\MonoBehaviourParticlePool.cs
+    sourceGUID: f02192694d978cc4c904ecf2f4621c5a
+    targetPath: Assets\Plugins\LDG\Core\Scripts\MonoBehaviourParticlePool.cs
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\Collection\IParticleCollection.cs
+    sourceGUID: b0b0c9855625fc442ab470de2ae6afac
+    targetPath: Assets\Plugins\LDG\Core\Scripts\Collection\IParticleCollection.cs
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\Collection\Generic\ObjectPool.cs
+    sourceGUID: b3a5aef92625eef48bb3c96515902cd9
+    targetPath: Assets\Plugins\LDG\Core\Scripts\Collection\Generic\ObjectPool.cs
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\Prototype\ApplicationSettings.cs
+    sourceGUID: 506cb7bf12e89264aad494caf49ef72f
+    targetPath: Assets\Plugins\LDG\Core\Scripts\Prototype\ApplicationSettings.cs
+  - sourcePath: Assets\Packages\LDG\Core\Scripts\Timers\Timer.cs
+    sourceGUID: 72cb244413b7d9f478ecae6aba6c90a1
+    targetPath: Assets\Plugins\LDG\Core\Scripts\Timers\Timer.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Debug\FPS.cs
+    sourceGUID: 05862a132ef380244a8d73c2ac998870
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Debug\FPS.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\ImageEffects\Scripts\ImageEffectSelector.cs
+    sourceGUID: 2af0eb0461cceca47854f59b0cef86b6
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\ImageEffects\Scripts\ImageEffectSelector.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\SelfDestruct.cs
+    sourceGUID: a1251e775a8f059458b33c28a8f51050
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Scripts\SelfDestruct.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\AudioSource\PlayAudioSourceTimer.cs
+    sourceGUID: 847836c5bc9b6c243b23e1e40475ba03
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Scripts\AudioSource\PlayAudioSourceTimer.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\AudioSource\Editor\PlayAudioSourceTimerEditor.cs
+    sourceGUID: 76c5c8e12032d0e45821cc426b159382
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Demos\Common\Scripts\AudioSource\Editor\PlayAudioSourceTimerEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\Camera\LookAt.cs
+    sourceGUID: 4a8473cadc040bf4fb14550db00b3c95
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Scripts\Camera\LookAt.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\Motions\TranslateLocalMotion.cs
+    sourceGUID: 2a86b014c856e0c4789c9708eeea6e50
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Scripts\Motions\TranslateLocalMotion.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\ParticleEmitters\NoteParticleEmitter.cs
+    sourceGUID: 9ec2b37ff5d4c0c45bf745481da2a775
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Scripts\ParticleEmitters\NoteParticleEmitter.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Common\Scripts\Particles\NoteParticle.cs
+    sourceGUID: 422db4610625acb4ca431f34f0b789d4
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Common\Scripts\Particles\NoteParticle.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Scenes\EventDriverSetup\EventHandlers\EmissionHandler.cs
+    sourceGUID: b201b1f093e02cf42a14011a785be887
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Scenes\EventDriverSetup\EventHandlers\EmissionHandler.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Scenes\Main\Scripts\SceneCycler.cs
+    sourceGUID: af746cac8bf36a74c8fabf6bfd7a6ac3
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Scenes\Main\Scripts\SceneCycler.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Scenes\Trap\Scripts\Earthquake.cs
+    sourceGUID: 34c6b68391fa6434280c915845550cb6
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Scenes\Trap\Scripts\Earthquake.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Demos\Scenes\Trap\Scripts\SimulationSpeed.cs
+    sourceGUID: 55140c5df81fb5f478c53905979eb41b
+    targetPath: Assets\Plugins\LDG\SoundReactor\Demos\Scenes\Trap\Scripts\SimulationSpeed.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\EQ.cs
+    sourceGUID: deb9a862ddfc19749853025107b0cab5
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\EQ.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Level.cs
+    sourceGUID: 07092bfaffac37e4190f185e230a3655
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Level.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDriver.cs
+    sourceGUID: 1217c697772761b4d97a511643732e65
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\SpectrumBuilder.cs
+    sourceGUID: 6947a3d20c190d846b6f8844b8709c32
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\SpectrumBuilder.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\SpectrumFilter.cs
+    sourceGUID: fcc989a6c6cf54e4c805f772cdabfc3a
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\SpectrumFilter.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\SpectrumSource.cs
+    sourceGUID: 49ca2b085bcad48f69a52f50f2e245c9
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\SpectrumSource.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\GlobalStyles.cs
+    sourceGUID: 0244de34913ca0e4d896792f6bcc83b0
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\GlobalStyles.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\PlaymodeSerializer.cs
+    sourceGUID: 21be6e9aadf8af1459e3ef4377551449
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\PlaymodeSerializer.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Extensions\MenuItems.cs
+    sourceGUID: 1d343f4c28ca25546a62550a14815f12
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Extensions\MenuItems.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Extensions\SpectrumGUILayout.cs
+    sourceGUID: 8b8fa842d469fa64e921fac11778d36d
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Extensions\SpectrumGUILayout.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\EQEditor.cs
+    sourceGUID: 214fc9b1f85fd554ca4127ea62a26ad0
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\EQEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\LevelEditor.cs
+    sourceGUID: 70729f56e25598c44a10b18ac79dbe3f
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\LevelEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\PeaksProfileEditor.cs
+    sourceGUID: 0a07021b3483b0a47a4890d15e386ef3
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\PeaksProfileEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\PropertyDriverEditor.cs
+    sourceGUID: 2ff51378070f7aa46bf080cdca72ddaf
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\PropertyDriverEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\SpectrumBuilderEditor.cs
+    sourceGUID: 296d2b3ffe476cd498d3b5a0bbaa8b6a
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\SpectrumBuilderEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\SpectrumFilterEditor.cs
+    sourceGUID: e9d1163eaf6345947a46ed7cb487993b
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\SpectrumFilterEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Editor\Inspector\SpectrumSourceEditor.cs
+    sourceGUID: 27a60253f14bc4a49ad2c6c54a45a527
+    targetPath: Assets\Plugins\Editor\LDG\SoundReactor\Scripts\Editor\Inspector\SpectrumSourceEditor.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Extra\InputDevice.cs
+    sourceGUID: dc909848acdb1b944ab3c97798821245
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Extra\InputDevice.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Extra\SpectrumLineRenderer.cs
+    sourceGUID: dcbb6a6e9d7ba78479cd1c333c75f01c
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Extra\SpectrumLineRenderer.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Math\Frequency.cs
+    sourceGUID: 46d7ee4995c9f624fb645dd208325f89
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Math\Frequency.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Math\Spline.cs
+    sourceGUID: 57bd52fbb8531b948965b2cdbe570708
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Math\Spline.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\ColorDriver.cs
+    sourceGUID: 525be45d0a897be47b65666af8e13897
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\ColorDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\EventDriver.cs
+    sourceGUID: 2d66f4ae484311c4692945c719f269df
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\EventDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\ForceDriver.cs
+    sourceGUID: da230e39e50c3ab469ae84f928e70d86
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\ForceDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\ParticleEmitterDriver.cs
+    sourceGUID: 97dce62d69ff6e442b46fa9f7fc2dc25
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\ParticleEmitterDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\PositionDriver.cs
+    sourceGUID: ac5194c748ec7d846aa42f6d9b1ae28f
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\PositionDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\RotateDriver.cs
+    sourceGUID: b3e2037665f17a24cbacedb101077760
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\RotateDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\PropertyDrivers\ScaleDriver.cs
+    sourceGUID: bd401b04aeccabe4b900569522436198
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\PropertyDrivers\ScaleDriver.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\ScriptableObjects\PeaksProfile.cs
+    sourceGUID: e4761bab2f7cb3a40b5d6327199d1d02
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\ScriptableObjects\PeaksProfile.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Utils\GLU.cs
+    sourceGUID: d2140945efe6fb144bd5271dac1114d4
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Utils\GLU.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Utils\SerializableObject.cs
+    sourceGUID: 7385bacfa2a8b634db2b0419bfc731be
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Utils\SerializableObject.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Vector\VectorShape.cs
+    sourceGUID: c3a874fbf79a59f429514b670fa10d09
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Vector\VectorShape.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Vector\VertexElement.cs
+    sourceGUID: ac233a8fea036e84b8ee4a9a30fecbb1
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Vector\VertexElement.cs
+  - sourcePath: Assets\Packages\LDG\SoundReactor\Scripts\Vector\VertexElementColor.cs
+    sourceGUID: a84bbefc39449b14792698a46c417ff7
+    targetPath: Assets\Plugins\LDG\SoundReactor\Scripts\Vector\VertexElementColor.cs
+  forRemoval: 0
+  forRemovalDeleteEmptyDirs: 0
+  persistent: 1

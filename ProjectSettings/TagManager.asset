@@ -9,6 +9,7 @@ TagManager:
   - Conductor
   - BounceWall
   - Tile
+  - Indestructable
   layers:
   - Default
   - TransparentFX
@@ -18,10 +19,10 @@ TagManager:
   - UI
   - PixelArt
   - Bouncy
-  - 
-  - 
-  - 
-  - 
+  - Red
+  - Green
+  - Blue
+  - Purple
   - 
   - 
   - 

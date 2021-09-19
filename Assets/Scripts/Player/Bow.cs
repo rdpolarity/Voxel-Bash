@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
 public class Bow : MonoBehaviour
 {
     private float charge;
-    
+
     [SerializeField]
-    private GameObject arrow;
+    private PlayerController player;
 
     [SerializeField]
     private float power;
@@ -20,15 +21,12 @@ public class Bow : MonoBehaviour
 
     private Vector3 dir = Vector3.zero;
 
-    private float yHeight;
-
     private AimIndicator indicator;
 
     // Start is called before the first frame update
     void Start()
     {
         indicator = GetComponentInChildren<AimIndicator>();
-        yHeight = transform.position.y;
     }
 
     public bool Charging { get; set; }
@@ -41,7 +39,7 @@ public class Bow : MonoBehaviour
         {
             charge += Time.deltaTime * chargeRate;
             indicator.gameObject.SetActive(true);
-            indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), arrow.GetComponent<Rigidbody>(), transform.position + dir);
+            indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), transform.position + dir);
         }
         else
         {
@@ -49,14 +47,13 @@ public class Bow : MonoBehaviour
         }
     }
 
-    public void Shoot(Vector3 pos)
+    public void shoot(Vector3 pos)
     {
-        var projectile = Instantiate(arrow);
-        projectile.transform.position = new Vector3(transform.position.x + dir.x, yHeight, transform.position.z + dir.z);
-        projectile.GetComponent<Rigidbody>().velocity = Mathf.Clamp(charge * power, minForce, maxForce) * (dir);
-
+        var pow = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f,0));
         indicator.Clear();
         charge = 0;
         Charging = false;
+
+        player.CmdShoot(pos, dir, pow);     
     }
 }

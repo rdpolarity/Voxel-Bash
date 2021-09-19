@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 342976093, guid: 5eb872180e6624b46b2fa8b2229cc7ac, type: 3}
+  m_Name: FirstGearGames-log
+  m_EditorClassIdentifier: 
+  ruleName: FirstGearGames
+  rootDirectoryGUID: b0dd742b0d482c7439cfb8a4cb0c4249
+  rules:
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Editor\DrawBitMaskField.cs
+    sourceGUID: 1aa5b3604b2806d43932a7c78d4d287d
+    targetPath: Assets\Plugins\Editor\FirstGearGames\Scripts\Editor\DrawBitMaskField.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\EditorRuntime\BitMaskAttribute.cs
+    sourceGUID: d29005cecd48ddc4a9017c0db498d576
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\EditorRuntime\BitMaskAttribute.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Arrays.cs
+    sourceGUID: 1b93eae9ff81b3e4b892128ca4b392ed
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Arrays.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Canvases.cs
+    sourceGUID: c0e7937b287d3d24d807a115c1a3a464
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Canvases.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\DisplayFPS.cs
+    sourceGUID: e7b0e7c837ca731478520a11e0201d7b
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\DisplayFPS.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Enums.cs
+    sourceGUID: e6c66aec505f9254491b2b126a2d4745
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Enums.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Floats.cs
+    sourceGUID: 4ab517aa5c3b6e34ca20461339adda04
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Floats.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\FrameRateCalculator.cs
+    sourceGUID: 1ac3c952f0a6d254aa92271c95a633ff
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\FrameRateCalculator.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Ints.cs
+    sourceGUID: c673118198f5c4b41986d52762828363
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Ints.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Layers.cs
+    sourceGUID: 1c18e15e44d21a94d8919f4b6b125a1f
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Layers.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Quaternions.cs
+    sourceGUID: 02a9084f4f788cd4293cdff56a49b5dd
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Quaternions.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Transforms.cs
+    sourceGUID: a182a44e1d830d94589cb57b7a25cc1f
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Transforms.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Vectors.cs
+    sourceGUID: 6bf25d6d9fa7a754b85a60006db774c4
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Vectors.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Network\Lookups.cs
+    sourceGUID: f1a6decfc27380c41a81236da459c9a1
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Network\Lookups.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Network\Platforms.cs
+    sourceGUID: 2796339eb81e2bd479d19627da52ff03
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Network\Platforms.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Network\Quaternions.cs
+    sourceGUID: 610d5b62062eff04dac0100a5acb6f00
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Network\Quaternions.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Structures\FloatRange.cs
+    sourceGUID: 35d4414338c0ab248a1b838402887ac0
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Structures\FloatRange.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Structures\IntRange.cs
+    sourceGUID: 16f03af589a154c47bcbcc3f82b710a6
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Structures\IntRange.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Scripts\Utilities\Structures\Vector2Range.cs
+    sourceGUID: 1b1d5cb52def18c46a0c1e71b5f1245f
+    targetPath: Assets\Plugins\FirstGearGames\Scripts\Utilities\Structures\Vector2Range.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FastProximityChecker\Demo\Scripts\AutoMovePlayer.cs
+    sourceGUID: 09ea08209d91d76468cc974041aa16c1
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FastProximityChecker\Demo\Scripts\AutoMovePlayer.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FastProximityChecker\Demo\Scripts\CubeSpawner.cs
+    sourceGUID: c51ea269827fc454bb8a545939b32964
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FastProximityChecker\Demo\Scripts\CubeSpawner.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FastProximityChecker\Demo\Scripts\PlayerCubeSpawner.cs
+    sourceGUID: 0dcb4896b5b1b414f822a91ffca61f95
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FastProximityChecker\Demo\Scripts\PlayerCubeSpawner.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FastProximityChecker\Scripts\FastProximityChecker.cs
+    sourceGUID: 8f1f9d1ccae3c414fa8d1d0758e1c9e2
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FastProximityChecker\Scripts\FastProximityChecker.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FastProximityChecker\Scripts\ProximityCheckerManager.cs
+    sourceGUID: 7d76098e26bf47542b690f4251cf1b0e
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FastProximityChecker\Scripts\ProximityCheckerManager.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\AutoMoveBlah.cs
+    sourceGUID: 3a06f5bcefb7bce46aefa6df0ae92a3e
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\AutoMoveBlah.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\AutoMoveBlending.cs
+    sourceGUID: b2c03cb0ef8a415438d96580e661be1a
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\AutoMoveBlending.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\MoveAndAnimate.cs
+    sourceGUID: d76403c89b235bf4e979cb12c2290beb
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\MoveAndAnimate.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\MoveAndAnimateServerAuth.cs
+    sourceGUID: f7861e4e7a35bfc4a902ea8e4e4f72ba
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Demos\Comparison\Scripts\MoveAndAnimateServerAuth.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\FlexNetworkAnimator.cs
+    sourceGUID: e8cac635f24954048aad3a6ff9110beb
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\FlexNetworkAnimator.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\Compression.cs
+    sourceGUID: e7911bdb04b18b94481b2fdf84f0ea0a
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\Compression.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\FlexNetworkAnimatorManager.cs
+    sourceGUID: e8fc0453f283eff41bcc9f96cb884faa
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\FlexNetworkAnimatorManager.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\ParameterUpdates.cs
+    sourceGUID: ae5cc76e73b0eeb4dbdbae4968c0588e
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\ParameterUpdates.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\Serialization.cs
+    sourceGUID: 172c66278c967e24cb7a5a5934381634
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\Serialization.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\Supporting.cs
+    sourceGUID: ece6daea8f1ecf744b6cfa58e094960c
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Core\Supporting.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Editor\FlexNetworkAnimatorEditor.cs
+    sourceGUID: 65609e99a0823a347a2f615b0e6f736e
+    targetPath: Assets\Plugins\Editor\FirstGearGames\Supporters\Assets\FlexNetworkAnimator\Scripts\Editor\FlexNetworkAnimatorEditor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AuthMotor.cs
+    sourceGUID: a9e977eddbebcf94eb8e70ca71bc0eec
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AuthMotor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AutoMotor.cs
+    sourceGUID: 40e31dd7319fdc343ad09ef3ad7aea52
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AutoMotor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AutoMotorCamera.cs
+    sourceGUID: 2b079bc6081fcc741ba8e5e5e7da345a
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AutoMotorCamera.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AutoMotorManager.cs
+    sourceGUID: 97219a57ecc92e0418bcec58ac4e2e97
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\AutoMotorManager.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\ClientDataRejector.cs
+    sourceGUID: 7d85fa92938f00e498cea00912992084
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\ClientDataRejector.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\Motor.cs
+    sourceGUID: 3f742b5636f75724bb84fbb2405195ee
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Comparison\Scripts\Motor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\ForceSendTransform\Scripts\JumpMotor.cs
+    sourceGUID: f9d04b12176c51e4db8b61eae67ecb8b
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\ForceSendTransform\Scripts\JumpMotor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\PickupObjects\Scripts\MotorPickupObject.cs
+    sourceGUID: 20caf78b2b201ab4d9ab085c1ab3ce80
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\PickupObjects\Scripts\MotorPickupObject.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\PickupObjects\Scripts\PickableObjectClientAuth.cs
+    sourceGUID: 1ffc24167db967d47b2ef01961108ef7
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\PickupObjects\Scripts\PickableObjectClientAuth.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\PickupObjects\Scripts\PickableObjectServerAuth.cs
+    sourceGUID: a305bb75b83e442478564eed4237c049
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\PickupObjects\Scripts\PickableObjectServerAuth.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Platforms\Scripts\MotorBasic.cs
+    sourceGUID: 7b45025226099b44a8d3efd3bcdf608b
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Platforms\Scripts\MotorBasic.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Platforms\Scripts\MovingPlatform.cs
+    sourceGUID: b3a1cfc4fa56c014d9f1121857b8a4ea
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Platforms\Scripts\MovingPlatform.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Platforms\Scripts\NTMotorBasic.cs
+    sourceGUID: bfc864622f83e9344891bcd2119744e3
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Demos\Platforms\Scripts\NTMotorBasic.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\FlexAttachTargets.cs
+    sourceGUID: 7eabe6726eace3a4a871381df219d158
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\FlexAttachTargets.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\FlexNetworkTransform.cs
+    sourceGUID: 2c6e8001e79980341af98dc404133ebd
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\FlexNetworkTransform.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\FlexNetworkTransformChild.cs
+    sourceGUID: 6f40779ebc4fb2f4f9537d4d162bb1d2
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\FlexNetworkTransformChild.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\AttachedTargetData.cs
+    sourceGUID: 9964b74d6e628a8429daf94731bccb17
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\AttachedTargetData.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\Compressions.cs
+    sourceGUID: 66d0aa2a53d97714f832b946281f0c51
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\Compressions.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\FlexNetworkTransformBase.cs
+    sourceGUID: e146455deef03794d977417f5e7a5aa2
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\FlexNetworkTransformBase.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\FlexNetworkTransformManager.cs
+    sourceGUID: 67e001d9c68167e46bde5e4c4b695882
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\FlexNetworkTransformManager.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\Serialization.cs
+    sourceGUID: b977b6b425b4f2045b36b4be5831cc9e
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\Serialization.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\Supporting.cs
+    sourceGUID: 634e8aa8afd40c847bafa1df4bc37973
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Core\Supporting.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Editor\FlexNetworkTransformBaseEditor.cs
+    sourceGUID: e6e2f1bc34058a84fabc446b44849123
+    targetPath: Assets\Plugins\Editor\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Editor\FlexNetworkTransformBaseEditor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Editor\FlexNetworkTransformChildEditor.cs
+    sourceGUID: 6ae9b4c9eba7a7b41b0a9563225fa52b
+    targetPath: Assets\Plugins\Editor\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Editor\FlexNetworkTransformChildEditor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Editor\FlexNetworkTransformEditor.cs
+    sourceGUID: 242b69197e003264d8590529408d88c9
+    targetPath: Assets\Plugins\Editor\FirstGearGames\Supporters\Assets\FlexNetworkTransform\Scripts\Editor\FlexNetworkTransformEditor.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\ReactivePhysics\Demo\Scripts\Controlled.cs
+    sourceGUID: ff6f8d71173cb464bbb73a9047c9f88c
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\ReactivePhysics\Demo\Scripts\Controlled.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\ReactivePhysics\Demo\Scripts\Controlled2D.cs
+    sourceGUID: 591f1a15769ed074db129499f6832018
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\ReactivePhysics\Demo\Scripts\Controlled2D.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\ReactivePhysics\Demo\Scripts\RollableCubeSpawner.cs
+    sourceGUID: b7ea015f6d7f7f14080ad1b6df68f03e
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\ReactivePhysics\Demo\Scripts\RollableCubeSpawner.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\ReactivePhysics\Scripts\ReactivePhysicsObject.cs
+    sourceGUID: 6aeadefbc57aec74797bde2892d590f9
+    targetPath: Assets\Plugins\FirstGearGames\Supporters\Assets\ReactivePhysics\Scripts\ReactivePhysicsObject.cs
+  - sourcePath: Assets\Packages\FirstGearGames\Supporters\Assets\ReactivePhysics\Scripts\Editor\ReactivePhysicsObjectEditor.cs
+    sourceGUID: 2837fdb2dfc97d142b5ee316bed9339d
+    targetPath: Assets\Plugins\Editor\FirstGearGames\Supporters\Assets\ReactivePhysics\Scripts\Editor\ReactivePhysicsObjectEditor.cs
+  forRemoval: 0
+  forRemovalDeleteEmptyDirs: 0
+  persistent: 1

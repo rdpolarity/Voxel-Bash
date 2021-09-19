@@ -1,57 +1,74 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
-public class Arrow : MonoBehaviour
+public class Arrow : NetworkBehaviour
 {
     public LayerMask bounceMask;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
     private Ray collisionDetect;
     private Vector3 lastPos;
 
-    // Start is called before the first frame update
-    void Start()
+    private Quaternion targetRotation;
+
+    public override void OnStartClient()
     {
+        base.OnStartClient();
         rigidbody = GetComponent<Rigidbody>();
+        if (!NetworkServer.active) {
+            Destroy(rigidbody);
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Quaternion targetRotation = Quaternion.LookRotation(rigidbody.velocity);
-        rigidbody.MoveRotation(targetRotation);
+        if (NetworkServer.active) {
+            if (transform.position.y < -100)
+            {
+                NetworkServer.Destroy(gameObject);
+            }
 
-        if (transform.position.y < -100)
-        {
-            Destroy(gameObject);
+            if (rigidbody != null) {                
+                Quaternion targetRotation = Quaternion.LookRotation(rigidbody.velocity);
+                rigidbody.MoveRotation(targetRotation);
+                float speed = (transform.position - lastPos).magnitude;
+                collisionDetect = new Ray(transform.position, rigidbody.velocity.normalized);
+                RaycastHit hit;
+                if (Physics.Raycast(collisionDetect, out hit, 0.5f, bounceMask))
+                {
+                    Debug.Log("Ricochet");
+                    rigidbody.velocity = Vector3.Reflect(rigidbody.velocity, hit.normal);
+                    rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.z);
+                }
+            }
+
+            lastPos = transform.position;
         }
-
-        float speed = (transform.position - lastPos).magnitude;
-        collisionDetect = new Ray(transform.position, rigidbody.velocity.normalized);
-        RaycastHit hit;
-        if (Physics.Raycast(collisionDetect, out hit, 0.5f, bounceMask))
-        {
-            Debug.Log("Ricochet");
-            rigidbody.velocity = Vector3.Reflect(rigidbody.velocity, hit.normal);
-            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.z);
-        }
-
-        lastPos = transform.position;
+        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Tile"))
-        {
-            Destroy(gameObject);
+        if (NetworkServer.active) {
+            if (collision.gameObject.CompareTag("Tile"))
+            {
+                collision.gameObject.transform.position = collision.gameObject.transform.position - new Vector3(0,20, 0);
+                NetworkServer.Destroy(gameObject);
+            }
+            else if (collision.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("Hit player");
+                collision.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(20, rigidbody.velocity.x+rigidbody.velocity.y));
+                NetworkServer.Destroy(gameObject);
+            }
+            else if (collision.gameObject.CompareTag("Indestructable")) {
+                NetworkServer.Destroy(gameObject);
+            }
         }
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("Hit player");
-            collision.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(20, rigidbody.velocity.x+rigidbody.velocity.y));
-            Destroy(gameObject);
-        }
+        
         
     }
 

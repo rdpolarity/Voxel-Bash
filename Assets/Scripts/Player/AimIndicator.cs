@@ -5,7 +5,6 @@ using UnityEngine;
 public class AimIndicator : MonoBehaviour
 {
     private float value;
-    private int lineSegmentCount = 5;
     private List<Vector3> linePoints = new List<Vector3>();
     private LineRenderer lineRenderer;
 
@@ -16,7 +15,7 @@ public class AimIndicator : MonoBehaviour
 
     public float Value { get; set; }
 
-    public void DrawIndicator(Vector3 force, Rigidbody rb, Vector3 startingPoint)
+    public void DrawIndicator(Vector3 force, Vector3 startingPoint)
     {
         linePoints.Clear();
 
