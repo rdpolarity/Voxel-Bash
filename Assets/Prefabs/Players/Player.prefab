@@ -214,7 +214,15 @@ MonoBehaviour:
   speed: 0.7
   maxSpeed: 1.4
   animator: {fileID: 1882352509146524678}
+
+  dashMultiplier: 5
+  dashTimer: 0.5
+  dashCooldown: 1
+  currDashCooldown: 0
+  isMoving: 0
+  myVelocity: {x: 0, y: 0, z: 0}
   grounded: {fileID: 0}
+  
   facing: {x: 0, y: 0, z: 0}
   arrow: {fileID: 3464475405107332064, guid: db2b0cccd655dee47bc6b6403a65e332, type: 3}
 --- !u!114 &4544073927636467284
