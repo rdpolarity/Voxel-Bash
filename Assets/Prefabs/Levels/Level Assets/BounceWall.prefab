@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5411731376869980271}
   - component: {fileID: 5435375865575746964}
   - component: {fileID: 2029981865098803558}
-  - component: {fileID: 4856846591015691128}
   - component: {fileID: 2893983945565197592}
   m_Layer: 7
   m_Name: BounceWall
@@ -91,24 +90,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7871229247804330960}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4cb9602753b35ea43b973ab330d3f451, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4856846591015691128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7871229247804330960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e89368a97045ffa41b3cb8e013163160, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2893983945565197592
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -77,10 +77,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_335ae85dc017463d88fea548db82c0f9: 0
-    - Vector1_096d4d461e2d4dab885669fe2c88fbb7: 0.56
-    - Vector1_4570a886b0f64daeac3c84c9fba4601e: 129.54
-    - Vector1_78fae97dec0f49a794ebabdcaeae2062: 0.42
-    - Vector1_fad56eba0a2a4118b511e21d336fe949: 0.1
+    - Vector1_096d4d461e2d4dab885669fe2c88fbb7: 0.7
+    - Vector1_4570a886b0f64daeac3c84c9fba4601e: 83
+    - Vector1_78fae97dec0f49a794ebabdcaeae2062: 0.37
+    - Vector1_fad56eba0a2a4118b511e21d336fe949: 0.03
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -99,7 +99,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_84c1aeb542604a2bb4060c53f1749852: {r: 0.9056604, g: 0.7456725, b: 0.5254539, a: 0}
-    - Color_ca7f88f7fb6d49db9b2412a94cdcec54: {r: 0.084549636, g: 0.8541183, b: 0.9433962, a: 0}
+    - Color_ca7f88f7fb6d49db9b2412a94cdcec54: {r: 0.76078135, g: 0.086274505, b: 0.94509804, a: 0}
     - _Color: {r: 0.8867924, g: 0.5018956, b: 0.32208967, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

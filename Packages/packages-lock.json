@@ -180,6 +180,15 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unity.visualeffectgraph": {
+      "version": "10.2.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.shadergraph": "10.2.2"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unityfx.outline": {
       "version": "0.8.4",
       "depth": 0,

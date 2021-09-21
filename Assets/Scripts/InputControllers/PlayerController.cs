@@ -18,6 +18,9 @@ public class PlayerController : NetworkBehaviour
     [SerializeField]
     public Animator animator;
 
+    [SerializeField]
+    private Grounded grounded;
+
     private MouseWorld mouseWorld;
     private Knockback force;
 
@@ -69,6 +72,8 @@ public class PlayerController : NetworkBehaviour
 
     private new Rigidbody rigidbody;
 
+    private float inputDisableTimer;
+
     private void Awake()
     {
         animator.SetBool("isMoving", false);
@@ -76,7 +81,7 @@ public class PlayerController : NetworkBehaviour
         rigidbody = GetComponent<Rigidbody>();
         mouseWorld = GetComponent<MouseWorld>();
         force = GetComponent<Knockback>();
-
+            
             // state machine test
         stateMachine = new PlayerStateMachine();
         idleState = new PlayerIdleState(this, stateMachine, "idle");
@@ -84,6 +89,8 @@ public class PlayerController : NetworkBehaviour
         dashState = new PlayerDashingState(this, stateMachine, "dash");
         fallState = new PlayerFallingState(this, stateMachine, "fall");
         stateMachine.Initialize(idleState);
+
+        grounded = GetComponentInChildren<Grounded>();
     }
 
     private string[] outlineColours = new string[]{"Red", "Green", "Blue", "Purple"};
@@ -99,9 +106,15 @@ public class PlayerController : NetworkBehaviour
     private void Update()
     {
         if (!isLocalPlayer) return;
-        velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
-        rigidbody.AddForce(velocity, ForceMode.Impulse);
-        velocity = Vector3.zero;
+
+        inputDisableTimer -= Time.deltaTime;
+        if (inputDisableTimer < 0 && grounded.active)
+        {
+            velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
+            rigidbody.AddForce(velocity, ForceMode.Impulse);
+            velocity = Vector3.zero;
+        }
+        
 
         // Max Velocity
         Vector3 horizontalVelocity = rigidbody.velocity;
@@ -126,6 +139,11 @@ public class PlayerController : NetworkBehaviour
             currDashCooldown = 0;
         }
         myVelocity = rigidbody.velocity;
+    }
+
+    public void DisableInput(float duration)
+    {
+        inputDisableTimer = duration;
     }
 
     public void OnMovement(InputAction.CallbackContext context)
@@ -196,12 +214,11 @@ public class PlayerController : NetworkBehaviour
 
     [SerializeField]
     private GameObject arrow;
-
     [Command]
     public void CmdShoot(Vector3 pos, Vector3 dir, Vector3 pow)
     {
         var projectile = Instantiate(arrow);
-        projectile.transform.position = bow.transform.position + dir;
+        projectile.transform.position = bow.transform.position + dir/2;
         projectile.GetComponent<Rigidbody>().velocity = pow;
         NetworkServer.Spawn(projectile);
     }

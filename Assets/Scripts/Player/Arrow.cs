@@ -11,6 +11,10 @@ public class Arrow : NetworkBehaviour
     private Ray collisionDetect;
     private Vector3 lastPos;
 
+    [SerializeField]
+    private float maxTiles;
+    private float tilesHit;
+
     private Quaternion targetRotation;
 
     public override void OnStartClient()
@@ -55,14 +59,16 @@ public class Arrow : NetworkBehaviour
         if (NetworkServer.active) {
             if (collision.gameObject.CompareTag("Tile"))
             {
-                collision.gameObject.transform.position = collision.gameObject.transform.position - new Vector3(0,20, 0);
-                NetworkServer.Destroy(gameObject);
-            }
-            else if (collision.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Hit player");
-                collision.gameObject.GetComponent<Knockback>().AddImpact(rigidbody.velocity.normalized, Mathf.Min(20, rigidbody.velocity.x+rigidbody.velocity.y));
-                NetworkServer.Destroy(gameObject);
+                if (tilesHit < maxTiles)
+                {
+                    tilesHit++;
+                    collision.gameObject.GetComponent<Tile>().Delete();
+                    if (tilesHit >= maxTiles)
+                    {
+                        NetworkServer.Destroy(gameObject);
+                    }
+                }
+                
             }
             else if (collision.gameObject.CompareTag("Indestructable")) {
                 NetworkServer.Destroy(gameObject);
@@ -70,6 +76,17 @@ public class Arrow : NetworkBehaviour
         }
         
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Hit player");
+            other.GetComponentInParent<Rigidbody>().AddForce(rigidbody.velocity*2, ForceMode.Impulse);
+            other.GetComponentInParent<PlayerController>().DisableInput(0.2f);
+            NetworkServer.Destroy(gameObject);
+        }
     }
 
     private void OnDrawGizmos()
