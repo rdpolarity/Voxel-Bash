@@ -45,7 +45,7 @@ namespace UnityEngine.InputSystem
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Parry"",
+                    ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""a0886e34-a123-42c4-8f6f-7caa9d7b22e3"",
                     ""expectedControlType"": ""Button"",
@@ -56,6 +56,14 @@ namespace UnityEngine.InputSystem
                     ""name"": ""Dash"",
                     ""type"": ""Button"",
                     ""id"": ""34efe694-fb2e-470c-a6b5-587fb932455b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Build"",
+                    ""type"": ""Button"",
+                    ""id"": ""a63fa5b0-8f5e-4216-a09c-4e978d0a27a2"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -123,7 +131,7 @@ namespace UnityEngine.InputSystem
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Parry"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -134,14 +142,14 @@ namespace UnityEngine.InputSystem
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Parry"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""16c8005b-7e52-4caa-b75a-cf58e72f32c5"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
@@ -335,6 +343,17 @@ namespace UnityEngine.InputSystem
                     ""action"": ""ChangeMapBackwards"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cfd0f56f-6eab-41bc-814f-20be4d320552"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Build"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -374,8 +393,9 @@ namespace UnityEngine.InputSystem
             m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
             m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
-            m_Player_Parry = m_Player.FindAction("Parry", throwIfNotFound: true);
+            m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
             m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+            m_Player_Build = m_Player.FindAction("Build", throwIfNotFound: true);
             m_Player_Strike = m_Player.FindAction("Strike", throwIfNotFound: true);
             m_Player_EscapeMenu = m_Player.FindAction("EscapeMenu", throwIfNotFound: true);
             m_Player_ChangeMapForward = m_Player.FindAction("ChangeMapForward", throwIfNotFound: true);
@@ -432,8 +452,9 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_Movement;
         private readonly InputAction m_Player_Look;
         private readonly InputAction m_Player_Shoot;
-        private readonly InputAction m_Player_Parry;
+        private readonly InputAction m_Player_Jump;
         private readonly InputAction m_Player_Dash;
+        private readonly InputAction m_Player_Build;
         private readonly InputAction m_Player_Strike;
         private readonly InputAction m_Player_EscapeMenu;
         private readonly InputAction m_Player_ChangeMapForward;
@@ -445,8 +466,9 @@ namespace UnityEngine.InputSystem
             public InputAction @Movement => m_Wrapper.m_Player_Movement;
             public InputAction @Look => m_Wrapper.m_Player_Look;
             public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
-            public InputAction @Parry => m_Wrapper.m_Player_Parry;
+            public InputAction @Jump => m_Wrapper.m_Player_Jump;
             public InputAction @Dash => m_Wrapper.m_Player_Dash;
+            public InputAction @Build => m_Wrapper.m_Player_Build;
             public InputAction @Strike => m_Wrapper.m_Player_Strike;
             public InputAction @EscapeMenu => m_Wrapper.m_Player_EscapeMenu;
             public InputAction @ChangeMapForward => m_Wrapper.m_Player_ChangeMapForward;
@@ -469,12 +491,15 @@ namespace UnityEngine.InputSystem
                     @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                     @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                     @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
-                    @Parry.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnParry;
-                    @Parry.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnParry;
-                    @Parry.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnParry;
+                    @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                    @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                    @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                     @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                     @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
                     @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                    @Build.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBuild;
+                    @Build.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBuild;
+                    @Build.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBuild;
                     @Strike.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStrike;
                     @Strike.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStrike;
                     @Strike.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStrike;
@@ -500,12 +525,15 @@ namespace UnityEngine.InputSystem
                     @Shoot.started += instance.OnShoot;
                     @Shoot.performed += instance.OnShoot;
                     @Shoot.canceled += instance.OnShoot;
-                    @Parry.started += instance.OnParry;
-                    @Parry.performed += instance.OnParry;
-                    @Parry.canceled += instance.OnParry;
+                    @Jump.started += instance.OnJump;
+                    @Jump.performed += instance.OnJump;
+                    @Jump.canceled += instance.OnJump;
                     @Dash.started += instance.OnDash;
                     @Dash.performed += instance.OnDash;
                     @Dash.canceled += instance.OnDash;
+                    @Build.started += instance.OnBuild;
+                    @Build.performed += instance.OnBuild;
+                    @Build.canceled += instance.OnBuild;
                     @Strike.started += instance.OnStrike;
                     @Strike.performed += instance.OnStrike;
                     @Strike.canceled += instance.OnStrike;
@@ -545,8 +573,9 @@ namespace UnityEngine.InputSystem
             void OnMovement(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
             void OnShoot(InputAction.CallbackContext context);
-            void OnParry(InputAction.CallbackContext context);
+            void OnJump(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
+            void OnBuild(InputAction.CallbackContext context);
             void OnStrike(InputAction.CallbackContext context);
             void OnEscapeMenu(InputAction.CallbackContext context);
             void OnChangeMapForward(InputAction.CallbackContext context);

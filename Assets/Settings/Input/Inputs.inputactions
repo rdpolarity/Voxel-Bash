@@ -30,7 +30,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Parry",
+                    "name": "Jump",
                     "type": "Button",
                     "id": "a0886e34-a123-42c4-8f6f-7caa9d7b22e3",
                     "expectedControlType": "Button",
@@ -41,6 +41,14 @@
                     "name": "Dash",
                     "type": "Button",
                     "id": "34efe694-fb2e-470c-a6b5-587fb932455b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Build",
+                    "type": "Button",
+                    "id": "a63fa5b0-8f5e-4216-a09c-4e978d0a27a2",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -108,7 +116,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Parry",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -119,14 +127,14 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Parry",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "16c8005b-7e52-4caa-b75a-cf58e72f32c5",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -318,6 +326,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ChangeMapBackwards",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cfd0f56f-6eab-41bc-814f-20be4d320552",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Build",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

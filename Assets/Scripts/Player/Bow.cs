@@ -31,14 +31,15 @@ public class Bow : MonoBehaviour
 
     private AimIndicator indicator;
 
+
+    public bool Charging { get; set; }
+    public Vector3 Dir { get { return dir; } set { dir = value; } }
+
     // Start is called before the first frame update
     void Start()
     {
         indicator = GetComponentInChildren<AimIndicator>();
     }
-
-    public bool Charging { get; set; }
-    public Vector3 Dir { get { return dir; } set { dir = value; } }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -46,6 +47,7 @@ public class Bow : MonoBehaviour
         cooldownTimer -= Time.fixedDeltaTime;
         if (cooldownTimer < 0)
         {
+            cooldownImage.enabled = false;
             if (Charging)
             {
                 charge += Time.deltaTime * chargeRate;
@@ -56,8 +58,9 @@ public class Bow : MonoBehaviour
             {
                 indicator.gameObject.SetActive(false);
             }
+        } else {
+            cooldownImage.enabled = true;
         }
-        Debug.Log(1 - cooldownTimer / cooldown);
         cooldownImage.transform.LookAt(Camera.main.transform);
         cooldownImage.fillAmount = Mathf.Clamp(1 - cooldownTimer / cooldown, 0 , 1);
     }
@@ -68,8 +71,9 @@ public class Bow : MonoBehaviour
         indicator.Clear();
         charge = 0;
         Charging = false;
-
-        player.CmdShoot(pos, dir, pow);
-        cooldownTimer = cooldown;
+        if (cooldownTimer < 0) {
+            player.CmdShoot(pos, dir, pow);
+            cooldownTimer = cooldown;
+        }
     }
 }

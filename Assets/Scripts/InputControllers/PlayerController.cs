@@ -40,6 +40,8 @@ public class PlayerController : NetworkBehaviour
 
     // debug
     public bool isMoving = false;
+    
+    private bool isBuilding = false;
 
     // debug set
     public PlayerStateMachine stateMachine { get; private set; }
@@ -108,7 +110,7 @@ public class PlayerController : NetworkBehaviour
         if (!isLocalPlayer) return;
 
         inputDisableTimer -= Time.deltaTime;
-        if (inputDisableTimer < 0 && grounded.active)
+        if (inputDisableTimer < 0)
         {
             velocity = new Vector3(movement.x * speed, 0, movement.y * speed);
             rigidbody.AddForce(velocity, ForceMode.Impulse);
@@ -139,6 +141,13 @@ public class PlayerController : NetworkBehaviour
             currDashCooldown = 0;
         }
         myVelocity = rigidbody.velocity;
+
+        if (isBuilding) {
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+            Build();
+        } else {
+            rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+        }
     }
 
     public void DisableInput(float duration)
@@ -165,6 +174,48 @@ public class PlayerController : NetworkBehaviour
         movement = context.ReadValue<Vector2>();
     }
 
+    [SerializeField]
+    private GameObject spawnableBuildBlock;
+
+    private void Build() {
+        if (grounded.active) {
+            var blockLocation = new Vector3(Mathf.RoundToInt(transform.position.x), 1, Mathf.RoundToInt(transform.position.z));
+            if (!Physics.CheckSphere (blockLocation, 0.1f)) { // Check if there's already a block there
+                var newBlock = Instantiate(spawnableBuildBlock, blockLocation, Quaternion.identity);
+                NetworkServer.Spawn(newBlock);
+            }
+        }
+    }
+
+    // private bool CheckIfBlockBelow() {
+    //     RaycastHit hit;
+    //     if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, 1))
+    //     {
+    //         if (hit.transform.gameObject.tag == "Tile") {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     }
+    //     else
+    //     {
+    //         return false;
+    //     }
+    // }
+
+    public void OnBuild(InputAction.CallbackContext context) {
+        if (!isLocalPlayer) return;
+        if (context.performed)
+        {
+            isBuilding = true;
+        }
+
+        if (context.canceled)
+        {
+            isBuilding = false;
+        }
+    }
+
     public void OnDash(InputAction.CallbackContext context)
     {
         if (!isLocalPlayer) return;
@@ -188,13 +239,14 @@ public class PlayerController : NetworkBehaviour
     {
         startingVelocity = new Vector3(movement.x * speed, 0, movement.y * speed);
         startingTime = Time.time;
+        var currentY = transform.position.y;
         while(Time.time < startingTime + dashTimer)
         {
             transform.Translate(startingVelocity * dashMultiplier * Time.deltaTime, Space.World);
+            transform.position = new Vector3(transform.position.x, currentY, transform.position.z);
             yield return null;
         }
     }
-
 
     public void OnShoot(InputAction.CallbackContext context)
     {
@@ -221,5 +273,12 @@ public class PlayerController : NetworkBehaviour
         projectile.transform.position = bow.transform.position + dir/2;
         projectile.GetComponent<Rigidbody>().velocity = pow;
         NetworkServer.Spawn(projectile);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Kill") {
+            transform.position = VoxelBashNetworkManager.singleton.GetStartPosition().transform.position;
+        }
     }
 }
