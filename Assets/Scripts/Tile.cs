@@ -8,6 +8,7 @@ public class Tile : MonoBehaviour
 {
     public GameObject nestedBlock;
     public GameObject explosionEffect;
+    public GameObject spawnOnDestroyed;
     public Vector2 coordinates;
     public List<Tile> neighbours;
     
@@ -16,6 +17,7 @@ public class Tile : MonoBehaviour
     {
         Debug.Log("Destroyed");
         if (explosionEffect != null) Instantiate(explosionEffect, transform.position, transform.rotation);
+        if (spawnOnDestroyed != null) Instantiate(spawnOnDestroyed, transform.position, transform.rotation);
         foreach (Tile t in neighbours)
         {
             t.neighbours.Remove(this);
