@@ -1,42 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using RDPolarity.Controllers;
 
-public class PlayerMovingState : PlayerGroundedState
+namespace RDPolarity.StateMachine
 {
-    public PlayerMovingState(PlayerController player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
+    public class PlayerMovingState : PlayerGroundedState
     {
-        
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
-
-        if (player.isMoving == false)
+        public PlayerMovingState(PlayerController playerController, PlayerStateMachine stateMachine, string animBoolName) : base(playerController, stateMachine, animBoolName)
         {
-            stateMachine.ChangeState(player.idleState);
+        
         }
-    }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
-        DoChecks();
-    }
+        public override void Enter()
+        {
+            base.Enter();
+        }
 
-    public override void DoChecks()
-    {
-        base.DoChecks();
+        public override void Exit()
+        {
+            base.Exit();
+        }
+
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
+
+            if (PlayerController.IsMoving == false)
+            {
+                stateMachine.ChangeState(PlayerController.IdleState);
+            }
+        }
+
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+            DoChecks();
+        }
+
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
     }
 }

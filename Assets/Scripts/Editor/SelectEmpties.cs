@@ -1,24 +1,30 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
-public class SelectEmpties : Editor {    
-    [MenuItem("MyMenu/SelectMissing")]
-    static void SelectMissing(MenuCommand command)
-    {
-        Transform[] ts = FindObjectsOfType<Transform>();
-        List<GameObject> selection = new List<GameObject>();
-        foreach(Transform t in ts)
+using UnityEngine;
+
+namespace RDPolarity.Editor
+{
+    /// <summary>
+    /// Selects all objects in the scene hierarchy with a missing script
+    /// </summary>
+    public class SelectEmpties : UnityEditor.Editor {    
+        [MenuItem("MyMenu/SelectMissing")]
+        static void SelectMissing(MenuCommand command)
         {
-            Component[] cs = t.gameObject.GetComponents<Component>();
-            foreach(Component c in cs)
+            Transform[] ts = FindObjectsOfType<Transform>();
+            List<GameObject> selection = new List<GameObject>();
+            foreach(Transform t in ts)
             {
-                if (c == null)
+                Component[] cs = t.gameObject.GetComponents<Component>();
+                foreach(Component c in cs)
                 {
-                    selection.Add(t.gameObject);
+                    if (c == null)
+                    {
+                        selection.Add(t.gameObject);
+                    }
                 }
             }
+            Selection.objects = selection.ToArray();
         }
-        Selection.objects = selection.ToArray();
     }
 } 

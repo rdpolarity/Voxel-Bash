@@ -1,37 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using RDPolarity.Controllers;
 
-public class PlayerGroundedState : PlayerState
+namespace RDPolarity.StateMachine
 {
-    public PlayerGroundedState(PlayerController player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
+    public class PlayerGroundedState : PlayerState
     {
+        public PlayerGroundedState(PlayerController playerController, PlayerStateMachine stateMachine, string animBoolName) : base(playerController, stateMachine, animBoolName)
+        {
 
-    }
+        }
 
-    public override void Enter()
-    {
-        base.Enter();
-    }
+        public override void Enter()
+        {
+            base.Enter();
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
-    }
+        public override void Exit()
+        {
+            base.Exit();
+        }
 
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
 
-    }
+        }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
-    }
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+        }
 
-    public override void DoChecks()
-    {
-        base.DoChecks();
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
     }
 }

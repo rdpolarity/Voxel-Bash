@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class LobbyManager : Singleton<LobbyManager>
+namespace RDPolarity.Singletons
 {
-    private int selectedMap = 0;
+    public class LobbyManager : Singleton<LobbyManager>
+    {
+        private int selectedMap = 0;
 
-    public int SelectedMap { get => selectedMap; set => selectedMap = value; }
+        public int SelectedMap { get => selectedMap; set => selectedMap = value; }
+    }
 }

@@ -1,50 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
+using RDPolarity.Controllers;
 using UnityEngine;
 
-public class PlayerState
+namespace RDPolarity.StateMachine
 {
-    protected PlayerController player;
-    protected PlayerStateMachine stateMachine;
-    //protected RigidBody playerRigidBody;
-
-    protected float startTime;
-
-    private string animBoolName;
-
-    public PlayerState(PlayerController player, PlayerStateMachine stateMachine, string animBoolName)
+    public class PlayerState
     {
-        this.player = player;
-        //this.playerRigidBody = playerRigidBody;
-        this.stateMachine = stateMachine;
-        this.animBoolName = animBoolName;
-    }
+        protected PlayerController PlayerController;
+        protected PlayerStateMachine stateMachine;
+        //protected RigidBody playerRigidBody;
 
-    public virtual void Enter()
-    {
-        DoChecks();
-        player.animator.SetBool("animBoolName", true);
-        startTime = Time.time;
-        Debug.Log(animBoolName);
-    }
+        protected float startTime;
 
-    public virtual void Exit()
-    {
-        player.animator.SetBool("animBoolName", false);
-    }
+        private string animBoolName;
 
-    public virtual void LogicUpdate()
-    {
+        public PlayerState(PlayerController playerController, PlayerStateMachine stateMachine, string animBoolName)
+        {
+            this.PlayerController = playerController;
+            //this.playerRigidBody = playerRigidBody;
+            this.stateMachine = stateMachine;
+            this.animBoolName = animBoolName;
+        }
 
-    }
+        public virtual void Enter()
+        {
+            DoChecks();
+            PlayerController.animator.SetBool("animBoolName", true);
+            startTime = Time.time;
+            Debug.Log(animBoolName);
+        }
 
-    public virtual void PhysicsUpdate()
-    {
-        DoChecks();
-    }
+        public virtual void Exit()
+        {
+            PlayerController.animator.SetBool("animBoolName", false);
+        }
 
-    public virtual void DoChecks()
-    {
+        public virtual void LogicUpdate()
+        {
 
+        }
+
+        public virtual void PhysicsUpdate()
+        {
+            DoChecks();
+        }
+
+        public virtual void DoChecks()
+        {
+
+        }
     }
 }

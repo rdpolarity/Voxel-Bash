@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+using RDPolarity.Controllers;
 using UnityEngine;
 
-public class HurtBox : MonoBehaviour
+namespace RDPolarity.Player
 {
-    PlayerController player;
-
-    private void Start()
+    public class HurtBox : MonoBehaviour
     {
-        player = GetComponent<PlayerController>();
-    }
+        PlayerController _playerController;
+
+        private void Start()
+        {
+            _playerController = GetComponent<PlayerController>();
+        }
 
     
+    }
 }

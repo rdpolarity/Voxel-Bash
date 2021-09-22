@@ -1,38 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Grounded : MonoBehaviour
+namespace RDPolarity.Player
 {
-    public bool active;
-    [SerializeField]
-    private int tilecount;
-
-    private void OnTriggerEnter(Collider collision)
+    public class Grounded : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("Tile") || collision.gameObject.CompareTag("Indestructable"))
-        {
-            tilecount += 1;
-        }
-    }
+        public bool active;
+        [SerializeField]
+        private int tilecount;
 
-    private void OnTriggerExit(Collider collision)
-    {
-        if(collision.gameObject.CompareTag("Tile") || collision.gameObject.CompareTag("Indestructable"))
+        private void OnTriggerEnter(Collider collision)
         {
-            tilecount -= 1;
+            if (collision.gameObject.CompareTag("Tile") || collision.gameObject.CompareTag("Indestructable"))
+            {
+                tilecount += 1;
+            }
         }
-    }
 
-    private void Update()
-    {
-        if (tilecount > 0)
+        private void OnTriggerExit(Collider collision)
         {
-            active = true;
+            if(collision.gameObject.CompareTag("Tile") || collision.gameObject.CompareTag("Indestructable"))
+            {
+                tilecount -= 1;
+            }
         }
-        else
+
+        private void Update()
         {
-            active = false;
+            if (tilecount > 0)
+            {
+                active = true;
+            }
+            else
+            {
+                active = false;
+            }
         }
     }
 }

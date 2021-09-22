@@ -1,44 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using RDPolarity.Controllers;
 
-public class PlayerFallingState : PlayerState
+namespace RDPolarity.StateMachine
 {
-    bool isGrounded = false;
-
-    public PlayerFallingState(PlayerController player, PlayerStateMachine stateMachine, string animBoolName) : base(player, stateMachine, animBoolName)
+    public class PlayerFallingState : PlayerState
     {
+        bool isGrounded = false;
 
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
-
-        if(isGrounded)
+        public PlayerFallingState(PlayerController playerController, PlayerStateMachine stateMachine, string animBoolName) : base(playerController, stateMachine, animBoolName)
         {
-            stateMachine.ChangeState(player.moveState); // add landing state?
+
         }
-    }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
+        public override void Enter()
+        {
+            base.Enter();
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
+
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
+
+            if(isGrounded)
+            {
+                stateMachine.ChangeState(PlayerController.MoveState); // add landing state?
+            }
+        }
+
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
         
-    }
+        }
 
-    public override void DoChecks()
-    {
-        base.DoChecks();
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
     }
 }

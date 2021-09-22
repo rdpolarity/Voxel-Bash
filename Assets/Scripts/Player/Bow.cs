@@ -1,79 +1,81 @@
-using System.Collections;
-using System.Collections.Generic;
-using Mirror;
+using RDPolarity.Controllers;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class Bow : MonoBehaviour
+namespace RDPolarity.Player
 {
-    private float charge;
-
-    [SerializeField]
-    private PlayerController player;
-    [SerializeField]
-    private Image cooldownImage;
-    private Canvas cooldownCanvas;
-
-    [SerializeField]
-    private float power;
-    [SerializeField]
-    private float chargeRate;
-    [SerializeField]
-    private float minForce;
-    [SerializeField]
-    private float maxForce;
-    [SerializeField]
-    private float cooldown;
-
-    private float cooldownTimer;
-
-    private Vector3 dir = Vector3.zero;
-
-    private AimIndicator indicator;
-
-
-    public bool Charging { get; set; }
-    public Vector3 Dir { get { return dir; } set { dir = value; } }
-
-    // Start is called before the first frame update
-    void Start()
+    public class Bow : MonoBehaviour
     {
-        indicator = GetComponentInChildren<AimIndicator>();
-    }
+        private float charge;
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        cooldownTimer -= Time.fixedDeltaTime;
-        if (cooldownTimer < 0)
+        [FormerlySerializedAs("player")] [SerializeField]
+        private PlayerController playerController;
+        [SerializeField]
+        private Image cooldownImage;
+        private Canvas cooldownCanvas;
+
+        [SerializeField]
+        private float power;
+        [SerializeField]
+        private float chargeRate;
+        [SerializeField]
+        private float minForce;
+        [SerializeField]
+        private float maxForce;
+        [SerializeField]
+        private float cooldown;
+
+        private float cooldownTimer;
+
+        private Vector3 dir = Vector3.zero;
+
+        private AimIndicator indicator;
+
+
+        public bool Charging { get; set; }
+        public Vector3 Dir { get { return dir; } set { dir = value; } }
+
+        // Start is called before the first frame update
+        void Start()
         {
-            cooldownImage.enabled = false;
-            if (Charging)
-            {
-                charge += Time.deltaTime * chargeRate;
-                indicator.gameObject.SetActive(true);
-                indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), transform.position + dir);
-            }
-            else
-            {
-                indicator.gameObject.SetActive(false);
-            }
-        } else {
-            cooldownImage.enabled = true;
+            indicator = GetComponentInChildren<AimIndicator>();
         }
-        cooldownImage.transform.LookAt(Camera.main.transform);
-        cooldownImage.fillAmount = Mathf.Clamp(1 - cooldownTimer / cooldown, 0 , 1);
-    }
 
-    public void shoot(Vector3 pos)
-    {
-        var pow = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f,0));
-        indicator.Clear();
-        charge = 0;
-        Charging = false;
-        if (cooldownTimer < 0) {
-            player.CmdShoot(pos, dir, pow);
-            cooldownTimer = cooldown;
+        // Update is called once per frame
+        void FixedUpdate()
+        {
+            cooldownTimer -= Time.fixedDeltaTime;
+            if (cooldownTimer < 0)
+            {
+                cooldownImage.enabled = false;
+                if (Charging)
+                {
+                    charge += Time.deltaTime * chargeRate;
+                    indicator.gameObject.SetActive(true);
+                    indicator.DrawIndicator(Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)), transform.position + dir);
+                }
+                else
+                {
+                    indicator.gameObject.SetActive(false);
+                }
+            } else {
+                cooldownImage.enabled = true;
+            }
+            cooldownImage.transform.LookAt(Camera.main.transform);
+            cooldownImage.fillAmount = Mathf.Clamp(1 - cooldownTimer / cooldown, 0 , 1);
+        }
+
+        public void shoot(Vector3 pos)
+        {
+            var pow = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f,0));
+            indicator.Clear();
+            charge = 0;
+            Charging = false;
+            if (cooldownTimer < 0) {
+                playerController.CmdShoot(pos, dir, pow);
+                cooldownTimer = cooldown;
+            }
         }
     }
 }
