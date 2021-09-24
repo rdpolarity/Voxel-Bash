@@ -169,7 +169,6 @@ GameObject:
   - component: {fileID: 5824983082867877698}
   - component: {fileID: 985633281554346634}
   - component: {fileID: 238433933065246005}
-  - component: {fileID: -8409547683196692318}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -225,6 +224,8 @@ MonoBehaviour:
   facing: {x: 0, y: 0, z: 0}
   spawnableBuildBlock: {fileID: 7202720877770313804, guid: 50c75866e892a504e93662e68a6d357b, type: 3}
   arrow: {fileID: 3464475405107332064, guid: db2b0cccd655dee47bc6b6403a65e332, type: 3}
+  swordSlash: {fileID: 1130446560849736, guid: c4d564b5d4682ad46b8621f0fa6f40d9, type: 3}
+  onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
 --- !u!114 &4544073927636467284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +304,19 @@ MonoBehaviour:
     m_ActionId: 34efe694-fb2e-470c-a6b5-587fb932455b
     m_ActionName: Player/Dash[/Keyboard/shift]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8311832726710157240}
+        m_TargetAssemblyTypeName: RDPolarity.Controllers.PlayerController, Assembly-CSharp
+        m_MethodName: OnStrike
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: e00c0eaf-b13e-4e4c-8c44-6d649e7c7489
     m_ActionName: Player/Strike[/Mouse/leftButton]
   - m_PersistentCalls:
@@ -463,7 +476,7 @@ MonoBehaviour:
   _extrapolationSpan: 0
   _teleportThreshold: 0
   _clientAuthoritative: 1
-  _synchronizeToOwner: 1
+  _synchronizeToOwner: 0
   _compressSmall: 1
   _synchronizePosition: 0
   _snapPosition: 0
@@ -491,28 +504,6 @@ MonoBehaviour:
   _synchronizeInterval: 0.1
   _clientAuthoritative: 1
   _synchronizeToOwner: 0
---- !u!114 &-8409547683196692318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2736277583398175609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83392ae5c1b731446909f252fd494ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.01
-  target: {fileID: -3485345082110988708}
-  clientAuthority: 0
-  syncVelocity: 1
-  clearVelocity: 0
-  velocitySensitivity: 0.1
-  syncAngularVelocity: 1
-  clearAngularVelocity: 0
-  angularVelocitySensitivity: 0.1
 --- !u!1 &2923902259316431472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,13 +1259,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
---- !u!95 &1882352509146524678 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2738340043145328431, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
-  m_PrefabInstance: {fileID: 4332458857954138921}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6606159848698705758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7472095209857985655, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
+  m_PrefabInstance: {fileID: 4332458857954138921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1882352509146524678 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2738340043145328431, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
   m_PrefabInstance: {fileID: 4332458857954138921}
   m_PrefabAsset: {fileID: 0}

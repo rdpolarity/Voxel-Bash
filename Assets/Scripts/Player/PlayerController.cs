@@ -27,7 +27,9 @@ namespace RDPolarity.Controllers
         [SerializeField] private Vector3 facing = Vector3.zero;
         [SerializeField] private GameObject spawnableBuildBlock;
         [SerializeField] private GameObject arrow;
-
+        [SerializeField] private GameObject swordSlash;
+        [SerializeField] private GameObject onHitParticles;
+        
         // Properties
         public bool IsMoving => isMoving;
         public PlayerStateMachine StateMachine { get; private set; }
@@ -51,7 +53,7 @@ namespace RDPolarity.Controllers
         private string[] _outlineColours = new string[] {"Red", "Green", "Blue", "Purple"};
 
         #region Unity Methods
-
+        
         private void Awake()
         {
             animator.SetBool("isMoving", false);
@@ -138,6 +140,28 @@ namespace RDPolarity.Controllers
             _inputDisableTimer = duration;
         }
 
+        private bool _canStrike = true;
+        public void OnStrike(InputAction.CallbackContext context)
+        {
+            if (!isLocalPlayer) return;
+
+            if (context.performed)
+            {
+                if (_canStrike)
+                {
+                    Instantiate(swordSlash, transform);
+                    _canStrike = false;
+                    StartCoroutine(StartStrikeCooldown());
+                }
+            }
+        }
+
+        IEnumerator StartStrikeCooldown()
+        {
+            yield return new WaitForSeconds(0.5f);
+            _canStrike = true;
+        }
+        
         public void OnMovement(InputAction.CallbackContext context)
         {
             if (!isLocalPlayer) return;
@@ -254,6 +278,13 @@ namespace RDPolarity.Controllers
 
         private void OnCollisionEnter(Collision collision)
         {
+            if (collision.gameObject.CompareTag("Kill") | collision.gameObject.CompareTag("Arrow"))
+            {
+                if (onHitParticles != null)
+                {
+                    Instantiate(onHitParticles, transform.position, transform.rotation);
+                }
+            }
             if (collision.gameObject.CompareTag("Kill"))
             {
                 transform.position = NetworkManager.singleton.GetStartPosition().transform.position;

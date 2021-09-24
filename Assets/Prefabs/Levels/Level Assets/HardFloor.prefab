@@ -110,8 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0e3e4ccde2577d4b80248dfa3d06426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 3896048585741395246, guid: b9d7fb97693c5f14dbd9dd2bfb608741, type: 3}
+  spawnOnDestroyed: {fileID: 0}
   nestedBlock: {fileID: 6613772577202858586}
-  explosionEffect: {fileID: 6913046579094719160, guid: b85e20680de894d47b1e76b71cfc4f52, type: 3}
   coordinates: {x: 0, y: 0}
   neighbours: []
 --- !u!114 &-6630330193780725650

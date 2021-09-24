@@ -2,17 +2,397 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8c0a31-29da-4c2e-8cf9-9f111d77f52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/External.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/External/PreloadPrefabs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/External/PreloadPrefabs.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack11bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack11bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack12bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack12bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Distortion.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Distortion.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/EmberExpl2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/EmberExpl2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare21bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare21bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare22cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare22cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare2cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare2cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash30bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash30bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/FlashGroundCG.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/FlashGroundCG.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Fresnel2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Fresnel2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17cg2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17cg2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Grunge5bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Grunge5bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Ice4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Ice4.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Impact1dn.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Impact1dn.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Leave9bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Leave9bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Mask50dn.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Mask50dn.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/MaskPoint1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/MaskPoint1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion12sc.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion12sc.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion3bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion3bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point11cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point11cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point12cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point12cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point19bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point19bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SlashDistortion.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SlashDistortion.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke12cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke12cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke17cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke17cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke21bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke21bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke27bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke27bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke32bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke32bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Snow4bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Snow4bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SoftNoise69bd.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SoftNoise69bd.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SparkTrail1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SparkTrail1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone3bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone3bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash4.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash4.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash5.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash5.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash6.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash6.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash7.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash7.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash8.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash8.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail21cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail21cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70bcg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70bcg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70dn.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70dn.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail71cg.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail71cg.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/TwoSides37.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/TwoSides37.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Waves23bcg2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Waves23bcg2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cell.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cell.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cone2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cone2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/HOVLCrystalPiese.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/HOVLCrystalPiese.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/IceSpikes2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/IceSpikes2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/MagicSword.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/MagicSword.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadCV.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadCV.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle6.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle6.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash3.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash3.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash4.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash4.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Stone1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Stone1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Sword.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Sword.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Twist2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Twist2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/WindPath1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/WindPath1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/СylindricalСone2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/СylindricalСone2.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Spikes attack.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Spikes attack.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 10.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 10.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 11.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 11.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 12.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 12.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 13.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 13.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 14.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 14.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 15.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 15.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 16.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 16.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 17.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 17.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 4.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 4.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 5.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 5.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 6.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 6.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 7.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 7.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 8.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 8.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 9.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 9.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 3.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 4.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 4.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 5.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 5.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 6.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 6.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 7.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 7.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_Fresnel.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_Fresnel.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/BlendDistort.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/BlendDistort.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_TwoSides.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_TwoSides.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/DissolveNoise.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/DissolveNoise.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Distortion.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Distortion.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Explosion.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Explosion.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Ice.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Ice.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Scroll.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Scroll.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/SwordSlash.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/SwordSlash.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack11.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack12.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crater62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crater62.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/EmberExpl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/EmberExpl2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Fire13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Fire13.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare20.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare21.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare22.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare23.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare31.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash21.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash30.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash31.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Glow1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Glow1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient17.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient3r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient3r.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Grunge5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Grunge5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/HUE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/HUE.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Ice4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Ice4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Impact1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Impact1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Leave9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Leave9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask50.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask53.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/MaskForShader.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/MaskForShader.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion12.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion9.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise28.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise34.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35n.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35t.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35t.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise41.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise43b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise43b.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise59.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise59.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise62.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise69.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise69.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/NormalMap8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/NormalMap8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Paint1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Paint1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point11.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point12.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point19.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke12.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke17.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke18n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke18n.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke21.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke24.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke27.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke32.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SmokeAnim1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SmokeAnim1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Snow4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Snow4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Motion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Motion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Albedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Albedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Height.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Height.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_MS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_MS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail21.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail55.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail58.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail58.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail66.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail66.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail70.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail70.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail71.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail71.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail75.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail75.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Waves23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Waves23.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX/Demo scene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX/Demo scene/Sword slash demo.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX/Demo scene/Sword slash demo.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/Editor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/Editor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PreloadPrefabs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PreloadPrefabs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Preload/NetworkManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Preload/NetworkManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Knockback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Knockback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
@@ -33,8 +413,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.9/Runtime/Impulse/CinemachineImpulseManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Basic/PlayerCameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.4.0/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepEdgeEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
@@ -104,7 +486,7 @@
       <workItem from="1632319004601" duration="504000" />
       <workItem from="1632319586754" duration="6405000" />
       <workItem from="1632326049890" duration="4147000" />
-      <workItem from="1632464564876" duration="1674000" />
+      <workItem from="1632464564876" duration="6142000" />
     </task>
     <servers />
   </component>

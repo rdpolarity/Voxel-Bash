@@ -1,3 +1,4 @@
+using Mirror;
 using UnityEngine;
 
 namespace RDPolarity.Player
@@ -16,10 +17,13 @@ namespace RDPolarity.Player
         // call this function to add an impact force:
         public void AddImpact(Vector3 dir, float force)
         {
-            dir.Normalize();
-            if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
-            impact += -dir.normalized * force / mass;
-            Debug.Log(impact.magnitude);
+            // if (NetworkServer.active)
+            // {
+            //     dir.Normalize();
+            //     if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
+            //     impact += -dir.normalized * force / mass;
+            //     Debug.Log(impact.magnitude);
+            // }
         }
 
         void Update()
