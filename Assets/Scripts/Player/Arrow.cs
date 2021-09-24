@@ -1,7 +1,9 @@
+using System;
 using Mirror;
 using RDPolarity.Arena;
 using RDPolarity.Controllers;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RDPolarity.Player
 {
@@ -15,10 +17,21 @@ namespace RDPolarity.Player
 
         [SerializeField]
         private float maxTiles;
+        [SerializeField] private GameObject onHitParticles;
         private float tilesHit;
 
         private Quaternion targetRotation;
-
+        
+                
+        [Serializable] public class OnHitEvent : UnityEvent { }
+        public OnHitEvent onHitEvent = new OnHitEvent();
+        
+        [Serializable] public class OnHitSelfEvent : UnityEvent { }
+        public OnHitSelfEvent onHitSelfEvent = new OnHitSelfEvent();
+        
+        [Serializable] public class OnHitOthersEvent : UnityEvent { }
+        public OnHitOthersEvent onHitOthersEvent = new OnHitOthersEvent();
+        
         public override void OnStartClient()
         {
             base.OnStartClient();
@@ -85,8 +98,10 @@ namespace RDPolarity.Player
             if (other.gameObject.CompareTag("Player"))
             {
                 Debug.Log("Hit player");
+                onHitEvent.Invoke();;
+                if (!isLocalPlayer) onHitOthersEvent.Invoke();;
+                Instantiate(onHitParticles, transform.position, transform.rotation);
                 other.GetComponentInParent<Rigidbody>().AddForce(rigidbody.velocity*2, ForceMode.Impulse);
-                other.GetComponentInParent<PlayerController>().DisableInput(0.2f);
                 NetworkServer.Destroy(gameObject);
             }
         }

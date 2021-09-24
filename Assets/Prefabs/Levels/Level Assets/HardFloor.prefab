@@ -113,6 +113,13 @@ MonoBehaviour:
   explosionEffect: {fileID: 3896048585741395246, guid: b9d7fb97693c5f14dbd9dd2bfb608741, type: 3}
   spawnOnDestroyed: {fileID: 0}
   nestedBlock: {fileID: 6613772577202858586}
+  blockSound:
+    Guid:
+      Data1: -2026924358
+      Data2: 1267019663
+      Data3: 1026184106
+      Data4: -2089744666
+    Path: event:/General/Block
   coordinates: {x: 0, y: 0}
   neighbours: []
 --- !u!114 &-6630330193780725650

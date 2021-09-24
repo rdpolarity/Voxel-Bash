@@ -2,399 +2,865 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8c0a31-29da-4c2e-8cf9-9f111d77f52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack11bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack11bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack12bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Crack12bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Distortion.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Distortion.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/DistortionSmoke18.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/EmberExpl2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/EmberExpl2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare21bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare21bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare22cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare22cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare23cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare2cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare2cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flare31bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash21cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash30bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash30bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Flash31bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/FlashGroundCG.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/FlashGroundCG.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Fresnel2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Fresnel2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Glow1cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bcg2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17bd2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17cg2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Gradient17cg2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Grunge5bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Grunge5bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Ice4.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Ice4.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Impact1dn.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Impact1dn.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Leave9bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Leave9bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Mask50dn.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Mask50dn.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/MaskPoint1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/MaskPoint1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion12sc.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion12sc.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion3bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Motion3bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point11cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point11cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point12cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point12cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point19bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Point19bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SlashDistortion.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SlashDistortion.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke12cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke12cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke17cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke17cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke21bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke21bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke24cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke27bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke27bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke32bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Smoke32bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SmokeAnim1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Snow4bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Snow4bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SoftNoise69bd.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SoftNoise69bd.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SparkTrail1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SparkTrail1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone3bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Stone3bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash3.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash3.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash4.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash4.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash5.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash5.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash6.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash6.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash7.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash7.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash8.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/SwordSlash8.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail21cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail21cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70bcg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70bcg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70dn.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail70dn.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail71cg.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Trail71cg.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/TwoSides37.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/TwoSides37.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Waves23bcg2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Materials/Waves23bcg2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cell.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cell.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cone2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Cone2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/HOVLCrystalPiese.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/HOVLCrystalPiese.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/IceSpikes2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/IceSpikes2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/MagicSword.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/MagicSword.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadCV.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadCV.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle6.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/QuadToCircle6.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash3.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash3.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash4.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Slash4.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Stone1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Stone1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Sword.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Sword.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Twist2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/Twist2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/WindPath1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/WindPath1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/СylindricalСone2.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Models/СylindricalСone2.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Spikes attack.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Spikes attack.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 10.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 10.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 11.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 11.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 12.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 12.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 13.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 13.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 14.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 14.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 15.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 15.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 16.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 16.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 17.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 17.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 5.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 5.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 6.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 6.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 7.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 7.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 8.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 8.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 9.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash 9.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 5.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 5.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 6.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 6.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 7.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Prefabs/Sword Slash Combo 7.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_CenterGlow.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_Fresnel.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Add_Fresnel.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/BlendDistort.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/BlendDistort.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_CenterGlow.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_TwoSides.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Blend_TwoSides.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/DissolveNoise.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/DissolveNoise.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Distortion.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Distortion.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Explosion.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Explosion.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Ice.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Ice.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Scroll.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/Scroll.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/SwordSlash.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Shaders/SwordSlash.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack11.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crack12.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crater62.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Crater62.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/EmberExpl2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/EmberExpl2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Fire13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Fire13.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare20.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare21.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare22.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare23.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flare31.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash21.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash30.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Flash31.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Glow1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Glow1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient17.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient3r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient3r.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Gradient9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Grunge5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Grunge5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/HUE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/HUE.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Ice4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Ice4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Impact1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Impact1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Leave9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Leave9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask50.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Mask53.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/MaskForShader.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/MaskForShader.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion12.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Motion9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise28.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise34.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35n.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise35t.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise41.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise41.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise43b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise43b.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise59.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise62.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise62.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise69.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Noise69.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/NormalMap8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/NormalMap8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Paint1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Paint1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point11.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point12.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Point19.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Slash5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke12.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke17.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke18n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke18n.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke21.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke24.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke27.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Smoke32.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SmokeAnim1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SmokeAnim1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Snow4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Snow4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Motion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Motion.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/SparkTrail1Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Albedo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Albedo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Height.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Height.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_MS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_MS.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone1_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Stone3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail21.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail55.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail58.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail66.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail66.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail70.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail71.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail71.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail75.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Trail75.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Waves23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Packages/Hovl Studio/Sword slash VFX/Textures/Waves23.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX/Demo scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX/Demo scene/Sword slash demo.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/HierarchyPro/Editor/_SAVED_DATA/_SCENES/Assets/Packages/Hovl Studio/Sword slash VFX/Demo scene/Sword slash demo.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/AddIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/AddIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/ArrowDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/ArrowDown.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/ArrowIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/ArrowIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/ArrowUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/ArrowUp.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/BankIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/BankIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/Border.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/Border.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/BrowserIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/BrowserIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/CopyIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/CopyIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/Delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/Delete.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/EventIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/EventIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/FolderIconClosed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/FolderIconClosed.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/FolderIconOpen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/FolderIconOpen.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/LevelMeter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/LevelMeter.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/LevelMeterOff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/LevelMeterOff.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/NotFound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/NotFound.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SearchIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SearchIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SearchIconBlack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SearchIconBlack.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/Selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/Selected.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SelectedAlt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SelectedAlt.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SnapshotIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/SnapshotIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/StudioIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/StudioIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportOpen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportOpen.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportPlayButtonOff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportPlayButtonOff.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportPlayButtonOn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportPlayButtonOn.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportStopButtonOff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportStopButtonOff.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportStopButtonOn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/TransportStopButtonOn.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/previewemitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Editor Default Resources/FMOD/previewemitter.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/FMOD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/FMOD/FMODEmitter.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/FMOD/FMODEmitter.tiff.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/FMODUnity.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/FMODUnity.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/LICENSE.TXT.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/README.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Editor/FMODUnityResonanceEditor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Editor/FMODUnityResonanceEditor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Editor/FmodResonanceAudioRoomEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Editor/FmodResonanceAudioRoomEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/FMODUnityResonance.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/FMODUnityResonance.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/FmodResonanceAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/FmodResonanceAudio.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/FmodResonanceAudioRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/addons/ResonanceAudio/Scripts/FmodResonanceAudioRoom.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/ContinuousParameterIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/ContinuousParameterIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/CrossYellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/CrossYellow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/DiscreteParameterIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/DiscreteParameterIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/FMODLogoBlack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/FMODLogoBlack.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/FMODLogoWhite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/FMODLogoWhite.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/LabeledParameterIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/LabeledParameterIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/Preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/Preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/PreviewEmitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/PreviewEmitter.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/TickGreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/TickGreen.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/Wrench.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/images/Wrench.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platform_ios.mm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platform_ios.mm.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmod.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmod.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmodL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmodL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmodstudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmodstudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmodstudioL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libfmodstudioL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libresonanceaudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/arm64-v8a/libresonanceaudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmod.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmod.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmodL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmodL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmodstudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmodstudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmodstudioL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmodstudioL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libresonanceaudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libresonanceaudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/fmod.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/fmod.jar.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmod.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmod.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmodL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmodL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmodstudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmodstudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmodstudioL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libfmodstudioL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libresonanceaudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/lib/x86/libresonanceaudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/src/PlatformAndroid.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/android/src/PlatformAndroid.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/lib/libfmodstudiounityplugin.bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/lib/libfmodstudiounityplugin.bc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/lib/libfmodstudiounitypluginL.bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/lib/libfmodstudiounitypluginL.bc.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/src/PlatformWebGL.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/html5/src/PlatformWebGL.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounityplugin.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounityplugin.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounitypluginL.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounitypluginL.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounitypluginsimulator.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounitypluginsimulator.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounitypluginsimulatorL.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libfmodstudiounitypluginsimulatorL.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libresonanceaudio.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libresonanceaudio.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libresonanceaudiosimulator.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/lib/libresonanceaudiosimulator.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/src/PlatformIOS.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/ios/src/PlatformIOS.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86/libfmodstudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86/libfmodstudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86/libfmodstudioL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86/libfmodstudioL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libfmodstudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libfmodstudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libfmodstudioL.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libfmodstudioL.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libresonanceaudio.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libresonanceaudio.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/src/PlatformLinux.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/linux/src/PlatformLinux.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/MacOS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/MacOS/fmodstudio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/MacOS/fmodstudio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/_CodeSignature.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/_CodeSignature/CodeResources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/MacOS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/MacOS/fmodstudioL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/MacOS/fmodstudioL.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/_CodeSignature.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/_CodeSignature/CodeResources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/MacOS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/MacOS/resonanceaudio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/MacOS/resonanceaudio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/_CodeSignature.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/_CodeSignature/CodeResources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/_CodeSignature/CodeResources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/src/PlatformMac.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/mac/src/PlatformMac.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounityplugin.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounityplugin.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounitypluginL.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounitypluginL.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounitypluginsimulator.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounitypluginsimulator.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounitypluginsimulatorL.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/lib/libfmodstudiounitypluginsimulatorL.a.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/src/PlatformAppleTV.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/tvos/src/PlatformAppleTV.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmod.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmod.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmodL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmodL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmodstudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmodstudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmodstudioL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/arm/fmodstudioL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmod.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmod.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmodL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmodL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmodstudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmodstudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmodstudioL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x64/fmodstudioL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmod.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmod.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmodL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmodL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmodstudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmodstudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmodstudioL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/uwp/lib/x86/fmodstudioL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86/fmodstudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86/fmodstudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86/fmodstudioL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86/fmodstudioL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86/resonanceaudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86/resonanceaudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudioL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudioL.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/resonanceaudio.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/lib/x86_64/resonanceaudio.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/src/PlatformWindows.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/platforms/win/src/PlatformWindows.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/AutomatableSlots.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/AutomatableSlots.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/BankRefAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/BankRefAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/CodeGeneration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/CodeGeneration.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BankRefDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BankRefDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BankRefreshWindow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BankRefreshWindow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BankRefresher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BankRefresher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BoltIntegration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/BoltIntegration.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/CreateEventPopup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/CreateEventPopup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorBankRef.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorBankRef.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorEventRef.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorEventRef.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorParamRef.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorParamRef.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EditorUtils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventBrowser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventBrowser.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventCache.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventCache.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventRefDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventRefDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventReferenceUpdater.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/EventReferenceUpdater.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FMODEventPlayableEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FMODEventPlayableEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FMODEventTrackEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FMODEventTrackEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FMODUnityEditor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FMODUnityEditor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FileReorganizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FileReorganizer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FindAndReplace.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/FindAndReplace.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/ListView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/ListView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/LogViewer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/LogViewer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/ParamRefDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/ParamRefDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/SettingsEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/SettingsEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/SetupWizard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/SetupWizard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioBankLoaderEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioBankLoaderEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioEventEmitterEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioEventEmitterEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioEventEmitterGizmoDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioEventEmitterGizmoDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioGlobalParameterTriggerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioGlobalParameterTriggerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioListenerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioListenerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioParameterTriggerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Editor/StudioParameterTriggerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/EventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/EventHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/EventRefAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/EventRefAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/EventReference.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/EventReference.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/FMODEventPlayable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/FMODEventPlayable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/FMODEventTrack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/FMODEventTrack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/FMODRuntimeManagerOnGUIHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/FMODRuntimeManagerOnGUIHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/ParamRef.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/ParamRef.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/ParamRefAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/ParamRefAttribute.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Platform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Platform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformDefault.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformDefault.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformGroup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformMobileHigh.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformMobileHigh.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformMobileLow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformMobileLow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformPlayInEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/PlatformPlayInEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/RuntimeUtils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Settings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/Settings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioBankLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioBankLoader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioEventEmitter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioEventEmitter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioGlobalParameterTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioGlobalParameterTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioParameterTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/StudioParameterTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod_dsp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod_dsp.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod_errors.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod_errors.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod_studio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/src/fmod_studio.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Music/FMOD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Music/FMOD/Desktop.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Music/FMOD/Desktop/Master.bank" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Music/FMOD/Desktop/Master.bank.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Music/FMOD/Desktop/Master.strings.bank" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Music/FMOD/Desktop/Master.strings.bank.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/OneShotSoundEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/OneShotSoundEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Slash.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Slash.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodPoolParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodPoolParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodSplashParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodSplashParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodSplatParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodSplatParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodStreamParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Materials/BloodStreamParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Prefabs/BloodSprayEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Prefabs/BloodSprayEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Prefabs/BloodStreamEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Prefabs/BloodStreamEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodDropAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodDropAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodDropNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodDropNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodPoolAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodPoolAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodPoolNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodPoolNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodSprayNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodSprayNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodStreamAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Blood/Textures/BloodStreamAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Editor/PackageManagerAssembly.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageImportList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageImportList.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/DebrisParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/EmbersParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/EmbersParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/FlameParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/FlameParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/FlameRoundYellowParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/FlameRoundYellowParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/IgnitionFlameParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/LightningParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/LightningParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaExplosionParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaExplosionParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaFireParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/PlasmaFireParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/ShockWaveParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/ShockWaveParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeDarkParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeDarkParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeLightParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Materials/SmokeLightParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/BigExplosionEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/BigExplosionEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/DrippingFlames.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/DrippingFlames.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlameThrowerEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlameThrowerEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesEffects.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesEffects.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesParticleEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/FlamesParticleEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/PlasmaExplosionEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/PlasmaExplosionEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/RibbonSmoke.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/RibbonSmoke.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmallExplosionEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmallExplosionEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmokeEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmokeEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/TorchEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/TorchEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/WallFlames.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/WallFlames.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/DebrisParticleSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/DebrisParticleSheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/FlameParticleSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/FlameParticleSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundGreyParticleSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundGreyParticleSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundParticleSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/FlameRoundParticleSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/LightningParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/LightningParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/RoundSoftParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/RoundSoftParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuff02ParticleSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffNormalSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffNormalSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffParticleSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Textures/SmokePuffParticleSheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/DustMoteParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/DustMoteParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/Spark2Particle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/Spark2Particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/SparkParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Materials/SparkParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/DustMotesEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/DustMotesEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/ElectricalSparksEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/ElectricalSparksEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/SandSwirlsEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/SandSwirlsEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/SparksEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Prefabs/SparksEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Textures/DustMoteParticle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Textures/DustMoteParticle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Textures/SparkParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Misc Effects/Textures/SparkParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Profiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Profiles/EffectsProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Profiles/EffectsProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Animations/GunFire.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Animations/GunFire.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Animations/GunIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Animations/GunIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Controllers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Controllers/Gun.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Animation/Controllers/Gun.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Fonts/Roboto-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Fonts/Roboto-Thin.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Fonts/RobotoCondensed-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Fonts/RobotoCondensed-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/Background.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/Background.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/DarkDefault.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/DarkDefault.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/FleshSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/FleshSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/MetalSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/MetalSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/SandSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/SandSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/Skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/Skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/StoneSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/StoneSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/WoodSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Materials/WoodSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/BackGround.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/BackGround.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/FPSWeapon.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/FPSWeapon.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/LowMan.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/LowMan.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials/MazeLowMan.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials/MazeLowMan.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials/No Name.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials/No Name.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials/ShooterFPSWeapon.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Models/Materials/ShooterFPSWeapon.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Character.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Character.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Meat.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Meat.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Metal.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Metal.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Sand.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Sand.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Stone.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Stone.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/WaterFilled.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/WaterFilled.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/WaterFilledExtinguish.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/WaterFilledExtinguish.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Wood.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/PhysicsMaterials/Wood.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Extinguish.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Extinguish.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Flesh.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Flesh.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Metal.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Metal.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/ParticlesLight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/ParticlesLight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Sand.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Sand.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Stone.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Stone.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/WaterFilled.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/WaterFilled.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Wood.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Prefabs/Wood.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/DecalDestroyer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/DecalDestroyer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ExtinguishableFire.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ExtinguishableFire.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunAim.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunAim.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunShoot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunShoot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleCollision.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleCollision.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleExamples.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleExamples.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Shaders/SurfaceShader_VC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Shaders/SurfaceShader_VC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Sprites/UnityLogoSprite.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Sprites/UnityLogoSprite.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/BackgroundAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/BackgroundAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/CloudsAlpha.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/CloudsAlpha.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/CloudsNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/CloudsNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/CloudsOcclusion.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/CloudsOcclusion.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/DustPuffSmallParticleSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/DustPuffSmallParticleSheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/StoneAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/StoneAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/StoneNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/StoneNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/WoodAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/WoodAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/WoodNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/WoodNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/fleshNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/fleshNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/wood_tiled_02_a.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/wood_tiled_02_a.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/wood_tiled_02_n.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/wood_tiled_02_n.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/wood_tiled_02_o.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/wood_tiled_02_o.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/SmokeTrail.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/SmokeTrail.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/ImpactSplashParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/ImpactSplashParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/StormCloudParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/StormCloudParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterDropParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterDropParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterMistParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterMistParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterRipplesParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterRipplesParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterTrailParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Materials/WaterTrailParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Models/ImpactSplash.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Models/ImpactSplash.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Models/WaterFaucet.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Models/WaterFaucet.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/RainEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/RainEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/StormCloudEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/StormCloudEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/WaterDripEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/WaterDripEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/WaterfallEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/WaterfallEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/WaterfallSmallEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Prefabs/WaterfallSmallEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/CloudsParticleNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/CloudsParticleNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/CloudsParticleSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/CloudsParticleSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/ImpactSplashParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/ImpactSplashParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterDropParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterDropParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterMistParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterMistParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterRipplesParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterRipplesParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterTrailParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WaterEffects/Textures/WaterTrailParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletDecalMetal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletDecalMetal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletDecalStone.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletDecalStone.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletDecalWood.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletDecalWood.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletFleshDecal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletFleshDecal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/DustPuffParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/DustPuffParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/MuzzleFlashParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/MuzzleFlashParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/Projectile.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/Projectile.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/RocketTrailParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/RocketTrailParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/ShallCasing.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/ShallCasing.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/TinyStonesParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/TinyStonesParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/WaterStreamParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/WaterStreamParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/WoodSplintersParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/WoodSplintersParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/Materials/No Name.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/Materials/No Name.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/RocketWarhead.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/RocketWarhead.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/ShellCasing.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Models/ShellCasing.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshBigEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshBigEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshSmallEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshSmallEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactMetalEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactMetalEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactSandEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactSandEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactStoneEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactStoneEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerExtinguisherEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWaterContainerExtinguisherEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWoodEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactWoodEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/CartridgeEjectEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/CartridgeEjectEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/MuzzleFlashEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/MuzzleFlashEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/RocketTrailEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/RocketTrailEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodMist.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodMist.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodSplat2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodSplat2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodSprayAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodSprayAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreak.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreak.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleMetalThroughAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleMetalThroughAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleMetalThroughNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleMetalThroughNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleRockAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleRockAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleRockHeight.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleRockHeight.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleRockNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BulletHoleRockNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FlashParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FlashParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleHeight.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleHeight.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/StreamNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/StreamNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/TinyStonesNormalsSheet.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/TinyStonesNormalsSheet.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/TinyStonesParticleSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/TinyStonesParticleSheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WaterDropsParticle.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WaterDropsParticle.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WaterSplashParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WaterSplashParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WoodBulletHoleAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WoodBulletHoleAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WoodBulletHoleDepth.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WoodBulletHoleDepth.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WoodBulletHoleNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/WoodBulletHoleNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/woodSplintersAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/woodSplintersAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/woodSplintersNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/woodSplintersNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Assets/Version 3.4/Rainbow/rainbow SM.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Assets/Version 3.4/Rainbow/rainbow SM.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3 TOP DOWN LOW FOG 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3 TOP DOWN LOW FOG 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3 TOP DOWN LOW FOG.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3 TOP DOWN LOW FOG.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 Q.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/ARTnGAME/InfiniCLOUD/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 Q.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Sample/Scenes/DayNightCycle/SkyProfile-741169173868421736.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/Polaris - Low Poly Ecosystem/Jupiter - Procedural Sky/Sample/Scenes/DayNightCycle/SkyProfile-741169173868421736.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/SkyMaster/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3 TOP DOWN LOW FOG 4 VORTEX.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/SkyMaster/Scripts/V3.4 Scripts/ShaderVolumeClouds/ShaderVolumeCloudsSMV3.4 3 SM30 like SM20 H 1 BACK8 use 3 v3.4.3 TOP DOWN LOW FOG 4 VORTEX.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level Assets/ArenaFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level Assets/ArenaFloor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level Assets/HardFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level Assets/HardFloor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level Assets/NetworkedArenaFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level Assets/NetworkedArenaFloor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/PlayerHitEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/PlayerHitEffect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/SwordSlashEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/SwordSlashEffect.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Preload/NetworkManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Preload/NetworkManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Knockback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Knockback.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arena/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Arrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Bow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Bow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AudioManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,13 +883,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Basic/PlayerCameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.4.0/External/Poly2Tri/Triangulation/Delaunay/Sweep/DTSweepEdgeEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82ec470c913149358ad0c83ad628910c13a000/18/4fb89c20/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/External/PreloadPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Slash.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yUvTIoT1PqoqYyv5mX205HMBjR" />
   <component name="ProjectLevelVcsManager">
@@ -487,6 +951,7 @@
       <workItem from="1632319586754" duration="6405000" />
       <workItem from="1632326049890" duration="4147000" />
       <workItem from="1632464564876" duration="6142000" />
+      <workItem from="1632491622942" duration="7259000" />
     </task>
     <servers />
   </component>

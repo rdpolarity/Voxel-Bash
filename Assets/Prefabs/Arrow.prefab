@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 539733644235096346}
   - component: {fileID: 2200600917128272806}
   - component: {fileID: -1151288190903504849}
+  - component: {fileID: 7476817603881100599}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Arrow
@@ -71,6 +72,28 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   maxTiles: 1
+  onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  onHitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7476817603881100599}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayHitSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHitSelfEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onHitOthersEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2200600917128272806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +141,67 @@ MonoBehaviour:
   showGizmos: 0
   showOverlay: 0
   overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+--- !u!114 &7476817603881100599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3464475405107332064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5681ccf713410e90e5ae1bc8d85e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  swingSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  shootSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  chargeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  hitSound:
+    Guid:
+      Data1: 471980331
+      Data2: 1075674343
+      Data3: 342356128
+      Data4: -2035351779
+    Path: event:/Player Sounds/Hit
+  deathSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  blockSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &3464475405107332066
 GameObject:
   m_ObjectHideFlags: 0

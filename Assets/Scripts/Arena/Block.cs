@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -12,6 +13,7 @@ namespace RDPolarity.Arena
         [SerializeField] private GameObject explosionEffect;
         [SerializeField] private GameObject spawnOnDestroyed;
         [SerializeField] private GameObject nestedBlock;
+        [SerializeField] private EventReference blockSound;
         
         public Vector2 coordinates;
         public List<Block> neighbours;
@@ -19,7 +21,7 @@ namespace RDPolarity.Arena
         //IMPORTANT!!!! this method must be used to destroy a tile to prevent null fields in other lists
         public void Delete()
         {
-            Debug.Log("Destroyed");
+            RuntimeManager.PlayOneShot(blockSound);
             if (explosionEffect != null) Instantiate(explosionEffect, transform.position, transform.rotation);
             if (spawnOnDestroyed != null) Instantiate(spawnOnDestroyed, transform.position, transform.rotation);
             foreach (Block t in neighbours)

@@ -11,6 +11,10 @@ TagManager:
   - Tile
   - Indestructable
   - Kill
+  - Tornado
+  - Grass
+  - Freezable
+  - Slash
   layers:
   - Default
   - TransparentFX

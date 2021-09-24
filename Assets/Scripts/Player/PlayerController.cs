@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using Mirror;
+using RDPolarity.Arena;
 using RDPolarity.Player;
 using RDPolarity.StateMachine;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace RDPolarity.Controllers
 {
@@ -28,7 +32,7 @@ namespace RDPolarity.Controllers
         [SerializeField] private GameObject spawnableBuildBlock;
         [SerializeField] private GameObject arrow;
         [SerializeField] private GameObject swordSlash;
-        [SerializeField] private GameObject onHitParticles;
+        [SerializeField] private GameObject onDeathParticles;
         
         // Properties
         public bool IsMoving => isMoving;
@@ -149,6 +153,7 @@ namespace RDPolarity.Controllers
             {
                 if (_canStrike)
                 {
+                    onStrikeEvent.Invoke();
                     Instantiate(swordSlash, transform);
                     _canStrike = false;
                     StartCoroutine(StartStrikeCooldown());
@@ -192,6 +197,7 @@ namespace RDPolarity.Controllers
                 if (currDashCooldown <= 0 && IsMoving)
                 {
                     Debug.Log("DASH");
+                    onDashEvent.Invoke();
                     StartCoroutine(Dash());
                     currDashCooldown += dashCooldown;
                 }
@@ -207,11 +213,13 @@ namespace RDPolarity.Controllers
             {
                 Debug.Log("Charging");
                 _bow.Charging = true;
+                if (_bow.CooldownTimer > 0) onChargeEvent.Invoke();
             }
 
             if (context.canceled)
             {
                 Debug.Log("Release");
+                onFireEvent.Invoke();
                 _bow.shoot(transform.position);
             }
         }
@@ -255,6 +263,7 @@ namespace RDPolarity.Controllers
                         // Check if there's already a block there
                         var newBlock = Instantiate(spawnableBuildBlock, blockLocation, Quaternion.identity);
                         NetworkServer.Spawn(newBlock);
+                        onBuildEvent.Invoke();
                     }
                 }
             }
@@ -278,20 +287,33 @@ namespace RDPolarity.Controllers
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.CompareTag("Kill") | collision.gameObject.CompareTag("Arrow"))
-            {
-                if (onHitParticles != null)
-                {
-                    Instantiate(onHitParticles, transform.position, transform.rotation);
-                }
-            }
             if (collision.gameObject.CompareTag("Kill"))
             {
+                onDeathEvent.Invoke();
+                Instantiate(onDeathParticles, transform.position, transform.rotation);
                 transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
             }
         }
 
         #endregion
+        
+        [Serializable] public class OnDeathEvent : UnityEvent { }
+         public OnDeathEvent onDeathEvent = new OnDeathEvent();
+
+         [Serializable] public class OnChargeEvent: UnityEvent { }
+        public OnChargeEvent onChargeEvent= new OnChargeEvent();
+        
+        [Serializable] public class OnFireEvent: UnityEvent { }
+        public OnFireEvent onFireEvent= new OnFireEvent();
+        
+        [Serializable] public class OnDashEvent: UnityEvent { }
+        public OnDashEvent onDashEvent= new OnDashEvent();
+        
+        [Serializable] public class OnStrikeEvent: UnityEvent { }
+        public OnStrikeEvent onStrikeEvent= new OnStrikeEvent();
+        
+        [Serializable] public class OnBuildEvent: UnityEvent { }
+        public OnBuildEvent onBuildEvent= new OnBuildEvent();
         
     }
 }

@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4408faecb2e0af949b9eb66c14527b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 2
+  lifetime: 1
 --- !u!1001 &4775702941765763946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138,6 +138,10 @@ PrefabInstance:
     - target: {fileID: 5313675933647126629, guid: dbab7c3b22a1477419d7f4cffdfa7635, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
       value: 0.35294116
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314364774232715489, guid: dbab7c3b22a1477419d7f4cffdfa7635, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5404630092147775689, guid: dbab7c3b22a1477419d7f4cffdfa7635, type: 3}
       propertyPath: m_Name

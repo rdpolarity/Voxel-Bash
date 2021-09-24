@@ -124,3 +124,4 @@ Material:
     - pointLightPos: {r: -432.51825, g: 1003.656, b: 640.9357, a: 0}
     - vortexControl: {r: -30, g: -0.62, b: 1.7, a: 1.33}
     - vortexPosRadius: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

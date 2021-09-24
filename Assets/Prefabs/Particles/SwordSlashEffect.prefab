@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 198094294235037756}
   - component: {fileID: 199459647271812714}
   - component: {fileID: 5517738435838439524}
+  - component: {fileID: 203540015027023395}
+  - component: {fileID: -945660479666724246}
   m_Layer: 0
-  m_Name: Sword Slash 9
-  m_TagString: Untagged
+  m_Name: SwordSlashEffect
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4892,6 +4894,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 0.3
+--- !u!65 &203540015027023395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130446560849736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: -1.91, z: 0}
+--- !u!114 &-945660479666724246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130446560849736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592d784243766c3419c95d34c2018afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  slashHitSound:
+    Guid:
+      Data1: 471980331
+      Data2: 1075674343
+      Data3: 342356128
+      Data4: -2035351779
+    Path: event:/Player Sounds/Hit
+  knockback: 8
 --- !u!1 &1228911251030386
 GameObject:
   m_ObjectHideFlags: 0

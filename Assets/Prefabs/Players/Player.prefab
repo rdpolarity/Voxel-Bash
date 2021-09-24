@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 5824983082867877698}
   - component: {fileID: 985633281554346634}
   - component: {fileID: 238433933065246005}
+  - component: {fileID: 4765358826038437947}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -225,7 +226,97 @@ MonoBehaviour:
   spawnableBuildBlock: {fileID: 7202720877770313804, guid: 50c75866e892a504e93662e68a6d357b, type: 3}
   arrow: {fileID: 3464475405107332064, guid: db2b0cccd655dee47bc6b6403a65e332, type: 3}
   swordSlash: {fileID: 1130446560849736, guid: c4d564b5d4682ad46b8621f0fa6f40d9, type: 3}
-  onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  onDeathParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayDeathSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onChargeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayChargeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onFireEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayShootSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDashEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayDashSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onStrikeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlaySwingSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onBuildEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayBlockSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4544073927636467284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +595,67 @@ MonoBehaviour:
   _synchronizeInterval: 0.1
   _clientAuthoritative: 1
   _synchronizeToOwner: 0
+--- !u!114 &4765358826038437947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736277583398175609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5681ccf713410e90e5ae1bc8d85e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSound:
+    Guid:
+      Data1: 320675893
+      Data2: 1333735478
+      Data3: 1440915628
+      Data4: 316612642
+    Path: event:/Player Sounds/DashShorten
+  swingSound:
+    Guid:
+      Data1: -389590768
+      Data2: 1135714294
+      Data3: -1611991910
+      Data4: 1004942209
+    Path: event:/Player Sounds/Swing Sword
+  shootSound:
+    Guid:
+      Data1: -194451500
+      Data2: 1168623314
+      Data3: -613532020
+      Data4: 19925504
+    Path: event:/Player Sounds/Shoot 2
+  chargeSound:
+    Guid:
+      Data1: 964195512
+      Data2: 1268459945
+      Data3: -1724066151
+      Data4: -233093882
+    Path: event:/Player Sounds/Charge
+  hitSound:
+    Guid:
+      Data1: 471980331
+      Data2: 1075674343
+      Data3: 342356128
+      Data4: -2035351779
+    Path: event:/Player Sounds/Hit
+  deathSound:
+    Guid:
+      Data1: -1006516843
+      Data2: 1119013009
+      Data3: 1607599551
+      Data4: -954096571
+    Path: event:/Player Sounds/Death
+  blockSound:
+    Guid:
+      Data1: -2026924358
+      Data2: 1267019663
+      Data3: 1026184106
+      Data4: -2089744666
+    Path: event:/General/Block
 --- !u!1 &2923902259316431472
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +1070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 781675528156422988, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.86
+      value: -1.26
       objectReference: {fileID: 0}
     - target: {fileID: 781675528156422988, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -942,7 +1094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1273380616403090837, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.657
       objectReference: {fileID: 0}
     - target: {fileID: 1273380616403090837, guid: 3ce074cc47b458c4fa5b138a90e2083c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1259,13 +1411,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
---- !u!4 &6606159848698705758 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7472095209857985655, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
-  m_PrefabInstance: {fileID: 4332458857954138921}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1882352509146524678 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2738340043145328431, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
+  m_PrefabInstance: {fileID: 4332458857954138921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6606159848698705758 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7472095209857985655, guid: 17270b3e583571c45a7f0a11c05b3aa6, type: 3}
   m_PrefabInstance: {fileID: 4332458857954138921}
   m_PrefabAsset: {fileID: 0}

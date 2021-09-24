@@ -36,6 +36,11 @@ namespace RDPolarity.Player
         public bool Charging { get; set; }
         public Vector3 Dir { get { return dir; } set { dir = value; } }
 
+        public float CooldownTimer
+        {
+            get => cooldownTimer;
+        }
+
         // Start is called before the first frame update
         void Start()
         {
