@@ -1,6 +1,7 @@
+using Mirror;
 using UnityEngine;
 
-namespace RDPolarity.Editor
+namespace RDPolarity.External
 {
     /// <summary>
     /// Auto loads any prefabs into the scene on game load found under "Resources/Preload"
@@ -14,8 +15,13 @@ namespace RDPolarity.Editor
             if (prefabs != null) {
                 Debug.Log(prefabs.Length + " Preload Assets Found!");
                 foreach (var prefab in prefabs) {
-                    Instantiate(prefab);
-                    Debug.Log("Preloaded (Local): " + prefab.name);
+                    if (NetworkServer.active) {
+                        NetworkServer.Spawn(Instantiate(prefab));
+                        Debug.Log("Preloaded (Local + Server): " + prefab.name);
+                    } else {
+                        Instantiate(prefab);
+                        Debug.Log("Preloaded (Local): " + prefab.name);
+                    }
                 }
             } else {
                 Debug.Log("No Preload Assets Found!");

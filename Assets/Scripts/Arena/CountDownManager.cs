@@ -1,11 +1,7 @@
 using System;
 using System.Collections;
-using Mirror.Weaver;
 using UnityEngine;
 using UnityEngine.Events;
-using Sirenix.OdinInspector;
-using Sirenix.OdinInspector.Editor;
-using UnityEditorInternal;
 
 namespace RDPolarity.Arena
 {

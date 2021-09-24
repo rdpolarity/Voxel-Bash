@@ -2,155 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba8c0a31-29da-4c2e-8cf9-9f111d77f52f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/ArenaController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/ArenaGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/ArenaGenerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/Block.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/Block.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/LevelProperties.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/LevelProperties.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/TileDecayController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/TileDecayController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/AutoDestroyParticleAfter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/AutoDestroyParticleAfter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/AutoLoadScene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/AutoLoadScene.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/FixRotation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/FixRotation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/PlayerCameraManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/PlayerCameraManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/ReadyZone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Basic/ReadyZone.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PreloadPrefabs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/PreloadPrefabs.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/BasicFeature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/BasicFeature.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/BasicFeaturePass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/BasicFeaturePass.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/BlitMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/BlitMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/SobelFilter.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rendering/SobelFilter.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/Input/Inputs.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/Input/Inputs.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-101046139147566736.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-101046139147566736.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-390559723647566736.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-390559723647566736.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/WaterProfile_577133212667566736.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/WaterProfile_577133212667566736.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/WaterProfile_701061144937566736.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/WaterProfile_701061144937566736.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/WaterProfile_812035537837566736.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/WaterProfile_812035537837566736.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerCameraManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerCameraManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Preload/NetworkManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Preload/NetworkManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AutoDestroyParicleOnFinish.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AutoDestroyParicleOnFinish.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AutoLoadScene.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AutoLoadScene.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectEmpties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectEmpties.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FixRotation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FixRotation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputControllers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputControllers/MenuController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputControllers/MenuController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputControllers/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputControllers/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/ArenaController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/ArenaController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/ArenaGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/ArenaGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/LevelBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/LevelBuilder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/LevelList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/LevelList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/LevelProperties.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels &amp; Arena/LevelProperties.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiSceneNetManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MultiSceneNetManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/NetworkController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/ArenaController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/SteamLobby.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/SteamLobbyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/SteamLobby.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/SteamLobbyManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/VoxelBashNetworkManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/VoxelBashNetworkManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AimIndicator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AimIndicator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Arrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Bow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Bow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Grounded.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Grounded.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/HurtBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/HurtBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Knockback.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Knockback.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MouseWorld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MouseWorld.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PreloadPrefabs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PreloadPrefabs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReadyZone.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReadyZone.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/BasicFeature.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/BasicFeature.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/BasicFeaturePass.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/BasicFeaturePass.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/BlitMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/BlitMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/SobelFilter.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Render Textures/SobelFilter.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/LobbyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/LobbyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/MapManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singletons/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singletons/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerDashingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerDashingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerFallingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerFallingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerGroundedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerIdleState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerIdleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerMovingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerMovingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/PlayerStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileDecayController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileDecayController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-101046139147566736.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-101046139147566736.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-377694321767566736.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-377694321767566736.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-390559723647566736.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-390559723647566736.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterProfile_577133212667566736.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterProfile_577133212667566736.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterProfile_701061144937566736.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterProfile_701061144937566736.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterProfile_812035537837566736.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WaterProfile_812035537837566736.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/External.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/External/PreloadPrefabs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/External/PreloadPrefabs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Voxel Bash/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PreloadPrefabs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/PreloadPrefabs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SkyProfile-377694321767566736.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,9 +35,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Basic/PlayerCameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.2.2f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/rdpol/OneDrive/Documents/GitHub/Voxel Bash/Assets/Scripts/Editor/PreloadPrefabs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Arena/CountDownManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82ec470c913149358ad0c83ad628910c13a000/18/4fb89c20/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/External/PreloadPrefabs.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yUvTIoT1PqoqYyv5mX205HMBjR" />
   <component name="ProjectLevelVcsManager">
@@ -236,6 +104,7 @@
       <workItem from="1632319004601" duration="504000" />
       <workItem from="1632319586754" duration="6405000" />
       <workItem from="1632326049890" duration="4147000" />
+      <workItem from="1632464564876" duration="1674000" />
     </task>
     <servers />
   </component>
