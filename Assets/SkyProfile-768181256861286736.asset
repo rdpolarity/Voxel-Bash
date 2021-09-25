@@ -126,7 +126,7 @@ Material:
     m_Colors:
     - _DetailOverlayTintColor: {r: 0, g: 0, b: 0, a: 0}
     - _FogColor: {r: 0, g: 0, b: 0, a: 0}
-    - _GroundColor: {r: 0.091427736, g: 0.046724804, b: 0.09433961, a: 1}
+    - _GroundColor: {r: 0.29969883, g: 0.06808473, b: 0.3207547, a: 1}
     - _HorizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
     - _HorizonColor: {r: 0.38431373, g: 0.48638386, b: 0.6509804, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 1}
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skyColor: {r: 0.10090523, g: 0.06363475, b: 0.20754719, a: 1}
   horizonColor: {r: 0.38431373, g: 0.48638386, b: 0.6509804, a: 1}
-  groundColor: {r: 0.091427736, g: 0.046724804, b: 0.09433961, a: 1}
+  groundColor: {r: 0.29969883, g: 0.06808473, b: 0.3207547, a: 1}
   horizonThickness: 1
   horizonExponent: 5
   horizonStep: 1000
