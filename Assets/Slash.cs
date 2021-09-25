@@ -19,7 +19,7 @@ namespace RDPolarity
                 {
                     Debug.Log("Hit player");
                     RuntimeManager.PlayOneShot(slashHitSound);
-                    Instantiate(onHitParticles, transform.position, transform.rotation);
+                    Instantiate(onHitParticles, other.transform.position, transform.rotation);
                     other.GetComponentInParent<Rigidbody>().AddForce(transform.parent.forward * knockback, ForceMode.Impulse);
                     StartCoroutine(TriggerCoolDown());
                 }
