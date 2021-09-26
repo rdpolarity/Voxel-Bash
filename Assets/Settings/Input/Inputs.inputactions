@@ -84,6 +84,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ChangeSkinForwards",
+                    "type": "Button",
+                    "id": "78dd911a-049f-41ba-a296-a6525181c8f9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ChangeSkinBackwards",
+                    "type": "Button",
+                    "id": "733f195d-3b11-43d0-a0cb-dd65d81fb85b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -337,6 +353,28 @@
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Build",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "36faf831-a4c1-427a-b5d4-bd661539f2ae",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeSkinForwards",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "14ce9199-cc3f-42f7-bcc6-557807a16e98",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeSkinBackwards",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
