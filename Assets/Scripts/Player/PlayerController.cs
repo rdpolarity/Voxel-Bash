@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Mirror;
 using Mirror.Experimental;
 using RDPolarity.Arena;
@@ -85,6 +86,8 @@ namespace RDPolarity.Controllers
 
         public OnBuildEvent onBuildEvent = new OnBuildEvent();
 
+        [SerializeField] private List<GameObject> skinList = new List<GameObject>();
+        
         // Properties
         public bool IsMoving => isMoving;
         public PlayerStateMachine StateMachine { get; private set; }
