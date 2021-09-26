@@ -117,12 +117,12 @@ namespace RDPolarity.Controllers
 
             if (_isBuilding)
             {
-                _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+                // _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
                 Build();
             }
             else
             {
-                _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+                // _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
             }
         }
 
