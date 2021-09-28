@@ -114,6 +114,7 @@ MonoBehaviour:
   visible: 0
   m_AssetId: 2e637c38b4d9f2542aba40539e037c10
   hasSpawned: 0
+  _hasChildNetworkBehaviours: 0
 --- !u!114 &3666917231092785987
 MonoBehaviour:
   m_ObjectHideFlags: 0
