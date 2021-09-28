@@ -215,12 +215,20 @@ namespace RDPolarity.Controllers
                 if (_canStrike)
                 {
                     onStrikeEvent.Invoke();
-                    Instantiate(swordSlash, transform);
+                    CmdStrike(gameObject);
                     _canStrike = false;
                     StartCoroutine(StartStrikeCooldown());
                 }
             }
         }
+
+        [Command]
+        public void CmdStrike(GameObject player)
+        {
+            var effect = Instantiate(swordSlash, player.transform.position, player.transform.rotation);
+            effect.AddComponent<StickToTransform>().target = player.transform;
+            NetworkServer.Spawn(effect);
+}
 
         IEnumerator StartStrikeCooldown()
         {
@@ -292,12 +300,6 @@ namespace RDPolarity.Controllers
             projectile.transform.position = _bow.transform.position + dir / 2;
             projectile.GetComponent<Rigidbody>().velocity = pow;
             NetworkServer.Spawn(projectile);
-        }
-
-        [ClientRpc]
-        public void RpcSpawnArrow(Transform start)
-        {
-            NetworkServer.Spawn(Instantiate(arrow, start));
         }
 
         public void OnBuild(InputAction.CallbackContext context)
@@ -372,7 +374,7 @@ namespace RDPolarity.Controllers
                 onHitEvent.Invoke();;
                 if (!isLocalPlayer) onHitOthersEvent.Invoke();;
                 var arrowVel = collision.GetComponentInParent<Rigidbody>().velocity;
-                Instantiate(onHitParticles, transform.position, transform.rotation);
+                NetworkServer.Spawn(Instantiate(onHitParticles, transform.position, transform.rotation));
                 _rigidbody.AddForce(arrowVel * 2, ForceMode.Impulse);
                 NetworkServer.Destroy(collision.transform.parent.gameObject);
             }
