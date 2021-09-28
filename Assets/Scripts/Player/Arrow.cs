@@ -21,17 +21,7 @@ namespace RDPolarity.Player
         private float tilesHit;
 
         private Quaternion targetRotation;
-        
-                
-        [Serializable] public class OnHitEvent : UnityEvent { }
-        public OnHitEvent onHitEvent = new OnHitEvent();
-        
-        [Serializable] public class OnHitSelfEvent : UnityEvent { }
-        public OnHitSelfEvent onHitSelfEvent = new OnHitSelfEvent();
-        
-        [Serializable] public class OnHitOthersEvent : UnityEvent { }
-        public OnHitOthersEvent onHitOthersEvent = new OnHitOthersEvent();
-        
+
         public override void OnStartClient()
         {
             base.OnStartClient();

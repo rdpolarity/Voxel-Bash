@@ -98,7 +98,6 @@ namespace RDPolarity.Singletons
                 {
                     _selected++;
                 }
-
                 _mapName = levels[_selected].name;
             }
         }

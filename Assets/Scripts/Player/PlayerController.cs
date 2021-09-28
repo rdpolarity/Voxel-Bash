@@ -92,7 +92,16 @@ namespace RDPolarity.Controllers
         public PlayerMovingState MoveState { get; private set; }
         public PlayerDashingState DashState { get; private set; }
         public PlayerFallingState FallState { get; private set; }
-
+                
+        [Serializable] public class OnHitEvent : UnityEvent { }
+        public OnHitEvent onHitEvent = new OnHitEvent();
+        
+        [Serializable] public class OnHitSelfEvent : UnityEvent { }
+        public OnHitSelfEvent onHitSelfEvent = new OnHitSelfEvent();
+        
+        [Serializable] public class OnHitOthersEvent : UnityEvent { }
+        public OnHitOthersEvent onHitOthersEvent = new OnHitOthersEvent();
+        
         // Local Variables
         private MouseWorld _mouseWorld;
         private Knockback _force;
@@ -360,8 +369,8 @@ namespace RDPolarity.Controllers
         {
             if (collision.gameObject.CompareTag("Arrow"))
             {
-                // onHitEvent.Invoke();;
-                // if (!isLocalPlayer) onHitOthersEvent.Invoke();;
+                onHitEvent.Invoke();;
+                if (!isLocalPlayer) onHitOthersEvent.Invoke();;
                 var arrowVel = collision.GetComponentInParent<Rigidbody>().velocity;
                 Instantiate(onHitParticles, transform.position, transform.rotation);
                 _rigidbody.AddForce(arrowVel * 2, ForceMode.Impulse);

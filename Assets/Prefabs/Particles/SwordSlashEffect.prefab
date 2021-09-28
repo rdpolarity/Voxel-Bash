@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5517738435838439524}
   m_Layer: 0
   m_Name: SwordSlashEffect
-  m_TagString: Arrow
+  m_TagString: Slash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29297,7 +29297,7 @@ GameObject:
   - component: {fileID: 1137557239176109629}
   m_Layer: 0
   m_Name: Hitbox
-  m_TagString: Arrow
+  m_TagString: Slash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
