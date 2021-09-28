@@ -93,19 +93,6 @@ namespace RDPolarity.Player
         
         }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Hit player");
-                onHitEvent.Invoke();;
-                if (!isLocalPlayer) onHitOthersEvent.Invoke();;
-                Instantiate(onHitParticles, transform.position, transform.rotation);
-                other.GetComponentInParent<Rigidbody>().AddForce(rigidbody.velocity*2, ForceMode.Impulse);
-                NetworkServer.Destroy(gameObject);
-            }
-        }
-
         private void OnDrawGizmos()
         {
             Gizmos.DrawRay(collisionDetect);

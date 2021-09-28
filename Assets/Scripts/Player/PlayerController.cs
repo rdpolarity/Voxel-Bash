@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using Mirror;
+using Mirror.Experimental;
 using RDPolarity.Arena;
 using RDPolarity.Player;
 using RDPolarity.StateMachine;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -27,13 +29,62 @@ namespace RDPolarity.Controllers
         [SerializeField] private float dashCooldown = 1.0f;
         [SerializeField] private float currDashCooldown = 0f;
         [SerializeField] private Vector3 myVelocity;
-        [SerializeField] private bool isMoving = false;
         [SerializeField] private Vector3 facing = Vector3.zero;
         [SerializeField] private GameObject spawnableBuildBlock;
         [SerializeField] private GameObject arrow;
         [SerializeField] private GameObject swordSlash;
         [SerializeField] private GameObject onDeathParticles;
-        
+        [SerializeField] private GameObject onHitParticles;
+
+        // ReadOnly Debug
+        [Title("Debug Variables")] [SerializeField, ReadOnly]
+        private bool isMoving = false;
+
+        [SerializeField, ReadOnly] private bool isBuilding;
+
+        // Events
+        [Serializable]
+        public class OnDeathEvent : UnityEvent
+        {
+        }
+
+        public OnDeathEvent onDeathEvent = new OnDeathEvent();
+
+        [Serializable]
+        public class OnChargeEvent : UnityEvent
+        {
+        }
+
+        public OnChargeEvent onChargeEvent = new OnChargeEvent();
+
+        [Serializable]
+        public class OnFireEvent : UnityEvent
+        {
+        }
+
+        public OnFireEvent onFireEvent = new OnFireEvent();
+
+        [Serializable]
+        public class OnDashEvent : UnityEvent
+        {
+        }
+
+        public OnDashEvent onDashEvent = new OnDashEvent();
+
+        [Serializable]
+        public class OnStrikeEvent : UnityEvent
+        {
+        }
+
+        public OnStrikeEvent onStrikeEvent = new OnStrikeEvent();
+
+        [Serializable]
+        public class OnBuildEvent : UnityEvent
+        {
+        }
+
+        public OnBuildEvent onBuildEvent = new OnBuildEvent();
+
         // Properties
         public bool IsMoving => isMoving;
         public PlayerStateMachine StateMachine { get; private set; }
@@ -46,7 +97,7 @@ namespace RDPolarity.Controllers
         private MouseWorld _mouseWorld;
         private Knockback _force;
         private float _startingTime;
-        private bool _isBuilding = false;
+
         private Vector3 _velocity = Vector3.zero;
         private Vector3 _startingVelocity = Vector3.zero;
         private Bow _bow;
@@ -57,7 +108,7 @@ namespace RDPolarity.Controllers
         private string[] _outlineColours = new string[] {"Red", "Green", "Blue", "Purple"};
 
         #region Unity Methods
-        
+
         private void Awake()
         {
             animator.SetBool("isMoving", false);
@@ -78,7 +129,7 @@ namespace RDPolarity.Controllers
         }
 
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (!isLocalPlayer) return;
 
@@ -115,7 +166,7 @@ namespace RDPolarity.Controllers
 
             myVelocity = _rigidbody.velocity;
 
-            if (_isBuilding)
+            if (isBuilding)
             {
                 // _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
                 Build();
@@ -145,6 +196,7 @@ namespace RDPolarity.Controllers
         }
 
         private bool _canStrike = true;
+
         public void OnStrike(InputAction.CallbackContext context)
         {
             if (!isLocalPlayer) return;
@@ -166,7 +218,7 @@ namespace RDPolarity.Controllers
             yield return new WaitForSeconds(0.5f);
             _canStrike = true;
         }
-        
+
         public void OnMovement(InputAction.CallbackContext context)
         {
             if (!isLocalPlayer) return;
@@ -232,41 +284,50 @@ namespace RDPolarity.Controllers
             projectile.GetComponent<Rigidbody>().velocity = pow;
             NetworkServer.Spawn(projectile);
         }
-        
+
+        [ClientRpc]
+        public void RpcSpawnArrow(Transform start)
+        {
+            NetworkServer.Spawn(Instantiate(arrow, start));
+        }
+
         public void OnBuild(InputAction.CallbackContext context)
         {
             if (!isLocalPlayer) return;
             if (context.performed)
             {
-                _isBuilding = true;
+                isBuilding = true;
             }
 
             if (context.canceled)
             {
-                _isBuilding = false;
+                isBuilding = false;
             }
         }
-        
+
         #endregion
 
         #region Private Methods
+
         private void Build()
         {
-            if (NetworkServer.active)
+            if (grounded.active)
             {
-                if (grounded.active)
+                var position = transform.position;
+                var blockLocation = new Vector3(Mathf.RoundToInt(position.x), 1, Mathf.RoundToInt(position.z));
+                if (!Physics.CheckSphere(blockLocation, 0.1f)) // Check if there's already a block there
                 {
-                    var position = transform.position;
-                    var blockLocation = new Vector3(Mathf.RoundToInt(position.x), 1, Mathf.RoundToInt(position.z));
-                    if (!Physics.CheckSphere(blockLocation, 0.1f))
-                    {
-                        // Check if there's already a block there
-                        var newBlock = Instantiate(spawnableBuildBlock, blockLocation, Quaternion.identity);
-                        NetworkServer.Spawn(newBlock);
-                        onBuildEvent.Invoke();
-                    }
+                    CmdPlaceBlock(blockLocation);
+                    onBuildEvent.Invoke();
                 }
             }
+        }
+
+        [Command]
+        private void CmdPlaceBlock(Vector3 blockLocation)
+        {
+            var newBlock = Instantiate(spawnableBuildBlock, blockLocation, Quaternion.identity);
+            NetworkServer.Spawn(newBlock);
         }
 
         private IEnumerator Dash()
@@ -295,25 +356,19 @@ namespace RDPolarity.Controllers
             }
         }
 
-        #endregion
-        
-        [Serializable] public class OnDeathEvent : UnityEvent { }
-         public OnDeathEvent onDeathEvent = new OnDeathEvent();
+        private void OnTriggerEnter(Collider collision)
+        {
+            if (collision.gameObject.CompareTag("Arrow"))
+            {
+                // onHitEvent.Invoke();;
+                // if (!isLocalPlayer) onHitOthersEvent.Invoke();;
+                var arrowVel = collision.GetComponentInParent<Rigidbody>().velocity;
+                Instantiate(onHitParticles, transform.position, transform.rotation);
+                _rigidbody.AddForce(arrowVel * 2, ForceMode.Impulse);
+                NetworkServer.Destroy(collision.transform.parent.gameObject);
+            }
+        }
 
-         [Serializable] public class OnChargeEvent: UnityEvent { }
-        public OnChargeEvent onChargeEvent= new OnChargeEvent();
-        
-        [Serializable] public class OnFireEvent: UnityEvent { }
-        public OnFireEvent onFireEvent= new OnFireEvent();
-        
-        [Serializable] public class OnDashEvent: UnityEvent { }
-        public OnDashEvent onDashEvent= new OnDashEvent();
-        
-        [Serializable] public class OnStrikeEvent: UnityEvent { }
-        public OnStrikeEvent onStrikeEvent= new OnStrikeEvent();
-        
-        [Serializable] public class OnBuildEvent: UnityEvent { }
-        public OnBuildEvent onBuildEvent= new OnBuildEvent();
-        
+        #endregion
     }
 }
