@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 140453647942114998}
   - component: {fileID: 5216030330695452610}
   - component: {fileID: -2018256400668049603}
+  - component: {fileID: -6290626063419090046}
   m_Layer: 0
   m_Name: VoxelDestroyEffect
   m_TagString: Untagged
@@ -154,3 +155,21 @@ MonoBehaviour:
   _snapRotation: 0
   _synchronizeScale: 0
   _snapScale: 0
+--- !u!114 &-6290626063419090046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3896048585741395246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 0
+  m_AssetId: b9d7fb97693c5f14dbd9dd2bfb608741
+  hasSpawned: 0
+  _hasChildNetworkBehaviours: 0
