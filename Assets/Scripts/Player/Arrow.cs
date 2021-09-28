@@ -21,17 +21,7 @@ namespace RDPolarity.Player
         private float tilesHit;
 
         private Quaternion targetRotation;
-        
-                
-        [Serializable] public class OnHitEvent : UnityEvent { }
-        public OnHitEvent onHitEvent = new OnHitEvent();
-        
-        [Serializable] public class OnHitSelfEvent : UnityEvent { }
-        public OnHitSelfEvent onHitSelfEvent = new OnHitSelfEvent();
-        
-        [Serializable] public class OnHitOthersEvent : UnityEvent { }
-        public OnHitOthersEvent onHitOthersEvent = new OnHitOthersEvent();
-        
+
         public override void OnStartClient()
         {
             base.OnStartClient();
@@ -91,19 +81,6 @@ namespace RDPolarity.Player
             }
         
         
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Hit player");
-                onHitEvent.Invoke();;
-                if (!isLocalPlayer) onHitOthersEvent.Invoke();;
-                Instantiate(onHitParticles, transform.position, transform.rotation);
-                other.GetComponentInParent<Rigidbody>().AddForce(rigidbody.velocity*2, ForceMode.Impulse);
-                NetworkServer.Destroy(gameObject);
-            }
         }
 
         private void OnDrawGizmos()

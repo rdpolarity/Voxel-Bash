@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Mirror;
 using TMPro;
@@ -9,17 +10,15 @@ namespace RDPolarity.Singletons
 {
     public class MapManager : NetworkBehaviour
     {
-        [SerializeField]
-        private List<GameObject> levels = new List<GameObject>();
+        [SerializeField] private List<GameObject> levels = new List<GameObject>();
 
-        [SerializeField]
-        TextMeshProUGUI levelText;
+        [SerializeField] TextMeshProUGUI levelText;
 
         private GameObject currentMap;
 
-        [SyncVar(hook = nameof(OnSelectionChanged))]
-        private int selected;
-
+        [SyncVar(hook = nameof(OnSelectionChanged))] private int _selected;
+        [SyncVar(hook = nameof(OnNameChange))] private string _mapName;
+        
         private Inputs inputActions;
 
         private void Awake()
@@ -33,7 +32,6 @@ namespace RDPolarity.Singletons
             inputActions.Player.ChangeMapForward.performed += Forward;
             inputActions.Player.ChangeMapBackwards.performed += Back;
             SceneManager.sceneLoaded += OnSceneLoaded;
-
         }
 
         private void OnDisable()
@@ -54,13 +52,18 @@ namespace RDPolarity.Singletons
         {
             if (NetworkServer.active)
             {
-                if (SceneManager.GetActiveScene().name == "Arena") {
+                if (SceneManager.GetActiveScene().name == "Arena")
+                {
                     SpawnMap(LobbyManager.Instance.SelectedMap);
-                    NetworkClient.localPlayer.gameObject.transform.position = NetworkManager.singleton.GetStartPosition().position;
+                    NetworkClient.localPlayer.gameObject.transform.position =
+                        NetworkManager.singleton.GetStartPosition().position;
                 }
-                if (SceneManager.GetActiveScene().name == "Lobby") {
-                    LobbyManager.Instance.SelectedMap = 0;
-                    SpawnPreview(selected);
+
+                if (SceneManager.GetActiveScene().name == "Lobby")
+                {
+                    _selected = 1;
+                    LobbyManager.Instance.SelectedMap = _selected;
+                    _mapName = levels[_selected].name;
                 }
             }
         }
@@ -70,8 +73,15 @@ namespace RDPolarity.Singletons
             if (NetworkServer.active)
             {
                 if (SceneManager.GetActiveScene().name != "Lobby") return;
-                if (selected <= 0) { selected = levels.Count - 1; }
-                else { selected--; }
+                if (_selected <= 0)
+                {
+                    _selected = levels.Count - 1;
+                }
+                else
+                {
+                    _selected--;
+                }
+                _mapName = levels[_selected].name;
             }
         }
 
@@ -80,11 +90,23 @@ namespace RDPolarity.Singletons
             if (NetworkServer.active)
             {
                 if (SceneManager.GetActiveScene().name != "Lobby") return;
-                if (selected >= levels.Count - 1) { selected = 0; }
-                else { selected++; }
+                if (_selected >= levels.Count - 1)
+                {
+                    _selected = 0;
+                }
+                else
+                {
+                    _selected++;
+                }
+                _mapName = levels[_selected].name;
             }
         }
 
+        private void OnNameChange(string oldName, string newName)
+        {
+            levelText.text = newName;
+        }
+        
         private void OnSelectionChanged(int oldSelection, int newSelection)
         {
             if (NetworkServer.active)
@@ -133,10 +155,12 @@ namespace RDPolarity.Singletons
 
         // SINGLETON AREA (NetworkBehavour can't inherit with generics... :< )
 
-        [SerializeField]
-        private static MapManager _instance;
+        [SerializeField] private static MapManager _instance;
 
-        public static MapManager Instance { get { return _instance; } }
+        public static MapManager Instance
+        {
+            get { return _instance; }
+        }
 
         private void Start()
         {

@@ -212,21 +212,23 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   inputs: {fileID: 4544073927636467284}
-  speed: 0.7
-  maxSpeed: 1.4
+  speed: 1.4
+  maxSpeed: 2
   animator: {fileID: 1882352509146524678}
   grounded: {fileID: 0}
-  dashMultiplier: 15
+  dashMultiplier: 7
   dashTimer: 0.15
   dashCooldown: 1
   currDashCooldown: 0
   myVelocity: {x: 0, y: 0, z: 0}
-  isMoving: 0
   facing: {x: 0, y: 0, z: 0}
   spawnableBuildBlock: {fileID: 7202720877770313804, guid: 50c75866e892a504e93662e68a6d357b, type: 3}
   arrow: {fileID: 3464475405107332064, guid: db2b0cccd655dee47bc6b6403a65e332, type: 3}
   swordSlash: {fileID: 1130446560849736, guid: c4d564b5d4682ad46b8621f0fa6f40d9, type: 3}
   onDeathParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  isMoving: 0
+  isBuilding: 0
   onDeathEvent:
     m_PersistentCalls:
       m_Calls:
@@ -259,19 +261,7 @@ MonoBehaviour:
         m_CallState: 2
   onFireEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4765358826038437947}
-        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
-        m_MethodName: PlayShootSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onDashEvent:
     m_PersistentCalls:
       m_Calls:
@@ -317,6 +307,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onHitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4765358826038437947}
+        m_TargetAssemblyTypeName: RDPolarity.Sound.OneShotSoundEffect, Assembly-CSharp
+        m_MethodName: PlayHitSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHitSelfEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onHitOthersEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4544073927636467284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +529,7 @@ MonoBehaviour:
   visible: 0
   m_AssetId: fe128f8e961ce024ba2a2063b57a9a62
   hasSpawned: 0
-  _hasChildNetworkBehaviours: 0
+  _hasChildNetworkBehaviours: 1
 --- !u!114 &507328640812373682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1046590476789785082
 RectTransform:
   m_ObjectHideFlags: 0
