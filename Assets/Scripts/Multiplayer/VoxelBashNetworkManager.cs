@@ -16,7 +16,7 @@ namespace RDPolarity.Multiplayer
     {
         String username;
     }
-    
+
     /// <summary>
     /// Network manager for voxel bash's addition network logic
     /// </summary>
@@ -36,6 +36,7 @@ namespace RDPolarity.Multiplayer
             {
                 StopServer();
             }
+
             SceneManager.LoadScene("MainMenu");
         }
 
@@ -77,9 +78,11 @@ namespace RDPolarity.Multiplayer
 
         public override void OnStopClient()
         {
-            if (!NetworkClient.isHostClient) {
+            if (!NetworkClient.isHostClient)
+            {
                 SceneManager.LoadScene("ConnectionLost");
             }
+
             base.OnStopClient();
         }
 
@@ -88,7 +91,7 @@ namespace RDPolarity.Multiplayer
             base.OnStartServer();
             NetworkServer.RegisterHandler<SpawnPlayerMessage>(OnCreateClient);
         }
-    
+
 
         public override void OnStopServer()
         {
@@ -103,7 +106,7 @@ namespace RDPolarity.Multiplayer
             NetworkClient.connection.Send(new SpawnPlayerMessage());
             Debug.Log("New player has connected!");
         }
-    
+
         public override void OnClientSceneChanged(NetworkConnection conn)
         {
             base.OnClientSceneChanged(conn);
@@ -111,16 +114,14 @@ namespace RDPolarity.Multiplayer
         }
 
         [Server]
-        public void OnCreateClient(NetworkConnection conn, SpawnPlayerMessage msg)
+        private void OnCreateClient(NetworkConnection conn, SpawnPlayerMessage msg)
         {
-            if (NetworkServer.active)
-            {
-                Transform startPos = GetStartPosition();
-                GameObject player = startPos != null
-                    ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
-                    : Instantiate(playerPrefab);
-                NetworkServer.AddPlayerForConnection(conn, player);
-            }
+            Transform startPos = GetStartPosition();
+            GameObject player = startPos != null
+                ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
+                : Instantiate(playerPrefab);
+            player.name = $"{playerPrefab.name} [connId={conn.connectionId}]";
+            NetworkServer.AddPlayerForConnection(conn, player);
         }
     }
 }

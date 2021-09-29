@@ -23,7 +23,7 @@ namespace RDPolarity.Arena
         public void Delete()
         {
             RuntimeManager.PlayOneShot(blockSound);
-            if (explosionEffect != null) NetworkServer.Spawn(Instantiate(explosionEffect, transform.position, transform.rotation));
+            if (explosionEffect != null) Instantiate(explosionEffect, transform.position, transform.rotation);
             if (spawnOnDestroyed != null) Instantiate(spawnOnDestroyed, transform.position, transform.rotation);
             foreach (Block t in neighbours)
             {

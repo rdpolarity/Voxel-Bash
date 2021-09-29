@@ -374,7 +374,7 @@ namespace RDPolarity.Controllers
                 onHitEvent.Invoke();
                 if (!isLocalPlayer) onHitOthersEvent.Invoke();
                 var arrowVel = collision.GetComponentInParent<Rigidbody>().velocity;
-                NetworkServer.Spawn(Instantiate(onHitParticles, transform.position, transform.rotation));
+                Instantiate(onHitParticles, transform.position, transform.rotation);
                 _rigidbody.AddForce(arrowVel * 2, ForceMode.Impulse);
                 
                 var collisionArrow = collision.transform.parent;
