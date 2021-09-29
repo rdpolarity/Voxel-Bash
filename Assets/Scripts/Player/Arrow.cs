@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Mirror;
 using RDPolarity.Arena;
 using RDPolarity.Controllers;
@@ -9,78 +10,80 @@ namespace RDPolarity.Player
 {
     public class Arrow : NetworkBehaviour
     {
+        [SerializeField] private float maxTiles;
+        [SerializeField] private GameObject onHitParticles;
+        [SerializeField] private Rigidbody _rigidbody;
+
         public LayerMask bounceMask;
 
-        private new Rigidbody rigidbody;
         private Ray collisionDetect;
         private Vector3 lastPos;
-
-        [SerializeField]
-        private float maxTiles;
-        [SerializeField] private GameObject onHitParticles;
         private float tilesHit;
 
-        private Quaternion targetRotation;
 
-        public override void OnStartClient()
-        {
-            base.OnStartClient();
-            rigidbody = GetComponent<Rigidbody>();
-            if (!NetworkServer.active) {
-                Destroy(rigidbody);
-            }
-        }
+        private Quaternion targetRotation;
 
         // Update is called once per frame
         void FixedUpdate()
         {
-            if (NetworkServer.active) {
-                if (transform.position.y < -100)
-                {
-                    NetworkServer.Destroy(gameObject);
-                }
+            Quaternion targetRotation = Quaternion.LookRotation(_rigidbody.velocity);
+            _rigidbody.MoveRotation(targetRotation);
 
-                if (rigidbody != null) {                
-                    Quaternion targetRotation = Quaternion.LookRotation(rigidbody.velocity);
-                    rigidbody.MoveRotation(targetRotation);
-                    float speed = (transform.position - lastPos).magnitude;
-                    collisionDetect = new Ray(transform.position, rigidbody.velocity.normalized);
-                    RaycastHit hit;
-                    if (Physics.Raycast(collisionDetect, out hit, 0.5f, bounceMask))
-                    {
-                        Debug.Log("Ricochet");
-                        rigidbody.velocity = Vector3.Reflect(rigidbody.velocity, hit.normal);
-                        rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.z);
-                    }
-                }
-
-                lastPos = transform.position;
+            collisionDetect = new Ray(transform.position, _rigidbody.velocity.normalized);
+            RaycastHit hit;
+            if (Physics.Raycast(collisionDetect, out hit, 0.5f, bounceMask))
+            {
+                Debug.Log("Ricochet");
+                _rigidbody.velocity = Vector3.Reflect(_rigidbody.velocity, hit.normal);
+                _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, 0, _rigidbody.velocity.z);
             }
-        
+
+            // if (NetworkServer.active) {
+            //     if (transform.position.y < -100)
+            //     {
+            //         NetworkServer.Destroy(gameObject);
+            //     }
+            //
+            //     if (rigidbody != null) {                
+            //         Quaternion targetRotation = Quaternion.LookRotation(rigidbody.velocity);
+            //         rigidbody.MoveRotation(targetRotation);
+            //         float speed = (transform.position - lastPos).magnitude;
+            //     }
+            //
+            //     lastPos = transform.position;
+            // }
         }
+
+
+        /// <summary>
+        /// Launches the arrow in a direction based on the power
+        /// </summary>
+        /// <param name="power"></param>
+        public void Launch(Vector3 power)
+        {
+            _rigidbody.isKinematic = false;
+            _rigidbody.AddForce(power, ForceMode.Impulse);
+        }
+
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (NetworkServer.active) {
-                if (collision.gameObject.CompareTag("Tile"))
+            if (collision.gameObject.CompareTag("Tile"))
+            {
+                if (tilesHit < maxTiles)
                 {
-                    if (tilesHit < maxTiles)
+                    tilesHit++;
+                    collision.gameObject.GetComponent<Block>().Delete();
+                    if (tilesHit >= maxTiles)
                     {
-                        tilesHit++;
-                        collision.gameObject.GetComponent<Block>().Delete();
-                        if (tilesHit >= maxTiles)
-                        {
-                            NetworkServer.Destroy(gameObject);
-                        }
+                        Destroy(gameObject);
                     }
-                
-                }
-                else if (collision.gameObject.CompareTag("Indestructable")) {
-                    NetworkServer.Destroy(gameObject);
                 }
             }
-        
-        
+            else if (collision.gameObject.CompareTag("Indestructable"))
+            {
+                Destroy(gameObject);
+            }
         }
 
         private void OnDrawGizmos()
