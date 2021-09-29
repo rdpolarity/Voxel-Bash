@@ -349,18 +349,15 @@ namespace RDPolarity.Controllers
             _startingVelocity = new Vector3(_movement.x * speed, 0, _movement.y * speed);
             _startingTime = Time.time;
             var currentY = transform.position.y;
-
+            
             var oldSpeed = speed;
             speed *= dashMultiplier;
             while (Time.time < _startingTime + dashTimer)
             {
-                Transform transform1;
-                (transform1 = transform).Translate(_startingVelocity * dashMultiplier * Time.deltaTime, Space.World);
-                var position = transform1.position;
-                position = new Vector3(position.x, currentY, position.z);
-                transform1.position = position;
+                _rigidbody.velocity = _rigidbody.velocity.normalized;
                 yield return null;
             }
+            speed = oldSpeed;
         }
 
         private void OnTriggerEnter(Collider collision)
