@@ -216,7 +216,7 @@ MonoBehaviour:
   maxSpeed: 2
   animator: {fileID: 1882352509146524678}
   grounded: {fileID: 0}
-  dashMultiplier: 7
+  dashMultiplier: 10
   dashTimer: 0.15
   dashCooldown: 1
   currDashCooldown: 0
