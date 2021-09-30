@@ -127,7 +127,8 @@ namespace RDPolarity.Controllers
         private Rigidbody _rigidbody;
         private float _inputDisableTimer;
         private string[] _outlineColours = new string[] {"Red", "Green", "Blue", "Purple"};
-
+        private bool _isMaxVelocity = true;
+        
         #region Unity Methods
 
         private void Awake()
@@ -163,11 +164,14 @@ namespace RDPolarity.Controllers
             }
 
             // Max Velocity
-            Vector3 horizontalVelocity = _rigidbody.velocity;
-            horizontalVelocity.y = 0;
-            if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+            if (_isMaxVelocity)
             {
-                _rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * _rigidbody.velocity.y;
+                Vector3 horizontalVelocity = _rigidbody.velocity;
+                horizontalVelocity.y = 0;
+                if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+                {
+                    _rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * _rigidbody.velocity.y;
+                }
             }
 
             // Look Direction (Y)
@@ -375,11 +379,19 @@ namespace RDPolarity.Controllers
                 if (!isLocalPlayer) onHitOthersEvent.Invoke();
                 var arrowVel = collision.GetComponentInParent<Rigidbody>().velocity;
                 Instantiate(onHitParticles, transform.position, transform.rotation);
+                StartCoroutine(MaxVelocityCooldown());
                 _rigidbody.AddForce(arrowVel * 2, ForceMode.Impulse);
                 
                 var collisionArrow = collision.transform.parent;
                 Destroy(collisionArrow.gameObject);
             }
+        }
+
+        IEnumerator MaxVelocityCooldown()
+        {
+            _isMaxVelocity = false;
+            yield return new WaitForSeconds(0.1f);
+            _isMaxVelocity = true;
         }
 
         #endregion
