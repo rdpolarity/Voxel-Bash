@@ -92,16 +92,28 @@ namespace RDPolarity.Controllers
         public PlayerMovingState MoveState { get; private set; }
         public PlayerDashingState DashState { get; private set; }
         public PlayerFallingState FallState { get; private set; }
-                
-        [Serializable] public class OnHitEvent : UnityEvent { }
+
+        [Serializable]
+        public class OnHitEvent : UnityEvent
+        {
+        }
+
         public OnHitEvent onHitEvent = new OnHitEvent();
-        
-        [Serializable] public class OnHitSelfEvent : UnityEvent { }
+
+        [Serializable]
+        public class OnHitSelfEvent : UnityEvent
+        {
+        }
+
         public OnHitSelfEvent onHitSelfEvent = new OnHitSelfEvent();
-        
-        [Serializable] public class OnHitOthersEvent : UnityEvent { }
+
+        [Serializable]
+        public class OnHitOthersEvent : UnityEvent
+        {
+        }
+
         public OnHitOthersEvent onHitOthersEvent = new OnHitOthersEvent();
-        
+
         // Local Variables
         private MouseWorld _mouseWorld;
         private Knockback _force;
@@ -115,7 +127,8 @@ namespace RDPolarity.Controllers
         private Rigidbody _rigidbody;
         private float _inputDisableTimer;
         private string[] _outlineColours = new string[] {"Red", "Green", "Blue", "Purple"};
-
+        private bool _isMaxVelocity = true;
+        
         #region Unity Methods
 
         private void Awake()
@@ -151,11 +164,14 @@ namespace RDPolarity.Controllers
             }
 
             // Max Velocity
-            Vector3 horizontalVelocity = _rigidbody.velocity;
-            horizontalVelocity.y = 0;
-            if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+            if (_isMaxVelocity)
             {
-                _rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * _rigidbody.velocity.y;
+                Vector3 horizontalVelocity = _rigidbody.velocity;
+                horizontalVelocity.y = 0;
+                if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+                {
+                    _rigidbody.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * _rigidbody.velocity.y;
+                }
             }
 
             // Look Direction (Y)
@@ -228,7 +244,7 @@ namespace RDPolarity.Controllers
             var effect = Instantiate(swordSlash, player.transform.position, player.transform.rotation);
             effect.AddComponent<StickToTransform>().target = player.transform;
             NetworkServer.Spawn(effect);
-}
+        }
 
         IEnumerator StartStrikeCooldown()
         {
@@ -289,17 +305,8 @@ namespace RDPolarity.Controllers
             {
                 Debug.Log("Release");
                 onFireEvent.Invoke();
-                _bow.shoot(transform.position);
+                _bow.Shoot(transform.position);
             }
-        }
-
-        [Command]
-        public void CmdShoot(Vector3 pos, Vector3 dir, Vector3 pow)
-        {
-            var projectile = Instantiate(arrow);
-            projectile.transform.position = _bow.transform.position + dir / 2;
-            projectile.GetComponent<Rigidbody>().velocity = pow;
-            NetworkServer.Spawn(projectile);
         }
 
         public void OnBuild(InputAction.CallbackContext context)
@@ -357,7 +364,7 @@ namespace RDPolarity.Controllers
             speed = oldSpeed;
         }
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider collision)
         {
             if (collision.gameObject.CompareTag("Kill"))
             {
@@ -365,19 +372,26 @@ namespace RDPolarity.Controllers
                 Instantiate(onDeathParticles, transform.position, transform.rotation);
                 transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
             }
-        }
-
-        private void OnTriggerEnter(Collider collision)
-        {
+            
             if (collision.gameObject.CompareTag("Arrow"))
             {
-                onHitEvent.Invoke();;
-                if (!isLocalPlayer) onHitOthersEvent.Invoke();;
+                onHitEvent.Invoke();
+                if (!isLocalPlayer) onHitOthersEvent.Invoke();
                 var arrowVel = collision.GetComponentInParent<Rigidbody>().velocity;
-                NetworkServer.Spawn(Instantiate(onHitParticles, transform.position, transform.rotation));
+                Instantiate(onHitParticles, transform.position, transform.rotation);
+                StartCoroutine(MaxVelocityCooldown());
                 _rigidbody.AddForce(arrowVel * 2, ForceMode.Impulse);
-                NetworkServer.Destroy(collision.transform.parent.gameObject);
+                
+                var collisionArrow = collision.transform.parent;
+                Destroy(collisionArrow.gameObject);
             }
+        }
+
+        IEnumerator MaxVelocityCooldown()
+        {
+            _isMaxVelocity = false;
+            yield return new WaitForSeconds(0.1f);
+            _isMaxVelocity = true;
         }
 
         #endregion
