@@ -15,7 +15,8 @@ namespace RDPolarity.UI
         [SerializeField] private GameObject escapeMenuGroup;
         [SerializeField] private GameObject lobbyButton;
         [SerializeField] private TMP_Text countdownText;
-         
+        [SerializeField] private TMP_Text timer;
+        
         private void Awake()
         {
             if (lobbyButton != null)
@@ -66,6 +67,11 @@ namespace RDPolarity.UI
         {
             var nm = NetworkManager.singleton as VoxelBashNetworkManager;
             nm.Host();
+        }
+
+        public void UpdateTimer(string time)
+        {
+            timer.text = time;
         }
 
         public void GotoLobby()
