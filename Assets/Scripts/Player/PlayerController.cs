@@ -37,6 +37,11 @@ namespace RDPolarity.Controllers
         [SerializeField] private GameObject onDeathParticles;
         [SerializeField] private GameObject onHitParticles;
         [SerializeField] public string currState = "";
+        private PlayerInfo playerInfo;
+        private bool roundStarted;
+
+        [SyncVar(hook = nameof(OnStocksChange))] private int _stocks = 3;
+
         // ReadOnly Debug
         [Title("Debug Variables")] [SerializeField, ReadOnly]
         private bool isMoving = false;
@@ -53,7 +58,12 @@ namespace RDPolarity.Controllers
 
         public OnDeathEvent onDeathEvent = new OnDeathEvent();
 
-        [Serializable]
+        public delegate void OnLose(PlayerController p);
+        public static event OnLose onLoseEvent;
+
+        public delegate void OnConnect(PlayerController p);
+        public static event OnConnect onConnectEvent;
+
         public class OnChargeEvent : UnityEvent
         {
         }
@@ -188,6 +198,8 @@ namespace RDPolarity.Controllers
             _mouseWorld = GetComponent<MouseWorld>();
             _force = GetComponent<Knockback>();
 
+            onConnectEvent?.Invoke(this);
+
             // state machine test
             StateMachine = new PlayerStateMachine();
             IdleState = new PlayerIdleState(this, StateMachine, "idle");
@@ -200,10 +212,20 @@ namespace RDPolarity.Controllers
             grounded = GetComponentInChildren<Grounded>();
         }
 
+        private void Start()
+        {
+            MatchManager.roundStartEvent += RoundStart;
+        }
+
+        private void RoundStart()
+        {
+            roundStarted = true;
+        }
 
         private void FixedUpdate()
         {
             if (!isLocalPlayer) return;
+            if (!roundStarted) return;
 
             _inputDisableTimer -= Time.deltaTime;
             if (_inputDisableTimer < 0)
@@ -387,6 +409,15 @@ namespace RDPolarity.Controllers
             }
         }
 
+        public bool Alive()
+        {
+            if (_stocks > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public void OnBuild(InputAction.CallbackContext context)
         {
             if (!isLocalPlayer) return;
@@ -399,6 +430,11 @@ namespace RDPolarity.Controllers
             {
                 isBuilding = false;
             }
+        }
+
+        public void SetPlayerInfo(PlayerInfo _playerInfo)
+        {
+            playerInfo = _playerInfo;
         }
 
         #endregion
@@ -417,6 +453,11 @@ namespace RDPolarity.Controllers
                     onBuildEvent.Invoke();
                 }
             }
+        }
+
+        private void OnStocksChange(int oldValue, int newValue)
+        {
+
         }
 
         [Command]
@@ -444,11 +485,22 @@ namespace RDPolarity.Controllers
             isDashing = false;
         }
 
+        private void UpdateStocks()
+        {
+            _stocks--;
+            playerInfo.RemoveStock();
+            if (_stocks <= 0)
+            {
+                onLoseEvent.Invoke(this);
+            }
+        }
+
         private void OnTriggerEnter(Collider collision)
         {
             if (collision.gameObject.CompareTag("Kill"))
             {
                 onDeathEvent.Invoke();
+                UpdateStocks();
                 Instantiate(onDeathParticles, transform.position, transform.rotation);
                 transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
             }

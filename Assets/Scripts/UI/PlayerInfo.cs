@@ -16,7 +16,7 @@ namespace RDPolarity
         // Start is called before the first frame update
         void Start()
         {
-            stockCount = stocks.Count;
+            stockCount = stocks.Count-1;
         }
 
         // Update is called once per frame
@@ -34,7 +34,7 @@ namespace RDPolarity
         {
             stocks[stockCount].gameObject.SetActive(false);
             stockCount--;
-            if (stockCount == 0)
+            if (stockCount < 0)
             {
                 cross.gameObject.SetActive(true);
             }

@@ -139,7 +139,7 @@ RectTransform:
   m_GameObject: {fileID: 7579371741474680307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 7579371742671581989}
   - {fileID: 7579371741325586610}
@@ -164,9 +164,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f194deb2629341948b735604d75a70ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIcon: {fileID: 0}
-  stocks: []
-  cross: {fileID: 0}
+  playerIcon: {fileID: 7579371742671581990}
+  stocks:
+  - {fileID: 7579371742270503192}
+  - {fileID: 7579371743313726868}
+  - {fileID: 7579371741353779531}
+  cross: {fileID: 7579371742695882352}
 --- !u!1 &7579371742270503198
 GameObject:
   m_ObjectHideFlags: 0

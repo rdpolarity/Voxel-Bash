@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Mirror;
 using RDPolarity.Multiplayer;
 using UnityEngine;
@@ -16,6 +17,7 @@ namespace RDPolarity.UI
         [SerializeField] private GameObject lobbyButton;
         [SerializeField] private TMP_Text countdownText;
         [SerializeField] private TMP_Text timer;
+        [SerializeField] private List<PlayerInfo> playerInfos;
         
         private void Awake()
         {
@@ -32,6 +34,11 @@ namespace RDPolarity.UI
             Inputs inputActions = new Inputs();
             inputActions.Player.Enable();
             inputActions.Player.EscapeMenu.performed += ToggleEscapeMenu;
+        }
+
+        public PlayerInfo GetPlayerInfo(int index)
+        {
+            return playerInfos[index];
         }
 
         public void OnCountdownTick(int seconds)
