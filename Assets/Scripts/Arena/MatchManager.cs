@@ -12,8 +12,8 @@ namespace RDPolarity
 {
     public class MatchManager : NetworkBehaviour
     {
-        public delegate void RoundStart();
-        public static event RoundStart roundStartEvent;
+        public delegate void RoundStart(bool value);
+        public static event RoundStart disablePlayers;
 
         [SerializeField] private UIController uiController;
         [SerializeField] private bool suddenDeath;
@@ -23,6 +23,7 @@ namespace RDPolarity
         [SerializeField] private List<PlayerController> alive = new List<PlayerController>();
         private bool roundOver;
         private bool allPlayersConnected;
+        private bool countDownFinished;
 
         [SerializeField] private int countFrom = 3;
         [Serializable] public class OnFinish : UnityEvent { }
@@ -36,7 +37,7 @@ namespace RDPolarity
         void Start()
         {
             SetPlayers();
-            alive = players;
+            SetInfo();
             roundTime = 10;
             PlayerController.onLoseEvent += PlayerLose;
             PlayerController.onConnectEvent += AddPlayer;
@@ -44,20 +45,27 @@ namespace RDPolarity
 
         private void Update()
         {
+            
             if (players.Count == NetworkServer.connections.Count && !allPlayersConnected)
             {
+                Debug.Log("Starting Countdown");
                 allPlayersConnected = true;
                 StartCoroutine(TickFor(countFrom));
             }
-            if (allPlayersConnected)
+            else if (allPlayersConnected && countDownFinished)
             {
+                
                 roundTime -= Time.deltaTime;
                 if (roundTime < 0)
                 {
                     suddenDeath = true;
                 }
             }
-           
+            else
+            {
+                disablePlayers.Invoke(true);
+            }
+
         }
 
         // Update is called once per frame
@@ -84,21 +92,6 @@ namespace RDPolarity
             alive.Remove(p);
         }
 
-        private void SetPlayers()
-        {
-            foreach (GameObject g in GameObject.FindGameObjectsWithTag("Player"))
-            {
-                if (g.name.Contains("Player"))
-                {
-                    if (!players.Contains(g.GetComponent<PlayerController>()))
-                    {
-                        AddPlayer(g.GetComponent<PlayerController>());
-                    }
-
-                }
-            }
-        }
-
         private IEnumerator TickFor(int seconds)
         {
             while (seconds >= 0)
@@ -107,23 +100,41 @@ namespace RDPolarity
                 yield return new WaitForSeconds(1);
                 seconds--;
             }
+            countDownFinished = true;
+            disablePlayers.Invoke(false);
             onFinish.Invoke();
         }
 
-        //This is a bandaid fix for when players join late
-        private IEnumerator DelayedSetPlayer()
+        private void SetInfo()
         {
-            yield return new WaitForSeconds(3f);
-            SetPlayers();
+            for (int i = 0; i < players.Count; i++)
+            {
+                players[i].SetPlayerInfo(uiController.GetPlayerInfo(i));
+                uiController.GetPlayerInfo(i).gameObject.SetActive(true);
+            }
         }
+
+        private void SetPlayers()
+        {
+            foreach (GameObject g in GameObject.FindGameObjectsWithTag("Player"))
+            {
+                if (g.name != "HurtBox")
+                {
+                    PlayerController player = g.GetComponent<PlayerController>();
+                    if (!players.Contains(player))
+                    {
+                        players.Add(player);
+                        alive.Add(player);
+                    }
+                }
+            }
+        }
+
         private void AddPlayer(PlayerController player)
         {
             PlayerInfo info = uiController.GetPlayerInfo(players.Count);
-            Debug.Log(players.Count);
-            players.Add(player);
-            
-            info.gameObject.SetActive(true);
-            player.SetPlayerInfo(info);
+            SetPlayers();
+            SetInfo();
         }
     }
 }

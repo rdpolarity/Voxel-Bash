@@ -38,7 +38,7 @@ namespace RDPolarity.Controllers
         [SerializeField] private GameObject onHitParticles;
         [SerializeField] public string currState = "";
         private PlayerInfo playerInfo;
-        private bool roundStarted;
+        [SerializeField] private bool disabled;
 
         [SyncVar(hook = nameof(OnStocksChange))] private int _stocks = 3;
 
@@ -198,7 +198,7 @@ namespace RDPolarity.Controllers
             _mouseWorld = GetComponent<MouseWorld>();
             _force = GetComponent<Knockback>();
 
-            onConnectEvent?.Invoke(this);
+            
 
             // state machine test
             StateMachine = new PlayerStateMachine();
@@ -214,18 +214,21 @@ namespace RDPolarity.Controllers
 
         private void Start()
         {
-            MatchManager.roundStartEvent += RoundStart;
+            MatchManager.disablePlayers += ChangePlayerDisable;
+            onConnectEvent?.Invoke(this);
         }
 
-        private void RoundStart()
+        private void ChangePlayerDisable(bool value)
         {
-            roundStarted = true;
+            Debug.Log("Player Disable Changed To " + value.ToString());
+            disabled = value;
         }
 
         private void FixedUpdate()
         {
             if (!isLocalPlayer) return;
-            if (!roundStarted) return;
+            Debug.Log(disabled);
+            if (disabled) return;
 
             _inputDisableTimer -= Time.deltaTime;
             if (_inputDisableTimer < 0)
@@ -492,6 +495,10 @@ namespace RDPolarity.Controllers
             if (_stocks <= 0)
             {
                 onLoseEvent.Invoke(this);
+                if (!Alive())
+                {
+                    ChangePlayerDisable(true);
+                }
             }
         }
 
