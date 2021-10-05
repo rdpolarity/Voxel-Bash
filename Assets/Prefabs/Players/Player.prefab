@@ -313,6 +313,7 @@ MonoBehaviour:
   - {fileID: 1200924564465691482, guid: 428ac481ca0530b40abdad1f14fce854, type: 3}
   - {fileID: 4538962258392059466, guid: 03d9b6ee8b487f044849733dafbd12d9, type: 3}
   - {fileID: 1569955243966769085, guid: 6cf2605c9e7a88b4eb31498310a629ce, type: 3}
+  - {fileID: 410546152362213843, guid: f8ebb2e52c5405f4aad664f9058d8aea, type: 3}
   onHitEvent:
     m_PersistentCalls:
       m_Calls:
