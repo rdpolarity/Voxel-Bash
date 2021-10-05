@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Mirror;
 using Mirror.Experimental;
 using RDPolarity.Arena;
@@ -85,6 +86,10 @@ namespace RDPolarity.Controllers
 
         public OnBuildEvent onBuildEvent = new OnBuildEvent();
 
+        [SerializeField] private GameObject modelSwapper;
+        [SerializeField] private List<GameObject> skinList = new List<GameObject>();
+        private int selectedSkin = 0;
+        
         // Properties
         public bool IsMoving => isMoving;
         public PlayerStateMachine StateMachine { get; private set; }
@@ -128,8 +133,42 @@ namespace RDPolarity.Controllers
         private float _inputDisableTimer;
         private string[] _outlineColours = new string[] {"Red", "Green", "Blue", "Purple"};
         private bool _isMaxVelocity = true;
+
+        public void OnSkinForward(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                if (selectedSkin >= skinList.Count - 1) { selectedSkin = 0; } 
+                else { selectedSkin++; }
+                
+                foreach (Transform child in modelSwapper.transform) {
+                    GameObject.Destroy(child.gameObject);
+                }
+                var skin = Instantiate(skinList[selectedSkin], modelSwapper.transform);
+                animator = skin.GetComponent<Animator>();
+                animator.SetBool("isMoving", false);
+            }
+            
+        }
+
+        public void OnSkinBackward(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                if (selectedSkin <= 0) { selectedSkin = skinList.Count - 1; }
+                else { selectedSkin--; }
+                
+                foreach (Transform child in modelSwapper.transform) {
+                    GameObject.Destroy(child.gameObject);
+                }
+                var skin = Instantiate(skinList[selectedSkin], modelSwapper.transform);
+                animator = skin.GetComponent<Animator>();
+                animator.SetBool("isMoving", false);
+            }
+        }
         
         #region Unity Methods
+        
 
         private void Awake()
         {

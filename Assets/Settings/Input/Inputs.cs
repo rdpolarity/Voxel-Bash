@@ -99,6 +99,22 @@ namespace UnityEngine.InputSystem
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChangeSkinForwards"",
+                    ""type"": ""Button"",
+                    ""id"": ""78dd911a-049f-41ba-a296-a6525181c8f9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ChangeSkinBackwards"",
+                    ""type"": ""Button"",
+                    ""id"": ""733f195d-3b11-43d0-a0cb-dd65d81fb85b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -354,6 +370,28 @@ namespace UnityEngine.InputSystem
                     ""action"": ""Build"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""36faf831-a4c1-427a-b5d4-bd661539f2ae"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeSkinForwards"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""14ce9199-cc3f-42f7-bcc6-557807a16e98"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ChangeSkinBackwards"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -400,6 +438,8 @@ namespace UnityEngine.InputSystem
             m_Player_EscapeMenu = m_Player.FindAction("EscapeMenu", throwIfNotFound: true);
             m_Player_ChangeMapForward = m_Player.FindAction("ChangeMapForward", throwIfNotFound: true);
             m_Player_ChangeMapBackwards = m_Player.FindAction("ChangeMapBackwards", throwIfNotFound: true);
+            m_Player_ChangeSkinForwards = m_Player.FindAction("ChangeSkinForwards", throwIfNotFound: true);
+            m_Player_ChangeSkinBackwards = m_Player.FindAction("ChangeSkinBackwards", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -459,6 +499,8 @@ namespace UnityEngine.InputSystem
         private readonly InputAction m_Player_EscapeMenu;
         private readonly InputAction m_Player_ChangeMapForward;
         private readonly InputAction m_Player_ChangeMapBackwards;
+        private readonly InputAction m_Player_ChangeSkinForwards;
+        private readonly InputAction m_Player_ChangeSkinBackwards;
         public struct PlayerActions
         {
             private @Inputs m_Wrapper;
@@ -473,6 +515,8 @@ namespace UnityEngine.InputSystem
             public InputAction @EscapeMenu => m_Wrapper.m_Player_EscapeMenu;
             public InputAction @ChangeMapForward => m_Wrapper.m_Player_ChangeMapForward;
             public InputAction @ChangeMapBackwards => m_Wrapper.m_Player_ChangeMapBackwards;
+            public InputAction @ChangeSkinForwards => m_Wrapper.m_Player_ChangeSkinForwards;
+            public InputAction @ChangeSkinBackwards => m_Wrapper.m_Player_ChangeSkinBackwards;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -512,6 +556,12 @@ namespace UnityEngine.InputSystem
                     @ChangeMapBackwards.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapBackwards;
                     @ChangeMapBackwards.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapBackwards;
                     @ChangeMapBackwards.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeMapBackwards;
+                    @ChangeSkinForwards.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeSkinForwards;
+                    @ChangeSkinForwards.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeSkinForwards;
+                    @ChangeSkinForwards.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeSkinForwards;
+                    @ChangeSkinBackwards.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeSkinBackwards;
+                    @ChangeSkinBackwards.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeSkinBackwards;
+                    @ChangeSkinBackwards.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnChangeSkinBackwards;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -546,6 +596,12 @@ namespace UnityEngine.InputSystem
                     @ChangeMapBackwards.started += instance.OnChangeMapBackwards;
                     @ChangeMapBackwards.performed += instance.OnChangeMapBackwards;
                     @ChangeMapBackwards.canceled += instance.OnChangeMapBackwards;
+                    @ChangeSkinForwards.started += instance.OnChangeSkinForwards;
+                    @ChangeSkinForwards.performed += instance.OnChangeSkinForwards;
+                    @ChangeSkinForwards.canceled += instance.OnChangeSkinForwards;
+                    @ChangeSkinBackwards.started += instance.OnChangeSkinBackwards;
+                    @ChangeSkinBackwards.performed += instance.OnChangeSkinBackwards;
+                    @ChangeSkinBackwards.canceled += instance.OnChangeSkinBackwards;
                 }
             }
         }
@@ -580,6 +636,8 @@ namespace UnityEngine.InputSystem
             void OnEscapeMenu(InputAction.CallbackContext context);
             void OnChangeMapForward(InputAction.CallbackContext context);
             void OnChangeMapBackwards(InputAction.CallbackContext context);
+            void OnChangeSkinForwards(InputAction.CallbackContext context);
+            void OnChangeSkinBackwards(InputAction.CallbackContext context);
         }
     }
 }
