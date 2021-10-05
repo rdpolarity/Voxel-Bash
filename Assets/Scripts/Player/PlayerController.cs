@@ -167,10 +167,8 @@ namespace RDPolarity.Controllers
             }
         }
         
-        
         #region Unity Methods
         
-        #region Unity Methods
 
         private void Awake()
         {
