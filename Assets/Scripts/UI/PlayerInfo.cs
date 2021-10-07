@@ -30,10 +30,17 @@ namespace RDPolarity
             playerIcon.sprite = s;
         }
 
-        public void RemoveStock()
+        public void UpdateStock(int _stocks)
         {
-            stocks[stockCount].gameObject.SetActive(false);
-            stockCount--;
+            stockCount = _stocks;
+            foreach (Image image in stocks)
+            {
+                image.gameObject.SetActive(false);
+            }
+            for (int i = 0; i < stockCount; i++)
+            {
+                stocks[i].gameObject.SetActive(true);
+            }
             if (stockCount < 0)
             {
                 cross.gameObject.SetActive(true);

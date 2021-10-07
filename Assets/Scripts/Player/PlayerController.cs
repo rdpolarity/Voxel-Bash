@@ -227,7 +227,6 @@ namespace RDPolarity.Controllers
         private void FixedUpdate()
         {
             if (!isLocalPlayer) return;
-            Debug.Log(disabled);
             if (disabled) return;
 
             _inputDisableTimer -= Time.deltaTime;
@@ -460,7 +459,7 @@ namespace RDPolarity.Controllers
 
         private void OnStocksChange(int oldValue, int newValue)
         {
-
+            playerInfo.UpdateStock(_stocks);
         }
 
         [Command]
@@ -491,7 +490,6 @@ namespace RDPolarity.Controllers
         private void UpdateStocks()
         {
             _stocks--;
-            playerInfo.RemoveStock();
             if (_stocks <= 0)
             {
                 onLoseEvent.Invoke(this);
