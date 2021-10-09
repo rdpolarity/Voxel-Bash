@@ -15,7 +15,7 @@ namespace RDPolarity.UI
         [SerializeField] private GameObject escapeMenuGroup;
         [SerializeField] private GameObject lobbyButton;
         [SerializeField] private TMP_Text countdownText;
-        
+         
         private void Awake()
         {
             if (lobbyButton != null)
