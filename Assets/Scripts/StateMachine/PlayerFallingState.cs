@@ -4,7 +4,6 @@ namespace RDPolarity.StateMachine
 {
     public class PlayerFallingState : PlayerState
     {
-        bool isGrounded = false;
 
         public PlayerFallingState(PlayerController playerController, PlayerStateMachine stateMachine, string animBoolName) : base(playerController, stateMachine, animBoolName)
         {
@@ -24,8 +23,11 @@ namespace RDPolarity.StateMachine
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
-            if(isGrounded)
+            if(PlayerController.checkDashing())
+            {
+                stateMachine.ChangeState(PlayerController.DashState);
+            }
+            else if(PlayerController.checkGrounded())
             {
                 stateMachine.ChangeState(PlayerController.MoveState); // add landing state?
             }

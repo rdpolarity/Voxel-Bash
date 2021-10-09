@@ -22,7 +22,14 @@ namespace RDPolarity.StateMachine
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
+            if (PlayerController.checkDashing())
+            {
+                stateMachine.ChangeState(PlayerController.DashState);
+            }
+            else if (PlayerController.checkGrounded() == false)
+            {
+                stateMachine.ChangeState(PlayerController.FallState);
+            }
         }
 
         public override void PhysicsUpdate()
