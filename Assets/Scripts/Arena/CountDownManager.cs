@@ -15,6 +15,7 @@ namespace RDPolarity.Arena
         public OnFinish onFinish = new OnFinish();
         [Serializable] public class OnTick : UnityEvent<int> { }
         public OnTick onTick = new OnTick();
+        
         void Start()
         {
             StartCoroutine(TickFor(countFrom));

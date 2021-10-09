@@ -59,16 +59,16 @@ namespace RDPolarity.Controllers
         public OnDeathEvent onDeathEvent = new OnDeathEvent();
 
         public delegate void OnLose(PlayerController p);
-        public static event OnLose onLoseEvent;
+        public static event OnLose ONLoseEvent;
 
         public delegate void OnConnect(PlayerController p);
-        public static event OnConnect onConnectEvent;
+        public static event OnConnect ONConnectEvent;
 
         public class OnChargeEvent : UnityEvent
         {
         }
 
-        public OnChargeEvent onChargeEvent = new OnChargeEvent();
+        private readonly OnChargeEvent _onChargeEvent = new OnChargeEvent();
 
         [Serializable]
         public class OnFireEvent : UnityEvent
@@ -214,8 +214,9 @@ namespace RDPolarity.Controllers
 
         private void Start()
         {
-            MatchManager.disablePlayers += ChangePlayerDisable;
-            onConnectEvent?.Invoke(this);
+            if (!isServer) return;
+            MatchManager.DisablePlayers += ChangePlayerDisable;
+            ONConnectEvent?.Invoke(this);
         }
 
         private void ChangePlayerDisable(bool value)
@@ -399,7 +400,7 @@ namespace RDPolarity.Controllers
                 Debug.Log("Charging");
                 Debug.Log(context.control.displayName);
                 _bow.Charging = true;
-                if (_bow.CooldownTimer > 0) onChargeEvent.Invoke();
+                if (_bow.CooldownTimer > 0) _onChargeEvent.Invoke();
             }
 
             if (context.canceled)
@@ -492,7 +493,7 @@ namespace RDPolarity.Controllers
             _stocks--;
             if (_stocks <= 0)
             {
-                onLoseEvent.Invoke(this);
+                ONLoseEvent.Invoke(this);
                 if (!Alive())
                 {
                     ChangePlayerDisable(true);

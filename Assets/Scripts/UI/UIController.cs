@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using Mirror;
+using RDPolarity.Arena;
 using RDPolarity.Multiplayer;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -18,7 +20,17 @@ namespace RDPolarity.UI
         [SerializeField] private TMP_Text countdownText;
         [SerializeField] private TMP_Text timer;
         [SerializeField] private List<PlayerInfo> playerInfos;
-        
+
+        private void OnEnable()
+        {
+            MatchManager.ONReadyTick += OnCountdownTick;
+        }
+
+        private void OnDisable()
+        {
+            MatchManager.ONReadyTick -= OnCountdownTick;
+        }
+
         private void Awake()
         {
             if (lobbyButton != null)

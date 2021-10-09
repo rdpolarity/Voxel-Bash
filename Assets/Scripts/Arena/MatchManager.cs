@@ -1,140 +1,139 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
 using Mirror;
-using RDPolarity.UI;
 using RDPolarity.Controllers;
+using RDPolarity.UI;
+using UnityEngine;
 
-
-namespace RDPolarity
+namespace RDPolarity.Arena
 {
+    /// <summary>
+    /// Manages the win/loss and round logic for the arena
+    /// </summary>
     public class MatchManager : NetworkBehaviour
     {
-        public delegate void RoundStart(bool value);
-        public static event RoundStart disablePlayers;
 
         [SerializeField] private UIController uiController;
         [SerializeField] private bool suddenDeath;
-        [SyncVar(hook = nameof(UpdateTimer))] private float roundTime;
-
         [SerializeField] private List<PlayerController> players = new List<PlayerController>();
         [SerializeField] private List<PlayerController> alive = new List<PlayerController>();
-        private bool roundOver;
-        private bool allPlayersConnected;
-        private bool countDownFinished;
-
         [SerializeField] private int countFrom = 3;
-        [Serializable] public class OnFinish : UnityEvent { }
-        public OnFinish onFinish = new OnFinish();
-        [Serializable] public class OnTick : UnityEvent<int> { }
-        public OnTick onTick = new OnTick();
-
         
+        [SyncVar(hook = nameof(UpdateRoundTimer))] private int _roundTime;
+        [SyncVar(hook = nameof(UpdateReadyTimer))] private int _readyTime;
+        
+        public delegate void RoundStart(bool value);
+        public static event RoundStart DisablePlayers;
+        
+        private bool _allPlayersConnected;
+        
+        public delegate void OnReadyTick(int seconds);
+        public static event OnReadyTick ONReadyTick;
 
-        // Start is called before the first frame update
-        void Start()
+        private void OnEnable()
+        {
+            PlayerController.ONLoseEvent += PlayerLose;
+            PlayerController.ONConnectEvent += AddPlayer;
+        }
+
+        private void OnDisable()
+        {
+            PlayerController.ONLoseEvent -= PlayerLose;
+            PlayerController.ONConnectEvent -= AddPlayer;
+        }
+
+        private void Start()
         {
             SetPlayers();
             SetInfo();
-            roundTime = 10;
-            PlayerController.onLoseEvent += PlayerLose;
-            PlayerController.onConnectEvent += AddPlayer;
+            if (isServer) _roundTime = 10;
+        }
+        
+        private void UpdateRoundTimer(int oldValue, int newValue)
+        {
+            uiController.UpdateTimer(newValue.ToString()); // This needs to change to a event like the ready timer !!
+        }
+        
+        private void UpdateReadyTimer(int oldValue, int newValue)
+        {
+            ONReadyTick?.Invoke(newValue);
         }
 
-        private void Update()
+        private void PlayerLose(PlayerController player)
         {
-            
-            if (players.Count == NetworkServer.connections.Count && !allPlayersConnected)
-            {
-                Debug.Log("Starting Countdown");
-                allPlayersConnected = true;
-                StartCoroutine(TickFor(countFrom));
-            }
-            else if (allPlayersConnected && countDownFinished)
-            {
-                
-                roundTime -= Time.deltaTime;
-                if (roundTime < 0)
-                {
-                    suddenDeath = true;
-                }
-            }
-            else
-            {
-                disablePlayers.Invoke(true);
-            }
-
-        }
-
-        // Update is called once per frame
-        private void UpdateTimer(float oldValue, float newValue)
-        {
-            string text = "";
-            if(roundOver)
-            {
-                text = alive[0].name + " wins!";
-            }
-            else if (suddenDeath)
-            {
-                text = "Sudden Death";
-            }
-            else
-            {
-                text = ((int)roundTime).ToString();
-            }
-            uiController.UpdateTimer(text);
-        }
-
-        private void PlayerLose(PlayerController p)
-        {
-            alive.Remove(p);
-        }
-
-        private IEnumerator TickFor(int seconds)
-        {
-            while (seconds >= 0)
-            {
-                onTick.Invoke(seconds);
-                yield return new WaitForSeconds(1);
-                seconds--;
-            }
-            countDownFinished = true;
-            disablePlayers.Invoke(false);
-            onFinish.Invoke();
+            alive.Remove(player);
         }
 
         private void SetInfo()
         {
-            for (int i = 0; i < players.Count; i++)
+            for (var i = 0; i < players.Count; i++)
             {
                 players[i].SetPlayerInfo(uiController.GetPlayerInfo(i));
                 uiController.GetPlayerInfo(i).gameObject.SetActive(true);
             }
         }
-
+        
         private void SetPlayers()
         {
-            foreach (GameObject g in GameObject.FindGameObjectsWithTag("Player"))
+            foreach (var g in GameObject.FindGameObjectsWithTag("Player"))
             {
-                if (g.name != "HurtBox")
-                {
-                    PlayerController player = g.GetComponent<PlayerController>();
-                    if (!players.Contains(player))
-                    {
-                        players.Add(player);
-                        alive.Add(player);
-                    }
-                }
+                if (g.name == "HurtBox") continue;
+                var player = g.GetComponent<PlayerController>();
+                if (players.Contains(player)) continue;
+                players.Add(player);
+                alive.Add(player);
             }
         }
+        
+        [Server]
+        private void OnReadyCountdownFinish()
+        {
+            DisablePlayers?.Invoke(false);
+            StartCoroutine(CountdownFor(_roundTime, RPCOnSuddenDeath, s => _roundTime = s));
 
+        }
+        
+        [ClientRpc]
+        private void RPCOnSuddenDeath()
+        {
+            suddenDeath = true;
+            uiController.UpdateTimer("Sudden Death");
+        }
+        
+        [ClientRpc]
+        private void RPCOnRoundOver()
+        {
+            DisablePlayers?.Invoke(true);
+            uiController.UpdateTimer(alive[0].name + " Wins!");
+        }
+        
+        [Server]
         private void AddPlayer(PlayerController player)
         {
-            PlayerInfo info = uiController.GetPlayerInfo(players.Count);
+            var info = uiController.GetPlayerInfo(players.Count);
             SetPlayers();
             SetInfo();
+            
+            DisablePlayers?.Invoke(true);
+            
+            _allPlayersConnected = players.Count == NetworkServer.connections.Count;
+            
+            if (_allPlayersConnected)
+            {
+                StartCoroutine(CountdownFor(countFrom, OnReadyCountdownFinish, s => _readyTime = s));
+            }
+        }
+        
+        private static IEnumerator CountdownFor(int seconds, Action finished, Action<int> tick = null)
+        {
+            while (seconds >= 0)
+            {
+                tick?.Invoke(seconds);
+                yield return new WaitForSeconds (1);
+                seconds--;
+            }
+            finished();
         }
     }
 }
