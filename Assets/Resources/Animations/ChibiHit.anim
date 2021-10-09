@@ -72,7 +72,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT
+    path: Root_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -115,7 +115,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT
+    path: Root_JNT/Neck_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -176,7 +176,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Head_JNT
+    path: Root_JNT/Neck_JNT/Head_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -201,7 +201,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Head_JNT/Chibi_rig_06_Bound:Crown_JNT
+    path: Root_JNT/Neck_JNT/Head_JNT/Crown_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -235,7 +235,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -260,7 +260,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -312,7 +312,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -337,7 +337,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT/Chibi_rig_06_Bound:Left_wrist_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT/Left_wrist_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -362,7 +362,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT/Chibi_rig_06_Bound:Left_wrist_JNT/Chibi_rig_06_Bound:Left_finger_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT/Left_wrist_JNT/Left_finger_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -396,7 +396,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -439,7 +439,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -473,7 +473,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -516,7 +516,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT/Chibi_rig_06_Bound:Right_wrist_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT/Right_wrist_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -541,7 +541,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT/Chibi_rig_06_Bound:Right_wrist_JNT/Chibi_rig_06_Bound:Right_finger_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT/Right_wrist_JNT/Right_finger_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -566,7 +566,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT
+    path: Root_JNT/Pelvis_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -591,7 +591,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -634,7 +634,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -695,7 +695,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT/Chibi_rig_06_Bound:Left_foot_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT/Left_foot_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -720,7 +720,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT/Chibi_rig_06_Bound:Left_foot_JNT/Chibi_rig_06_Bound:Left_toe_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT/Left_foot_JNT/Left_toe_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -781,7 +781,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -842,7 +842,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -903,7 +903,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT/Chibi_rig_06_Bound:Right_foot_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT/Right_foot_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -928,7 +928,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT/Chibi_rig_06_Bound:Right_foot_JNT/Chibi_rig_06_Bound:Right_toe_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT/Right_foot_JNT/Right_toe_JNT
   m_CompressedRotationCurves: []
   m_EulerCurves: []
   m_PositionCurves:
@@ -965,7 +965,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT
+    path: Root_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -990,7 +990,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT
+    path: Root_JNT/Neck_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1015,7 +1015,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Head_JNT
+    path: Root_JNT/Neck_JNT/Head_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1040,7 +1040,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Head_JNT/Chibi_rig_06_Bound:Crown_JNT
+    path: Root_JNT/Neck_JNT/Head_JNT/Crown_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1065,7 +1065,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1090,7 +1090,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1115,7 +1115,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1140,7 +1140,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT/Chibi_rig_06_Bound:Left_wrist_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT/Left_wrist_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1165,7 +1165,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT/Chibi_rig_06_Bound:Left_wrist_JNT/Chibi_rig_06_Bound:Left_finger_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT/Left_wrist_JNT/Left_finger_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1190,7 +1190,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1215,7 +1215,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1240,7 +1240,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1265,7 +1265,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT/Chibi_rig_06_Bound:Right_wrist_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT/Right_wrist_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1290,7 +1290,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT/Chibi_rig_06_Bound:Right_wrist_JNT/Chibi_rig_06_Bound:Right_finger_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT/Right_wrist_JNT/Right_finger_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1315,7 +1315,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT
+    path: Root_JNT/Pelvis_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1340,7 +1340,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1365,7 +1365,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1390,7 +1390,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT/Chibi_rig_06_Bound:Left_foot_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT/Left_foot_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1415,7 +1415,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT/Chibi_rig_06_Bound:Left_foot_JNT/Chibi_rig_06_Bound:Left_toe_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT/Left_foot_JNT/Left_toe_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1440,7 +1440,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1465,7 +1465,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1490,7 +1490,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT/Chibi_rig_06_Bound:Right_foot_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT/Right_foot_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1515,7 +1515,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT/Chibi_rig_06_Bound:Right_foot_JNT/Chibi_rig_06_Bound:Right_toe_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT/Right_foot_JNT/Right_toe_JNT
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -1541,7 +1541,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT
+    path: Root_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1566,7 +1566,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT
+    path: Root_JNT/Neck_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1591,7 +1591,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Head_JNT
+    path: Root_JNT/Neck_JNT/Head_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1616,7 +1616,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Head_JNT/Chibi_rig_06_Bound:Crown_JNT
+    path: Root_JNT/Neck_JNT/Head_JNT/Crown_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1641,7 +1641,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1666,7 +1666,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1691,7 +1691,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1716,7 +1716,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT/Chibi_rig_06_Bound:Left_wrist_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT/Left_wrist_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1741,7 +1741,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Left_clav_JNT/Chibi_rig_06_Bound:Left_shoulder_JNT/Chibi_rig_06_Bound:Left_elbow_JNT/Chibi_rig_06_Bound:Left_wrist_JNT/Chibi_rig_06_Bound:Left_finger_JNT
+    path: Root_JNT/Neck_JNT/Left_clav_JNT/Left_shoulder_JNT/Left_elbow_JNT/Left_wrist_JNT/Left_finger_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1766,7 +1766,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1791,7 +1791,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1816,7 +1816,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1841,7 +1841,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT/Chibi_rig_06_Bound:Right_wrist_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT/Right_wrist_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1866,7 +1866,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Neck_JNT/Chibi_rig_06_Bound:Right_clav_JNT/Chibi_rig_06_Bound:Right_shoulder_JNT/Chibi_rig_06_Bound:Right_elbow_JNT/Chibi_rig_06_Bound:Right_wrist_JNT/Chibi_rig_06_Bound:Right_finger_JNT
+    path: Root_JNT/Neck_JNT/Right_clav_JNT/Right_shoulder_JNT/Right_elbow_JNT/Right_wrist_JNT/Right_finger_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1891,7 +1891,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT
+    path: Root_JNT/Pelvis_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1916,7 +1916,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1941,7 +1941,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1966,7 +1966,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT/Chibi_rig_06_Bound:Left_foot_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT/Left_foot_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1991,7 +1991,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Left_hip_JNT/Chibi_rig_06_Bound:Left_knee_JNT/Chibi_rig_06_Bound:Left_foot_JNT/Chibi_rig_06_Bound:Left_toe_JNT
+    path: Root_JNT/Pelvis_JNT/Left_hip_JNT/Left_knee_JNT/Left_foot_JNT/Left_toe_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2016,7 +2016,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2041,7 +2041,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2066,7 +2066,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT/Chibi_rig_06_Bound:Right_foot_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT/Right_foot_JNT
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2091,7 +2091,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Chibi_rig_06_Bound:Root_JNT/Chibi_rig_06_Bound:Pelvis_JNT/Chibi_rig_06_Bound:Right_hip_JNT/Chibi_rig_06_Bound:Right_knee_JNT/Chibi_rig_06_Bound:Right_foot_JNT/Chibi_rig_06_Bound:Right_toe_JNT
+    path: Root_JNT/Pelvis_JNT/Right_hip_JNT/Right_knee_JNT/Right_foot_JNT/Right_toe_JNT
   m_FloatCurves: []
   m_PPtrCurves: []
   m_SampleRate: 24
