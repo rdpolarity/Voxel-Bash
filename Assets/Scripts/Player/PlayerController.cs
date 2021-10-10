@@ -63,6 +63,9 @@ namespace RDPolarity.Controllers
 
         public delegate void OnConnect(PlayerController p);
         public static event OnConnect ONConnectEvent;
+        
+        public delegate void OnStockUpdated(int i);
+        public static event OnStockUpdated ONStockUpdated;
 
         public class OnChargeEvent : UnityEvent
         {
@@ -500,7 +503,7 @@ namespace RDPolarity.Controllers
         private void UpdateStocks()
         {
             _stocks--;
-            
+            ONStockUpdated?.Invoke(_stocks);
             if (_stocks > 0) return;
             ONLoseEvent?.Invoke(this);
             if (!Alive())
@@ -509,19 +512,20 @@ namespace RDPolarity.Controllers
             }
         }
 
+        [ClientRpc]
+        private void KillPlayer()
+        {
+            Instantiate(onDeathParticles, transform.position, transform.rotation);
+            transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
+        }
+        
         private void OnTriggerEnter(Collider collision)
         {
-            if (collision.gameObject.CompareTag("Kill"))
+            if (isServer && collision.gameObject.CompareTag("Kill"))
             {
-
-                Instantiate(onDeathParticles, transform.position, transform.rotation);
-                transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
-                
-                if (isServer)
-                {
-                    onDeathEvent.Invoke();
-                    UpdateStocks();
-                }
+                KillPlayer();
+                onDeathEvent.Invoke();
+                UpdateStocks();
             }
             
             if (collision.gameObject.CompareTag("Arrow"))

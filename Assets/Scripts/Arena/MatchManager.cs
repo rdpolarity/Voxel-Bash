@@ -41,12 +41,15 @@ namespace RDPolarity.Arena
         {
             PlayerController.ONLoseEvent += PlayerLose;
             PlayerController.ONConnectEvent += AddPlayer;
+            PlayerController.ONStockUpdated += StockUpdated;
+
         }
 
         private void OnDisable()
         {
             PlayerController.ONLoseEvent -= PlayerLose;
             PlayerController.ONConnectEvent -= AddPlayer;
+            PlayerController.ONStockUpdated -= StockUpdated;
         }
 
         private void Start()
@@ -66,10 +69,17 @@ namespace RDPolarity.Arena
         {
             ONReadyTick?.Invoke(newValue);
         }
-        
+
+        [Server]
+        private void StockUpdated(int stocks)
+        {
+            if (suddenDeath) OnRoundOver();
+        }
+
         [Server]
         private void PlayerLose(PlayerController player)
         {
+            alive.Remove(player.GetComponent<PlayerController>());
             KillPlayer(player.gameObject);
             if (alive?.Count <= 1) OnRoundOver();
         }
@@ -80,8 +90,10 @@ namespace RDPolarity.Arena
             alive.Remove(player.GetComponent<PlayerController>());
             player.transform.position = Vector3.up * 100;
             RemoveCameraTrack(player);
+            
         }
         
+        [Server]
         private void OnRoundOver()
         {
             StartCoroutine(CountdownFor(3, () => NetworkManager.singleton.ServerChangeScene("lobby")));
