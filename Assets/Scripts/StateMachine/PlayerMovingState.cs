@@ -12,6 +12,7 @@ namespace RDPolarity.StateMachine
         public override void Enter()
         {
             base.Enter();
+
         }
 
         public override void Exit()
@@ -23,7 +24,7 @@ namespace RDPolarity.StateMachine
         {
             base.LogicUpdate();
 
-            if (PlayerController.IsMoving == false)
+            if (PlayerController.checkMoving() == false)
             {
                 stateMachine.ChangeState(PlayerController.IdleState);
             }

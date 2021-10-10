@@ -11,27 +11,48 @@ namespace RDPolarity.StateMachine
 
         protected float startTime;
 
+        private Animator animator;
         private string animBoolName;
 
         public PlayerState(PlayerController playerController, PlayerStateMachine stateMachine, string animBoolName)
         {
             this.PlayerController = playerController;
-            //this.playerRigidBody = playerRigidBody;
             this.stateMachine = stateMachine;
             this.animBoolName = animBoolName;
+        }
+
+        public virtual void Init()
+        {
+            animator = PlayerController.animator;
         }
 
         public virtual void Enter()
         {
             DoChecks();
-            PlayerController.animator.SetBool("animBoolName", true);
+            if(animator != null)
+            {
+                animator.SetBool(animBoolName, true);
+            }
+            else
+            {
+                animator = PlayerController.animator;
+                animator.SetBool(animBoolName, true);
+            }
             startTime = Time.time;
             Debug.Log(animBoolName);
         }
 
         public virtual void Exit()
         {
-            PlayerController.animator.SetBool("animBoolName", false);
+            if (animator != null)
+            {
+                animator.SetBool(animBoolName, false);
+            }
+            else
+            {
+                animator = PlayerController.animator;
+                animator.SetBool(animBoolName, false);
+            }
         }
 
         public virtual void LogicUpdate()
@@ -47,6 +68,15 @@ namespace RDPolarity.StateMachine
         public virtual void DoChecks()
         {
 
+        }
+
+        public string CheckState()
+        {
+            return animBoolName;
+        }
+        public void SetAnim(Animator aAnimator)
+        {
+            animator = aAnimator;
         }
     }
 }

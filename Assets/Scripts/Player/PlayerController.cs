@@ -36,10 +36,12 @@ namespace RDPolarity.Controllers
         [SerializeField] private GameObject swordSlash;
         [SerializeField] private GameObject onDeathParticles;
         [SerializeField] private GameObject onHitParticles;
-
+        [SerializeField] public string currState = "";
         // ReadOnly Debug
         [Title("Debug Variables")] [SerializeField, ReadOnly]
         private bool isMoving = false;
+        [SerializeField, ReadOnly] private bool isDashing = false;
+        [SerializeField, ReadOnly] private bool isGrounded = false;
 
         [SerializeField, ReadOnly] private bool isBuilding;
 
@@ -92,11 +94,16 @@ namespace RDPolarity.Controllers
         
         // Properties
         public bool IsMoving => isMoving;
+        public bool checkMoving() { return isMoving; }
+        public bool checkDashing() { return isDashing; }
+        public bool checkGrounded() { return isGrounded; }
+
         public PlayerStateMachine StateMachine { get; private set; }
         public PlayerIdleState IdleState { get; private set; }
         public PlayerMovingState MoveState { get; private set; }
         public PlayerDashingState DashState { get; private set; }
         public PlayerFallingState FallState { get; private set; }
+        
 
         [Serializable]
         public class OnHitEvent : UnityEvent
@@ -146,6 +153,7 @@ namespace RDPolarity.Controllers
                 }
                 var skin = Instantiate(skinList[selectedSkin], modelSwapper.transform);
                 animator = skin.GetComponent<Animator>();
+                StateMachine.CurrentState.SetAnim(animator);
                 animator.SetBool("isMoving", false);
             }
             
@@ -163,6 +171,7 @@ namespace RDPolarity.Controllers
                 }
                 var skin = Instantiate(skinList[selectedSkin], modelSwapper.transform);
                 animator = skin.GetComponent<Animator>();
+                StateMachine.CurrentState.SetAnim(animator);
                 animator.SetBool("isMoving", false);
             }
         }
@@ -185,6 +194,7 @@ namespace RDPolarity.Controllers
             DashState = new PlayerDashingState(this, StateMachine, "dash");
             FallState = new PlayerFallingState(this, StateMachine, "fall");
             StateMachine.Initialize(IdleState);
+            StateMachine.CurrentState.SetAnim(animator);
 
             grounded = GetComponentInChildren<Grounded>();
         }
@@ -228,7 +238,11 @@ namespace RDPolarity.Controllers
                 currDashCooldown = 0;
             }
 
+
+            isGrounded = grounded.active;
             myVelocity = _rigidbody.velocity;
+            StateMachine.stateUpdate();
+            currState = StateMachine.CurrentState.CheckState();
 
             if (isBuilding)
             {
@@ -392,7 +406,8 @@ namespace RDPolarity.Controllers
             _startingVelocity = new Vector3(_movement.x * speed, 0, _movement.y * speed);
             _startingTime = Time.time;
             var currentY = transform.position.y;
-            
+            isDashing = true;
+
             var oldSpeed = speed;
             speed *= dashMultiplier;
             while (Time.time < _startingTime + dashTimer)
@@ -401,6 +416,7 @@ namespace RDPolarity.Controllers
                 yield return null;
             }
             speed = oldSpeed;
+            isDashing = false;
         }
 
         private void OnTriggerEnter(Collider collision)

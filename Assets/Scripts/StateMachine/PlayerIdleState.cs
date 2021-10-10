@@ -23,7 +23,7 @@ namespace RDPolarity.StateMachine
         {
             base.LogicUpdate();
 
-            if(PlayerController.IsMoving)
+            if(PlayerController.checkMoving())
             {
                 stateMachine.ChangeState(PlayerController.MoveState);
             }
