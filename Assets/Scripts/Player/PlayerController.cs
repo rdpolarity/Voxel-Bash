@@ -140,6 +140,7 @@ namespace RDPolarity.Controllers
         private float _inputDisableTimer;
         private string[] _outlineColours = new string[] {"Red", "Green", "Blue", "Purple"};
         private bool _isMaxVelocity = true;
+        private Quaternion slowRotation;
 
         public void OnSkinForward(InputAction.CallbackContext context)
         {
@@ -224,12 +225,7 @@ namespace RDPolarity.Controllers
             }
 
             // Look Direction (Y)
-            facing = Vector3.Normalize(_mouseWorld.Position - transform.position);
-            facing.y = 0;
-            var rotation = Quaternion.LookRotation(facing);
-            var slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
             transform.rotation = slowRotation;
-            _bow.Dir = facing;
 
             // dash cd 
             currDashCooldown -= Time.deltaTime;
@@ -308,7 +304,7 @@ namespace RDPolarity.Controllers
         public void OnMovement(InputAction.CallbackContext context)
         {
             if (!isLocalPlayer) return;
-
+            Debug.Log("player moving");
             if (context.performed)
             {
                 animator.SetBool("isMoving", true);
@@ -322,6 +318,33 @@ namespace RDPolarity.Controllers
             }
 
             _movement = context.ReadValue<Vector2>();
+        }
+
+        public void OnLook(InputAction.CallbackContext context)
+        {
+            if (!isLocalPlayer) return;
+
+            if (context.control.displayName == "Right Stick")
+            {
+                Vector2 stickInput = Gamepad.current.rightStick.ReadValue().normalized;
+
+                //Dont update the facing if the input is too small. Player can shoot downwards if its allowed
+                if (Mathf.Abs(stickInput.x + stickInput.y) > 0.02)
+                {
+                    facing = new Vector3(stickInput.x, 0, stickInput.y);
+                }
+            }
+
+            else
+            {
+                facing = Vector3.Normalize(_mouseWorld.Position - transform.position);
+                facing.y = 0;
+                
+            }
+            var rotation = Quaternion.LookRotation(facing);
+            slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
+            
+            _bow.Dir = facing;
         }
 
         public void OnDash(InputAction.CallbackContext context)
@@ -350,6 +373,7 @@ namespace RDPolarity.Controllers
             if (context.started)
             {
                 Debug.Log("Charging");
+                Debug.Log(context.control.displayName);
                 _bow.Charging = true;
                 if (_bow.CooldownTimer > 0) onChargeEvent.Invoke();
             }
@@ -357,6 +381,7 @@ namespace RDPolarity.Controllers
             if (context.canceled)
             {
                 Debug.Log("Release");
+                Debug.Log(context.control.displayName);
                 onFireEvent.Invoke();
                 _bow.Shoot(transform.position);
             }
