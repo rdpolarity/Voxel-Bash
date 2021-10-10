@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FirstGearGames.Mirrors.Assets.FlexNetworkAnimators;
 using Mirror;
 using Mirror.Experimental;
 using RDPolarity.Arena;
@@ -103,7 +104,7 @@ namespace RDPolarity.Controllers
 
         [SerializeField] private GameObject modelSwapper;
         [SerializeField] private List<GameObject> skinList = new List<GameObject>();
-        private int selectedSkin = 0;
+        [SyncVar(hook = nameof(UpdateSkin))]private int selectedSkin = 0;
         
         // Properties
         public bool IsMoving => isMoving;
@@ -157,37 +158,46 @@ namespace RDPolarity.Controllers
 
         public void OnSkinForward(InputAction.CallbackContext context)
         {
-            if (context.performed)
+            if (context.performed && isLocalPlayer)
             {
                 if (selectedSkin >= skinList.Count - 1) { selectedSkin = 0; } 
                 else { selectedSkin++; }
-                
-                foreach (Transform child in modelSwapper.transform) {
-                    GameObject.Destroy(child.gameObject);
-                }
-                var skin = Instantiate(skinList[selectedSkin], modelSwapper.transform);
-                animator = skin.GetComponent<Animator>();
-                StateMachine.CurrentState.SetAnim(animator);
-                animator.SetBool("isMoving", false);
+            }
+            if (!isServer) CMDUpdateSkin(selectedSkin);
+        }
+
+        private void UpdateSkin(int oldValue, int newValue)
+        {
+            CMDUpdateSkin(newValue);
+        }
+
+        [Command]
+        private void CMDUpdateSkin(int selection)
+        {
+            RPCUpdateSkin(selection);
+        }
+        
+        [ClientRpc]
+        private void RPCUpdateSkin(int selection)
+        {
+            foreach (Transform child in modelSwapper.transform) {
+                Destroy(child.gameObject);
             }
             
+            var skin = Instantiate(skinList[selection], modelSwapper.transform);
+            animator = skin.GetComponent<Animator>();
+            GetComponent<FlexNetworkAnimator>().SetAnimator(animator);
+            StateMachine.CurrentState.SetAnim(animator);
         }
 
         public void OnSkinBackward(InputAction.CallbackContext context)
         {
-            if (context.performed)
+            if (context.performed && isLocalPlayer)
             {
                 if (selectedSkin <= 0) { selectedSkin = skinList.Count - 1; }
                 else { selectedSkin--; }
-                
-                foreach (Transform child in modelSwapper.transform) {
-                    GameObject.Destroy(child.gameObject);
-                }
-                var skin = Instantiate(skinList[selectedSkin], modelSwapper.transform);
-                animator = skin.GetComponent<Animator>();
-                StateMachine.CurrentState.SetAnim(animator);
-                animator.SetBool("isMoving", false);
             }
+            if (!isServer) CMDUpdateSkin(selectedSkin);
         }
         
         #region Unity Methods
@@ -227,6 +237,9 @@ namespace RDPolarity.Controllers
 
         private void Start()
         {
+            selectedSkin = 1;
+            selectedSkin = 0;
+            CMDUpdateSkin(selectedSkin);
             ONConnectEvent?.Invoke(this);
         }
 
@@ -269,22 +282,13 @@ namespace RDPolarity.Controllers
             {
                 currDashCooldown = 0;
             }
-
-
+            
             isGrounded = grounded.active;
             myVelocity = _rigidbody.velocity;
             StateMachine.stateUpdate();
             currState = StateMachine.CurrentState.CheckState();
 
-            if (isBuilding)
-            {
-                // _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
-                Build();
-            }
-            else
-            {
-                // _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
-            }
+            if (isBuilding) Build();
         }
 
         #endregion
@@ -370,7 +374,6 @@ namespace RDPolarity.Controllers
                     facing = new Vector3(stickInput.x, 0, stickInput.y);
                 }
             }
-
             else
             {
                 facing = Vector3.Normalize(_mouseWorld.Position - transform.position);
@@ -378,7 +381,8 @@ namespace RDPolarity.Controllers
                 
             }
             var rotation = Quaternion.LookRotation(facing);
-            slowRotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
+            // Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
+            slowRotation = rotation;
             
             _bow.Dir = facing;
         }
