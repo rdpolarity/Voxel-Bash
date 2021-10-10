@@ -37,6 +37,11 @@ namespace RDPolarity.Controllers
         [SerializeField] private GameObject onDeathParticles;
         [SerializeField] private GameObject onHitParticles;
         [SerializeField] public string currState = "";
+        private PlayerInfo playerInfo;
+        [SerializeField] private bool disabled;
+
+        [SyncVar(hook = nameof(OnStocksChange))] private int _stocks = 3;
+
         // ReadOnly Debug
         [Title("Debug Variables")] [SerializeField, ReadOnly]
         private bool isMoving = false;
@@ -53,12 +58,20 @@ namespace RDPolarity.Controllers
 
         public OnDeathEvent onDeathEvent = new OnDeathEvent();
 
-        [Serializable]
+        public delegate void OnLose(PlayerController p);
+        public static event OnLose ONLoseEvent;
+
+        public delegate void OnConnect(PlayerController p);
+        public static event OnConnect ONConnectEvent;
+        
+        public delegate void OnStockUpdated(int i);
+        public static event OnStockUpdated ONStockUpdated;
+
         public class OnChargeEvent : UnityEvent
         {
         }
 
-        public OnChargeEvent onChargeEvent = new OnChargeEvent();
+        private readonly OnChargeEvent _onChargeEvent = new OnChargeEvent();
 
         [Serializable]
         public class OnFireEvent : UnityEvent
@@ -180,6 +193,16 @@ namespace RDPolarity.Controllers
         #region Unity Methods
         
 
+        private void OnEnable()
+        {
+            MatchManager.DisablePlayers += ChangePlayerDisable;
+        }
+
+        private void OnDisable()
+        {
+            MatchManager.DisablePlayers -= ChangePlayerDisable;
+        }
+
         private void Awake()
         {
             animator.SetBool("isMoving", false);
@@ -187,6 +210,8 @@ namespace RDPolarity.Controllers
             _rigidbody = GetComponent<Rigidbody>();
             _mouseWorld = GetComponent<MouseWorld>();
             _force = GetComponent<Knockback>();
+
+            
 
             // state machine test
             StateMachine = new PlayerStateMachine();
@@ -200,10 +225,21 @@ namespace RDPolarity.Controllers
             grounded = GetComponentInChildren<Grounded>();
         }
 
+        private void Start()
+        {
+            ONConnectEvent?.Invoke(this);
+        }
+
+        private void ChangePlayerDisable(bool value)
+        {
+            Debug.Log("Player Disable Changed To " + value.ToString());
+            disabled = value;
+        }
 
         private void FixedUpdate()
         {
             if (!isLocalPlayer) return;
+            if (disabled) return;
 
             _inputDisableTimer -= Time.deltaTime;
             if (_inputDisableTimer < 0)
@@ -375,7 +411,7 @@ namespace RDPolarity.Controllers
                 Debug.Log("Charging");
                 Debug.Log(context.control.displayName);
                 _bow.Charging = true;
-                if (_bow.CooldownTimer > 0) onChargeEvent.Invoke();
+                if (_bow.CooldownTimer > 0) _onChargeEvent.Invoke();
             }
 
             if (context.canceled)
@@ -385,6 +421,15 @@ namespace RDPolarity.Controllers
                 onFireEvent.Invoke();
                 _bow.Shoot(transform.position);
             }
+        }
+
+        public bool Alive()
+        {
+            if (_stocks > 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         public void OnBuild(InputAction.CallbackContext context)
@@ -399,6 +444,11 @@ namespace RDPolarity.Controllers
             {
                 isBuilding = false;
             }
+        }
+
+        public void SetPlayerInfo(PlayerInfo _playerInfo)
+        {
+            playerInfo = _playerInfo;
         }
 
         #endregion
@@ -417,6 +467,11 @@ namespace RDPolarity.Controllers
                     onBuildEvent.Invoke();
                 }
             }
+        }
+
+        private void OnStocksChange(int oldValue, int newValue)
+        {
+            playerInfo.UpdateStock(_stocks);
         }
 
         [Command]
@@ -443,14 +498,34 @@ namespace RDPolarity.Controllers
             speed = oldSpeed;
             isDashing = false;
         }
+        
+        [Server]
+        private void UpdateStocks()
+        {
+            _stocks--;
+            ONStockUpdated?.Invoke(_stocks);
+            if (_stocks > 0) return;
+            ONLoseEvent?.Invoke(this);
+            if (!Alive())
+            {
+                ChangePlayerDisable(true);
+            }
+        }
 
+        [ClientRpc]
+        private void KillPlayer()
+        {
+            Instantiate(onDeathParticles, transform.position, transform.rotation);
+            transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
+        }
+        
         private void OnTriggerEnter(Collider collision)
         {
-            if (collision.gameObject.CompareTag("Kill"))
+            if (isServer && collision.gameObject.CompareTag("Kill"))
             {
+                KillPlayer();
                 onDeathEvent.Invoke();
-                Instantiate(onDeathParticles, transform.position, transform.rotation);
-                transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
+                UpdateStocks();
             }
             
             if (collision.gameObject.CompareTag("Arrow"))

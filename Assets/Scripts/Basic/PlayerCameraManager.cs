@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using Cinemachine;
+using RDPolarity.Arena;
 using UnityEngine;
 
 namespace RDPolarity.Basic
@@ -9,12 +11,6 @@ namespace RDPolarity.Basic
     /// </summary>
     public class PlayerCameraManager : MonoBehaviour
     {
-        public void InitCamera() {
-            var targetGroup = GetComponent<CinemachineTargetGroup>();
-            foreach(var player in GameObject.FindGameObjectsWithTag("Player")) {
-                Debug.Log(player.name);
-                targetGroup.AddMember(player.gameObject.transform, 1, 0);
-            }
-        }
+
     }
 }

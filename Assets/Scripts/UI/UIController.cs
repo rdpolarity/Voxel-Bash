@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using Mirror;
+using RDPolarity.Arena;
 using RDPolarity.Multiplayer;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -15,7 +18,19 @@ namespace RDPolarity.UI
         [SerializeField] private GameObject escapeMenuGroup;
         [SerializeField] private GameObject lobbyButton;
         [SerializeField] private TMP_Text countdownText;
-         
+        [SerializeField] private TMP_Text timer;
+        [SerializeField] private List<PlayerInfo> playerInfos;
+
+        private void OnEnable()
+        {
+            MatchManager.ONReadyTick += OnCountdownTick;
+        }
+
+        private void OnDisable()
+        {
+            MatchManager.ONReadyTick -= OnCountdownTick;
+        }
+
         private void Awake()
         {
             if (lobbyButton != null)
@@ -31,6 +46,11 @@ namespace RDPolarity.UI
             Inputs inputActions = new Inputs();
             inputActions.Player.Enable();
             inputActions.Player.EscapeMenu.performed += ToggleEscapeMenu;
+        }
+
+        public PlayerInfo GetPlayerInfo(int index)
+        {
+            return playerInfos[index];
         }
 
         public void OnCountdownTick(int seconds)
@@ -66,6 +86,11 @@ namespace RDPolarity.UI
         {
             var nm = NetworkManager.singleton as VoxelBashNetworkManager;
             nm.Host();
+        }
+
+        public void UpdateTimer(string time)
+        {
+            timer.text = time;
         }
 
         public void GotoLobby()
