@@ -190,6 +190,16 @@ namespace RDPolarity.Controllers
         #region Unity Methods
         
 
+        private void OnEnable()
+        {
+            MatchManager.DisablePlayers += ChangePlayerDisable;
+        }
+
+        private void OnDisable()
+        {
+            MatchManager.DisablePlayers -= ChangePlayerDisable;
+        }
+
         private void Awake()
         {
             animator.SetBool("isMoving", false);
@@ -214,8 +224,6 @@ namespace RDPolarity.Controllers
 
         private void Start()
         {
-            if (!isServer) return;
-            MatchManager.DisablePlayers += ChangePlayerDisable;
             ONConnectEvent?.Invoke(this);
         }
 
@@ -487,17 +495,17 @@ namespace RDPolarity.Controllers
             speed = oldSpeed;
             isDashing = false;
         }
-
+        
+        [Server]
         private void UpdateStocks()
         {
             _stocks--;
-            if (_stocks <= 0)
+            
+            if (_stocks > 0) return;
+            ONLoseEvent?.Invoke(this);
+            if (!Alive())
             {
-                ONLoseEvent.Invoke(this);
-                if (!Alive())
-                {
-                    ChangePlayerDisable(true);
-                }
+                ChangePlayerDisable(true);
             }
         }
 
@@ -505,10 +513,15 @@ namespace RDPolarity.Controllers
         {
             if (collision.gameObject.CompareTag("Kill"))
             {
-                onDeathEvent.Invoke();
-                UpdateStocks();
+
                 Instantiate(onDeathParticles, transform.position, transform.rotation);
                 transform.position = NetworkManager.singleton.GetStartPosition().transform.position;
+                
+                if (isServer)
+                {
+                    onDeathEvent.Invoke();
+                    UpdateStocks();
+                }
             }
             
             if (collision.gameObject.CompareTag("Arrow"))

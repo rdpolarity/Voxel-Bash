@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using Mirror;
 using RDPolarity.Controllers;
 using RDPolarity.UI;
@@ -19,6 +20,7 @@ namespace RDPolarity.Arena
         [SerializeField] private List<PlayerController> players = new List<PlayerController>();
         [SerializeField] private List<PlayerController> alive = new List<PlayerController>();
         [SerializeField] private int countFrom = 3;
+        [SerializeField] private CinemachineTargetGroup cameraTargetGroup;
         
         [SyncVar(hook = nameof(UpdateRoundTimer))] private int _roundTime;
         [SyncVar(hook = nameof(UpdateReadyTimer))] private int _readyTime;
@@ -27,9 +29,13 @@ namespace RDPolarity.Arena
         public static event RoundStart DisablePlayers;
         
         private bool _allPlayersConnected;
+        private bool _isRoundOver;
         
         public delegate void OnReadyTick(int seconds);
         public static event OnReadyTick ONReadyTick;
+        
+        public delegate void OnReadyFinish();
+        public static event OnReadyFinish ONReadyFinish;
 
         private void OnEnable()
         {
@@ -52,6 +58,7 @@ namespace RDPolarity.Arena
         
         private void UpdateRoundTimer(int oldValue, int newValue)
         {
+            if (_isRoundOver) return;
             uiController.UpdateTimer(newValue.ToString()); // This needs to change to a event like the ready timer !!
         }
         
@@ -59,10 +66,27 @@ namespace RDPolarity.Arena
         {
             ONReadyTick?.Invoke(newValue);
         }
-
+        
+        [Server]
         private void PlayerLose(PlayerController player)
         {
-            alive.Remove(player);
+            KillPlayer(player.gameObject);
+            if (alive?.Count <= 1) OnRoundOver();
+        }
+
+        [ClientRpc]
+        private void KillPlayer(GameObject player)
+        {
+            alive.Remove(player.GetComponent<PlayerController>());
+            player.transform.position = Vector3.up * 100;
+            RemoveCameraTrack(player);
+        }
+        
+        private void OnRoundOver()
+        {
+            StartCoroutine(CountdownFor(3, () => NetworkManager.singleton.ServerChangeScene("lobby")));
+            RPCOnRoundOver();
+            FreezeAllPlayer(true);
         }
 
         private void SetInfo()
@@ -89,14 +113,27 @@ namespace RDPolarity.Arena
         [Server]
         private void OnReadyCountdownFinish()
         {
-            DisablePlayers?.Invoke(false);
+            FreezeAllPlayer(false);
+            RPCStartCameraTrack();
             StartCoroutine(CountdownFor(_roundTime, RPCOnSuddenDeath, s => _roundTime = s));
-
         }
-        
+
+        [ClientRpc]
+        private void FreezeAllPlayer(bool isFrozen)
+        {
+            DisablePlayers?.Invoke(isFrozen);
+        }
+
+        [ClientRpc]
+        private void RPCStartCameraTrack()
+        {
+            foreach (var player in players) AddCameraTrack(player.gameObject);
+        }
+
         [ClientRpc]
         private void RPCOnSuddenDeath()
         {
+            if (_isRoundOver) return;
             suddenDeath = true;
             uiController.UpdateTimer("Sudden Death");
         }
@@ -104,24 +141,32 @@ namespace RDPolarity.Arena
         [ClientRpc]
         private void RPCOnRoundOver()
         {
-            DisablePlayers?.Invoke(true);
-            uiController.UpdateTimer(alive[0].name + " Wins!");
+            _isRoundOver = true;
+            if (alive.Count == 0)
+            {
+                uiController.UpdateTimer("Nobody" + " Wins :(");
+            }
+            else
+            {
+                uiController.UpdateTimer(alive[0].name + " Wins!");
+            }
         }
         
-        [Server]
         private void AddPlayer(PlayerController player)
         {
             var info = uiController.GetPlayerInfo(players.Count);
             SetPlayers();
             SetInfo();
             
-            DisablePlayers?.Invoke(true);
             
-            _allPlayersConnected = players.Count == NetworkServer.connections.Count;
-            
-            if (_allPlayersConnected)
+            if (isServer)
             {
-                StartCoroutine(CountdownFor(countFrom, OnReadyCountdownFinish, s => _readyTime = s));
+                FreezeAllPlayer(true);
+                _allPlayersConnected = players.Count == NetworkServer.connections.Count;
+                if (_allPlayersConnected)
+                {
+                    StartCoroutine(CountdownFor(countFrom, OnReadyCountdownFinish, s => _readyTime = s));
+                }
             }
         }
         
@@ -134,6 +179,14 @@ namespace RDPolarity.Arena
                 seconds--;
             }
             finished();
+        }
+        
+        private void AddCameraTrack(GameObject player) {
+            cameraTargetGroup.AddMember(player.gameObject.transform, 1, 0);
+        }
+        
+        private void RemoveCameraTrack(GameObject player) {
+            cameraTargetGroup.RemoveMember(player.gameObject.transform);
         }
     }
 }
