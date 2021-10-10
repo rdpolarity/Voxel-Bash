@@ -229,6 +229,7 @@ MonoBehaviour:
   onDeathParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
   onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
   currState: 
+  disabled: 0
   isMoving: 0
   isDashing: 0
   isGrounded: 0
@@ -248,9 +249,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onLoseEvent:
-    m_PersistentCalls:
-      m_Calls: []
   onFireEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -301,8 +299,8 @@ MonoBehaviour:
         m_CallState: 2
   modelSwapper: {fileID: 3864199000054426364}
   skinList:
-  - {fileID: 1200924564465691482, guid: 428ac481ca0530b40abdad1f14fce854, type: 3}
   - {fileID: 4538962258392059466, guid: 03d9b6ee8b487f044849733dafbd12d9, type: 3}
+  - {fileID: 1200924564465691482, guid: 428ac481ca0530b40abdad1f14fce854, type: 3}
   - {fileID: 1569955243966769085, guid: 6cf2605c9e7a88b4eb31498310a629ce, type: 3}
   - {fileID: 410546152362213843, guid: f8ebb2e52c5405f4aad664f9058d8aea, type: 3}
   - {fileID: 2266862653703006816, guid: 09d467c71a9d9f740bf6291d8aa5fb43, type: 3}
@@ -414,19 +412,7 @@ MonoBehaviour:
     m_ActionId: 34efe694-fb2e-470c-a6b5-587fb932455b
     m_ActionName: Player/Dash[/Keyboard/shift]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8311832726710157240}
-        m_TargetAssemblyTypeName: RDPolarity.Controllers.PlayerController, Assembly-CSharp
-        m_MethodName: OnStrike
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: e00c0eaf-b13e-4e4c-8c44-6d649e7c7489
     m_ActionName: Player/Strike[/Mouse/leftButton]
   - m_PersistentCalls:

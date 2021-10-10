@@ -21,6 +21,7 @@ namespace RDPolarity.Arena
         [SerializeField] private List<PlayerController> alive = new List<PlayerController>();
         [SerializeField] private int countFrom = 3;
         [SerializeField] private CinemachineTargetGroup cameraTargetGroup;
+        [SerializeField] private int roundTime = 120;
         
         [SyncVar(hook = nameof(UpdateRoundTimer))] private int _roundTime;
         [SyncVar(hook = nameof(UpdateReadyTimer))] private int _readyTime;
@@ -56,7 +57,7 @@ namespace RDPolarity.Arena
         {
             SetPlayers();
             SetInfo();
-            if (isServer) _roundTime = 10;
+            if (isServer) _roundTime = roundTime;
         }
         
         private void UpdateRoundTimer(int oldValue, int newValue)
