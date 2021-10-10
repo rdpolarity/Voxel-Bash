@@ -228,7 +228,10 @@ MonoBehaviour:
   swordSlash: {fileID: 1130446560849736, guid: c4d564b5d4682ad46b8621f0fa6f40d9, type: 3}
   onDeathParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
   onHitParticles: {fileID: 2709668850571123160, guid: ce3708ccaf5f22a4695ae0927943527a, type: 3}
+  currState: 
   isMoving: 0
+  isDashing: 0
+  isGrounded: 0
   isBuilding: 0
   onDeathEvent:
     m_PersistentCalls:
@@ -323,6 +326,7 @@ MonoBehaviour:
   - {fileID: 256564935079807752, guid: b3405bcb5a90a5343850edbc09b613cb, type: 3}
   - {fileID: 2085689077509281661, guid: 2a6315fbea1425c4bb74a6e80a0ac8bf, type: 3}
   - {fileID: 3009089133866427334, guid: 5142358dab7ece64e8d0ad59fda055a8, type: 3}
+  - {fileID: 7794973742826116309, guid: dd67e3d5724d0c040940a2d47638d7db, type: 3}
   onHitEvent:
     m_PersistentCalls:
       m_Calls:
