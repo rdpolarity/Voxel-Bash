@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using FMODUnity;
 using Mirror;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace RDPolarity.Arena
@@ -29,11 +30,13 @@ namespace RDPolarity.Arena
             {
                 t.neighbours.Remove(this);
             }
-            if (nestedBlock != null)
+            if (nestedBlock != null && SceneManager.GetActiveScene().name == "Arena")
             {
-                nestedBlock.transform.localPosition = new Vector3(0, 20, 0);
+                var basicBlock = Instantiate(nestedBlock, transform.position, transform.rotation);
+                // basicBlock.transform.parent = transform;
+                NetworkServer.Spawn(basicBlock);
             }
-            gameObject.transform.position = gameObject.transform.position - new Vector3(0, 20, 0);
+            gameObject.transform.position = gameObject.transform.position - new Vector3(0, 1000, 0);
         }
     }
 }
