@@ -19,9 +19,17 @@ namespace RDPolarity.Player
         private Ray collisionDetect;
         private Vector3 lastPos;
         private float tilesHit;
+        private MeshRenderer render;
 
 
         private Quaternion targetRotation;
+
+        private void Start()
+        {
+            render = GetComponentInChildren<MeshRenderer>();
+            render.enabled = false;
+            StartCoroutine(ActivateRenderer());
+        }
 
         // Update is called once per frame
         void FixedUpdate()
@@ -65,6 +73,12 @@ namespace RDPolarity.Player
             _rigidbody.AddForce(power, ForceMode.Impulse);
         }
 
+
+        private IEnumerator ActivateRenderer()
+        {
+            yield return new WaitForSeconds(0.1f);
+            render.enabled = true;
+        }
 
         private void OnCollisionEnter(Collision collision)
         {

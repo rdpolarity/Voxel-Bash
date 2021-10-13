@@ -413,7 +413,6 @@ namespace RDPolarity.Controllers
             if (context.started)
             {
                 Debug.Log("Charging");
-                Debug.Log(context.control.displayName);
                 _bow.Charging = true;
                 if (_bow.CooldownTimer > 0) _onChargeEvent.Invoke();
             }
@@ -421,7 +420,6 @@ namespace RDPolarity.Controllers
             if (context.canceled)
             {
                 Debug.Log("Release");
-                Debug.Log(context.control.displayName);
                 onFireEvent.Invoke();
                 _bow.Shoot(transform.position);
             }

@@ -3,6 +3,7 @@ using RDPolarity.Controllers;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using System.Collections;
 
 namespace RDPolarity.Player
 {
@@ -61,17 +62,19 @@ namespace RDPolarity.Player
                     charge += Time.deltaTime * chargeRate;
                     indicator.gameObject.SetActive(true);
                     indicator.DrawIndicator(
-                        Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0)),
+                        Mathf.Clamp(charge * power, minForce, maxForce) * dir,
                         transform.position + dir);
                 }
                 else
                 {
-                    indicator.gameObject.SetActive(false);
+                    
+                    
                 }
             }
             else
             {
                 cooldownImage.enabled = true;
+                indicator.gameObject.SetActive(false);
             }
 
             cooldownImage.transform.LookAt(Camera.main.transform);
@@ -82,17 +85,17 @@ namespace RDPolarity.Player
         {
             if (!hasAuthority) return;
             
-            var pow = Mathf.Clamp(charge * power, minForce, maxForce) * (dir + new Vector3(0, 0.1f, 0));
+            var pow = Mathf.Clamp(charge * power, minForce, maxForce) * dir;
             indicator.Clear();
             charge = 0;
+            Debug.Log("Setting false");
             Charging = false;
             
             if (cooldownTimer < 0)
             {
                 if (!isServer)
                 {
-                    var projectile = Instantiate(arrow);
-                    projectile.transform.position = transform.position + dir / 2;
+                    var projectile = Instantiate(arrow, transform.position, Quaternion.LookRotation(pow.normalized));
                     projectile.GetComponent<Arrow>().Launch(pow);
                 }
 
@@ -100,6 +103,7 @@ namespace RDPolarity.Player
                 cooldownTimer = cooldown;
             }
         }
+        
 
         [Command]
         private void CmdShoot(Vector3 pos, Vector3 dir, Vector3 pow, double networkTime)
