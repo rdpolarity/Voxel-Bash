@@ -5,9 +5,11 @@ using FirstGearGames.Mirrors.Assets.FlexNetworkAnimators;
 using Mirror;
 using Mirror.Experimental;
 using RDPolarity.Arena;
+using RDPolarity.Multiplayer;
 using RDPolarity.Player;
 using RDPolarity.StateMachine;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -22,6 +24,7 @@ namespace RDPolarity.Controllers
     {
         // Public Serialized
         [SerializeField] private PlayerInput inputs;
+        [SerializeField] public TMP_Text usernameText;
         [SerializeField] private float speed = 1f;
         [SerializeField] private float maxSpeed = 5f;
         [SerializeField] public Animator animator;
@@ -43,6 +46,9 @@ namespace RDPolarity.Controllers
 
         [SyncVar(hook = nameof(OnStocksChange))] private int _stocks = 3;
 
+        [SyncVar(hook = nameof(UpdateUsername))]
+        private string _username = "null";
+            
         // ReadOnly Debug
         [Title("Debug Variables")] [SerializeField, ReadOnly]
         private bool isMoving = false;
@@ -139,7 +145,8 @@ namespace RDPolarity.Controllers
         }
 
         public OnHitOthersEvent onHitOthersEvent = new OnHitOthersEvent();
-
+        public PlayerDataManager persistentData;
+        
         // Local Variables
         private MouseWorld _mouseWorld;
         private Knockback _force;
@@ -156,29 +163,25 @@ namespace RDPolarity.Controllers
         private bool _isMaxVelocity = true;
         private Quaternion slowRotation;
 
+        private void UpdateUsername(string oldValue, string newValue)
+        {
+            usernameText.text = newValue;
+        }
+        
         public void OnSkinForward(InputAction.CallbackContext context)
         {
             if (context.performed && isLocalPlayer)
             {
-                if (selectedSkin >= skinList.Count - 1) { selectedSkin = 0; } 
-                else { selectedSkin++; }
+                CMDUpdateSkin(true);
             }
-            if (!isServer) CMDUpdateSkin(selectedSkin);
         }
 
         private void UpdateSkin(int oldValue, int newValue)
         {
-            CMDUpdateSkin(newValue);
+            ChangeSkin(newValue);
         }
 
-        [Command]
-        private void CMDUpdateSkin(int selection)
-        {
-            RPCUpdateSkin(selection);
-        }
-        
-        [ClientRpc]
-        private void RPCUpdateSkin(int selection)
+        private void ChangeSkin(int selection)
         {
             foreach (Transform child in modelSwapper.transform) {
                 Destroy(child.gameObject);
@@ -190,14 +193,28 @@ namespace RDPolarity.Controllers
             StateMachine.CurrentState.SetAnim(animator);
         }
 
-        public void OnSkinBackward(InputAction.CallbackContext context)
+        [Command]
+        private void CMDUpdateSkin(bool increase)
         {
-            if (context.performed && isLocalPlayer)
+            if (increase)
+            {
+                if (selectedSkin >= skinList.Count - 1) { selectedSkin = 0; } 
+                else { selectedSkin++; }
+            }
+            else
             {
                 if (selectedSkin <= 0) { selectedSkin = skinList.Count - 1; }
                 else { selectedSkin--; }
             }
-            if (!isServer) CMDUpdateSkin(selectedSkin);
+        }
+        
+
+        public void OnSkinBackward(InputAction.CallbackContext context)
+        {
+            if (context.performed && isLocalPlayer)
+            {
+                CMDUpdateSkin(false);
+            }
         }
         
         #region Unity Methods
@@ -220,9 +237,7 @@ namespace RDPolarity.Controllers
             _rigidbody = GetComponent<Rigidbody>();
             _mouseWorld = GetComponent<MouseWorld>();
             _force = GetComponent<Knockback>();
-
             
-
             // state machine test
             StateMachine = new PlayerStateMachine();
             IdleState = new PlayerIdleState(this, StateMachine, "idle");
@@ -237,9 +252,10 @@ namespace RDPolarity.Controllers
 
         private void Start()
         {
-            selectedSkin = 1;
-            selectedSkin = 0;
-            CMDUpdateSkin(selectedSkin);
+            if (isServer) _username = name;
+            ChangeSkin(selectedSkin);
+            // if (isServer) selectedSkin = PlayerDataManager.Instance.skinID;
+
             ONConnectEvent?.Invoke(this);
         }
 
@@ -378,7 +394,6 @@ namespace RDPolarity.Controllers
             {
                 facing = Vector3.Normalize(_mouseWorld.Position - transform.position);
                 facing.y = 0;
-                
             }
             var rotation = Quaternion.LookRotation(facing);
             // Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
