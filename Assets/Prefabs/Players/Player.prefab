@@ -315,6 +315,7 @@ MonoBehaviour:
   - {fileID: 3009089133866427334, guid: 5142358dab7ece64e8d0ad59fda055a8, type: 3}
   - {fileID: 7794973742826116309, guid: dd67e3d5724d0c040940a2d47638d7db, type: 3}
   - {fileID: 4183889852974116444, guid: f040daedf1bf90a43a17a3ad569a6af6, type: 3}
+  - {fileID: 70343430729522809, guid: 0314d8e4f0143974e8f0ac3d577ae6f7, type: 3}
   onHitEvent:
     m_PersistentCalls:
       m_Calls:
